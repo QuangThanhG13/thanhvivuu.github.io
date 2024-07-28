@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Theory Docker Project on </title>
-    <link>//localhost:60662/1-introduce/1.4-docker/</link>
+    <link>//localhost:1313/1-introduce/1.4-docker/</link>
     <description>Recent content in Theory Docker Project on </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="//localhost:60662/1-introduce/1.4-docker/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/1-introduce/1.4-docker/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

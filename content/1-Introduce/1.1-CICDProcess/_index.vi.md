@@ -21,4 +21,4 @@ Quá trình vòng đời phát triển cùng với các bước làm việc tron
 + **Deliver**: Đưa code đã kiểm tra vào môi trường test, có thể tự động hoặc sau khi được chấp thuận từ con người.
 + **Deploy**: Áp dụng các thay đổi lên sản phẩm, tự động hoặc theo phê duyệt từ con người.
 
-![CI/CD Process](../../../static/images/1-Introduce/cicdprocess.jpg)
+![CI/CD Process](thanhvivuu.github.io/images/1-Introduce/cicdprocess.jpg)

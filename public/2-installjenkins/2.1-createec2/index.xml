@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Create EC2 Server on </title>
-    <link>//localhost:60662/2-installjenkins/2.1-createec2/</link>
+    <link>//localhost:1313/2-installjenkins/2.1-createec2/</link>
     <description>Recent content in Create EC2 Server on </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="//localhost:60662/2-installjenkins/2.1-createec2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/2-installjenkins/2.1-createec2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tạo máy chủ EC2</title>
-      <link>//localhost:60662/2-installjenkins/2.1-createec2/_index.vi/</link>
+      <link>//localhost:1313/2-installjenkins/2.1-createec2/_index.vi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:60662/2-installjenkins/2.1-createec2/_index.vi/</guid>
+      <guid>//localhost:1313/2-installjenkins/2.1-createec2/_index.vi/</guid>
       <description>Tạo máy chủ EC2 Truy cập AWS Management Console&#xA;Tìm EC2 Chọn EC2 Trong giao diện EC2&#xA;Chọn Instances Chọn Launch instances Name and tags của instance, nhập workshop Thực hiện chọn AMI&#xA;Chọn Quick Start Chọn Amazon Linux Chọn AMI Thực hiện chọn Instance type và Chọn Create new key pair Trong giao diện Cretae key pair&#xA;Key pair name, nhập aws-keypair (tên tùy chọn, bạn có thể đặt bất kỳ).</description>
     </item>
   </channel>

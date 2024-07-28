@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SSH into EC2 to install Jenkin on </title>
-    <link>//localhost:60662/2-installjenkins/2.2-sshec2/</link>
+    <link>//localhost:1313/2-installjenkins/2.2-sshec2/</link>
     <description>Recent content in SSH into EC2 to install Jenkin on </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="//localhost:60662/2-installjenkins/2.2-sshec2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/2-installjenkins/2.2-sshec2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSH vào EC2 để cài Jenkins</title>
-      <link>//localhost:60662/2-installjenkins/2.2-sshec2/_index.vi/</link>
+      <link>//localhost:1313/2-installjenkins/2.2-sshec2/_index.vi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:60662/2-installjenkins/2.2-sshec2/_index.vi/</guid>
+      <guid>//localhost:1313/2-installjenkins/2.2-sshec2/_index.vi/</guid>
       <description>SSH vào EC2 để cài Jenkins Copy đường dẫn trong mục Example Vào thư mục chứa file key-pair vừa tải về ở mục 2.1, mở bằng Git bash và dán đường dẫn để ssh vào EC2 Tạo network cho 2 container sudo chmod 666 /var/run/docker.sock&#xD;docker network create jenkins Setup docker:dind docker run --name jenkins-docker -d --privileged --network jenkins --network-alias docker --env DOCKER_TLS_CERTDIR=/certs --volume docker-certs-jk:/certs/client --volume jenkins-home:/var/jenkins_home -p 2376:2376 docker:dind --storage-driver overlay2 Run container Jenkins docker run --name jenkins -d --network jenkins --env DOCKER_HOST=tcp://docker:2376 --env DOCKER_CERT_PATH=/certs/client --env DOCKER_TLS_VERIFY=1 -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home -v docker-certs-jk:/certs/client:ro jenkins/jenkins:2.</description>
     </item>
   </channel>

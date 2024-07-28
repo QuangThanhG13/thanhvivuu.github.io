@@ -2,62 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:60662/3-installargocd/3.1-installminikube/_index.vi/</loc>
+    <loc>//localhost:1313/3-installargocd/3.1-installminikube/_index.vi/</loc>
   </url><url>
-    <loc>//localhost:60662/2-installjenkins/2.1-createec2/</loc>
+    <loc>//localhost:1313/2-installjenkins/2.1-createec2/</loc>
   </url><url>
-    <loc>//localhost:60662/1-introduce/_index.vi/</loc>
+    <loc>//localhost:1313/1-introduce/_index.vi/</loc>
   </url><url>
-    <loc>//localhost:60662/</loc>
+    <loc>//localhost:1313/</loc>
   </url><url>
-    <loc>//localhost:60662/3-installargocd/3.1-installminikube/</loc>
+    <loc>//localhost:1313/3-installargocd/3.1-installminikube/</loc>
   </url><url>
-    <loc>//localhost:60662/1-introduce/</loc>
+    <loc>//localhost:1313/1-introduce/</loc>
   </url><url>
-    <loc>//localhost:60662/1-introduce/1.1-cicdprocess/_index.vi/</loc>
+    <loc>//localhost:1313/1-introduce/1.1-cicdprocess/_index.vi/</loc>
   </url><url>
-    <loc>//localhost:60662/2-installjenkins/2.1-createec2/_index.vi/</loc>
+    <loc>//localhost:1313/2-installjenkins/2.1-createec2/_index.vi/</loc>
   </url><url>
-    <loc>//localhost:60662/1-introduce/1.1-cicdprocess/</loc>
+    <loc>//localhost:1313/1-introduce/1.1-cicdprocess/</loc>
   </url><url>
-    <loc>//localhost:60662/1-introduce/1.4-docker/</loc>
+    <loc>//localhost:1313/1-introduce/1.4-docker/</loc>
   </url><url>
-    <loc>//localhost:60662/_index.vi/</loc>
+    <loc>//localhost:1313/_index.vi/</loc>
   </url><url>
-    <loc>//localhost:60662/2-installjenkins/_index.vi/</loc>
+    <loc>//localhost:1313/2-installjenkins/_index.vi/</loc>
   </url><url>
-    <loc>//localhost:60662/2-installjenkins/</loc>
+    <loc>//localhost:1313/2-installjenkins/</loc>
   </url><url>
-    <loc>//localhost:60662/1-introduce/1.2-jenkins/</loc>
+    <loc>//localhost:1313/1-introduce/1.2-jenkins/</loc>
   </url><url>
-    <loc>//localhost:60662/1-introduce/1.2-jenkins/_index.vi/</loc>
+    <loc>//localhost:1313/1-introduce/1.2-jenkins/_index.vi/</loc>
   </url><url>
-    <loc>//localhost:60662/3-installargocd/3.2-setupmanifest/</loc>
+    <loc>//localhost:1313/3-installargocd/3.2-setupmanifest/</loc>
   </url><url>
-    <loc>//localhost:60662/2-installjenkins/2.2-sshec2/</loc>
+    <loc>//localhost:1313/2-installjenkins/2.2-sshec2/</loc>
   </url><url>
-    <loc>//localhost:60662/2-installjenkins/2.2-sshec2/_index.vi/</loc>
+    <loc>//localhost:1313/2-installjenkins/2.2-sshec2/_index.vi/</loc>
   </url><url>
-    <loc>//localhost:60662/3-installargocd/3.2-setupmanifest/_index.vi/</loc>
+    <loc>//localhost:1313/3-installargocd/3.2-setupmanifest/_index.vi/</loc>
   </url><url>
-    <loc>//localhost:60662/1-introduce/1.3-argocd/</loc>
+    <loc>//localhost:1313/1-introduce/1.3-argocd/</loc>
   </url><url>
-    <loc>//localhost:60662/1-introduce/1.3-argocd/_index.vi/</loc>
+    <loc>//localhost:1313/1-introduce/1.3-argocd/_index.vi/</loc>
   </url><url>
-    <loc>//localhost:60662/3-installargocd/</loc>
+    <loc>//localhost:1313/3-installargocd/</loc>
   </url><url>
-    <loc>//localhost:60662/2-installjenkins/2.3-connectec2/</loc>
+    <loc>//localhost:1313/2-installjenkins/2.3-connectec2/</loc>
   </url><url>
-    <loc>//localhost:60662/2-installjenkins/2.3-connectec2/_index.vi/</loc>
+    <loc>//localhost:1313/2-installjenkins/2.3-connectec2/_index.vi/</loc>
   </url><url>
-    <loc>//localhost:60662/3-installargocd/_index.vi/</loc>
+    <loc>//localhost:1313/3-installargocd/_index.vi/</loc>
   </url><url>
-    <loc>//localhost:60662/4-cleanup/</loc>
+    <loc>//localhost:1313/4-cleanup/</loc>
   </url><url>
-    <loc>//localhost:60662/4-cleanup/_index.vi/</loc>
+    <loc>//localhost:1313/4-cleanup/_index.vi/</loc>
   </url><url>
-    <loc>//localhost:60662/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
   </url><url>
-    <loc>//localhost:60662/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
   </url>
 </urlset>

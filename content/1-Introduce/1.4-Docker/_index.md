@@ -13,6 +13,7 @@ pre: "<b> 1.4 </b>"
 - Docker is an open-source platform that automates the deployment
 - Docker packages your application and all its dependencies into an image. A Docker image contains everything needed to run your application
 ![Docker](../../../static/images/Docker/img.png)
+ [img.png](img.png)
 ### Key Concepts
 
 1. **Containers**: Containers are lightweight, portable, and run isolated processes on a shared operating system. They contain everything needed to run an application, including code, runtime, libraries, and settings.

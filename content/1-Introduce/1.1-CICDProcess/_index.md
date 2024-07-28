@@ -21,4 +21,4 @@ The development lifecycle process along with the steps in CI/CD occur as follows
 + **Deliver**: Move tested code to a test environment, which can be automatic or after human approval.
 + **Deploy**: Implement changes to the product, automatically or according to human approval.
 
-![CI/CD Process](/images/1-Introduce/cicdprocess.jpg?featherlight=false&width=50pc)
+![CI/CD Process](../../../static/images/1-Introduce/cicdprocess.jpg)
