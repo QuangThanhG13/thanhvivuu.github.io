@@ -12,14 +12,14 @@ pre: "<b> 1.4 </b>"
 
 - Docker is an open-source platform that automates the deployment
 - Docker packages your application and all its dependencies into an image. A Docker image contains everything needed to run your application
- [Docker](../../../static/images/Docker/img.png)
+  ![img.png](img.png)
  
 ### Key Concepts
 
 1. **Containers**: Containers are lightweight, portable, and run isolated processes on a shared operating system. They contain everything needed to run an application, including code, runtime, libraries, and settings.
-   [img.png](img.png)
+ )
 2. **Images**: Images are read-only templates used to create containers. They are built from a Dockerfile and include the application code, dependencies, and the runtime environment.
-   [img.png](img.png)
+   
 3. **Dockerfile**: A Dockerfile is a script containing instructions on how to build a Docker image. It specifies the base image, application code, environment variables, and commands to run.
 
 4. **Docker Hub**: Docker Hub is a cloud-based repository where users can find and share Docker images. It provides a centralized place to store and manage Docker images.
