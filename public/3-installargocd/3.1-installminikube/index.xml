@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Installation and Deployment of Argo CD on Implementing CI/CD using Jenkins and Argo CD.</title>
-    <link>//localhost:1313/3-installargocd/3.1-installminikube/</link>
-    <description>Recent content in Installation and Deployment of Argo CD on Implementing CI/CD using Jenkins and Argo CD.</description>
+    <title>Installation and Deployment of Argo CD on </title>
+    <link>//localhost:60662/3-installargocd/3.1-installminikube/</link>
+    <description>Recent content in Installation and Deployment of Argo CD on </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="//localhost:1313/3-installargocd/3.1-installminikube/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:60662/3-installargocd/3.1-installminikube/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cài đặt và triển khai Argo CD </title>
+      <link>//localhost:60662/3-installargocd/3.1-installminikube/_index.vi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:60662/3-installargocd/3.1-installminikube/_index.vi/</guid>
+      <description>I. Cài đặt Minikube Tại giao diện cmd đang ssh vào EC2, tải xuống trực tiếp Minikube&#xA;curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \ &amp;amp;&amp;amp; chmod +x minikube Thêm Minikube vào biến môi trường path&#xA;sudo mkdir -p /usr/local/bin/&#xD;sudo install minikube /usr/local/bin/ Kiểm tra xem Minikube đã được cài đặt thành công hay chưa&#xA;minikube version Sau khi cài đặt thành công, chạy cluster trong minikube&#xA;minikube start Kiểm tra xem Minikube đã được khởi động thành công hay chưa</description>
+    </item>
   </channel>
 </rss>

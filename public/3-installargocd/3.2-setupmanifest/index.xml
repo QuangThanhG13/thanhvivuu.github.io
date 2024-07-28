@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Setup Repo Manifest on Implementing CI/CD using Jenkins and Argo CD.</title>
-    <link>//localhost:1313/3-installargocd/3.2-setupmanifest/</link>
-    <description>Recent content in Setup Repo Manifest on Implementing CI/CD using Jenkins and Argo CD.</description>
+    <title>Setup Repo Manifest on </title>
+    <link>//localhost:60662/3-installargocd/3.2-setupmanifest/</link>
+    <description>Recent content in Setup Repo Manifest on </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="//localhost:1313/3-installargocd/3.2-setupmanifest/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:60662/3-installargocd/3.2-setupmanifest/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thiết lập Repo Manifest</title>
+      <link>//localhost:60662/3-installargocd/3.2-setupmanifest/_index.vi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:60662/3-installargocd/3.2-setupmanifest/_index.vi/</guid>
+      <description>Thiết lập Repo Manifest Clone repo cho dự án của bạn trên Gitlab&#xA;Đối với dự án của tôi, trong repo manifest sẽ có 3 folder tương ứng với 3 phần: Front-end, Back-end và Database&#xA;Chạy các pod tương ứng với 3 phần trên kubectl apply -f [folder_name] Trong đó [folder_name] chính là tên của 3 folder vừa clone về&#xA;Kiểm tra trạng thái các pod&#xA;minikube dashboard Khi các pod đã chạy xong, thực hiện import dữ liệu vào cho database</description>
+    </item>
   </channel>
 </rss>

@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Setup connection between Jenkins and Gitlab on Implementing CI/CD using Jenkins and Argo CD.</title>
-    <link>//localhost:1313/2-installjenkins/2.3-connectec2/</link>
-    <description>Recent content in Setup connection between Jenkins and Gitlab on Implementing CI/CD using Jenkins and Argo CD.</description>
+    <title>Setup connection between Jenkins and Gitlab on </title>
+    <link>//localhost:60662/2-installjenkins/2.3-connectec2/</link>
+    <description>Recent content in Setup connection between Jenkins and Gitlab on </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="//localhost:1313/2-installjenkins/2.3-connectec2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:60662/2-installjenkins/2.3-connectec2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thiết lập kết nối giữa Jenkins và Gitlab</title>
+      <link>//localhost:60662/2-installjenkins/2.3-connectec2/_index.vi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:60662/2-installjenkins/2.3-connectec2/_index.vi/</guid>
+      <description>Thiết lập kết nối giữa Jenkins và Gitlab Cài đặt plugin jenkins Truy cập vào Manage Jenkins -&amp;gt; Plugin -&amp;gt; Available plugin tiến hành cài đặt plugin phù hợp cho project: Gitlab , Docker và Docker pipeline Cài đặt Tools jenkins&#xA;Manage Jenkins -&amp;gt; Tools, kéo xuống phần JDK installations ấn vào Add JDK Trong phần Name đặt là Jdk Tích Install automatically Đối với Git, Docker, Maven làm tương tự Tạo item</description>
+    </item>
   </channel>
 </rss>

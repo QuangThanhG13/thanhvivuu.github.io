@@ -1,11 +1,102 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Implementing CI/CD using Jenkins and Argo CD on Implementing CI/CD using Jenkins and Argo CD.</title>
-    <link>//localhost:1313/</link>
-    <description>Recent content in Implementing CI/CD using Jenkins and Argo CD on Implementing CI/CD using Jenkins and Argo CD.</description>
+    <title>Implementing CI/CD using Jenkins and Argo CD on </title>
+    <link>//localhost:60662/</link>
+    <description>Recent content in Implementing CI/CD using Jenkins and Argo CD on </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:60662/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cài đặt và triển khai Argo CD </title>
+      <link>//localhost:60662/3-installargocd/3.1-installminikube/_index.vi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:60662/3-installargocd/3.1-installminikube/_index.vi/</guid>
+      <description>I. Cài đặt Minikube Tại giao diện cmd đang ssh vào EC2, tải xuống trực tiếp Minikube&#xA;curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \ &amp;amp;&amp;amp; chmod +x minikube Thêm Minikube vào biến môi trường path&#xA;sudo mkdir -p /usr/local/bin/&#xD;sudo install minikube /usr/local/bin/ Kiểm tra xem Minikube đã được cài đặt thành công hay chưa&#xA;minikube version Sau khi cài đặt thành công, chạy cluster trong minikube&#xA;minikube start Kiểm tra xem Minikube đã được khởi động thành công hay chưa</description>
+    </item>
+    <item>
+      <title>Giới thiệu</title>
+      <link>//localhost:60662/1-introduce/_index.vi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:60662/1-introduce/_index.vi/</guid>
+      <description>Giới thiệu CI/CD, Jenkins và ArgoCD CI/CD là viết tắt của Continuous Integration/Continuous Delivery hoặc Continuous Deployment. Đây là một phương pháp phát triển phần mềm mục tiêu đến việc tự động hóa quá trình tích hợp, kiểm thử, phân phối và triển khai ứng dụng.&#xA;CI/CD sẽ liên tục kiểm tra test code mới. Điều này giúp ngăn chặn các lỗi trong hệ thống trước khi code mới được cập nhật lên server.</description>
+    </item>
+    <item>
+      <title>Quy trình hoạt động CI/CD</title>
+      <link>//localhost:60662/1-introduce/1.1-cicdprocess/_index.vi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:60662/1-introduce/1.1-cicdprocess/_index.vi/</guid>
+      <description>Quy trình hoạt động CI/CD Nếu muốn hiểu kỹ hơn về cách thức hoạt động của quy trình CI/CD, bạn cần nắm được các bước tiến hành cụ thể trong quy trình đó. Vậy những bước này bao gồm những gì và chúng hoạt động ra sao?&#xA;Tích hợp Liên tục (CI) là quy trình đầu tiên, nơi mà các lập trình viên thường xuyên hợp nhất code của họ vào một kho lưu trữ chung như Git, nhiều lần trong ngày.</description>
+    </item>
+    <item>
+      <title>Tạo máy chủ EC2</title>
+      <link>//localhost:60662/2-installjenkins/2.1-createec2/_index.vi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:60662/2-installjenkins/2.1-createec2/_index.vi/</guid>
+      <description>Tạo máy chủ EC2 Truy cập AWS Management Console&#xA;Tìm EC2 Chọn EC2 Trong giao diện EC2&#xA;Chọn Instances Chọn Launch instances Name and tags của instance, nhập workshop Thực hiện chọn AMI&#xA;Chọn Quick Start Chọn Amazon Linux Chọn AMI Thực hiện chọn Instance type và Chọn Create new key pair Trong giao diện Cretae key pair&#xA;Key pair name, nhập aws-keypair (tên tùy chọn, bạn có thể đặt bất kỳ).</description>
+    </item>
+    <item>
+      <title>Triển khai CI/CD sử dụng Jenkins và Argo CD</title>
+      <link>//localhost:60662/_index.vi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:60662/_index.vi/</guid>
+      <description>Triển khai CI/CD sử dụng Jenkins và Argo CD Tổng quan Trong bài lab này, bạn sẽ tìm hiểu các khái niệm cơ bản và thực hành việc thiết lập Jenkins và Argo CD để tự động hóa các giai đoạn xây dựng và kiểm thử của ứng dụng, đồng thời sử dụng Argo CD để tự động triển khai ứng dụng đến môi trường mong muốn, cải thiện tốc độ và độ tin cậy của quá trình giao hàng phần mềm, đồng thời đảm bảo tất cả các thay đổi được theo dõi và kiểm toán trong Git.</description>
+    </item>
+    <item>
+      <title>Cài đặt Jenkins </title>
+      <link>//localhost:60662/2-installjenkins/_index.vi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:60662/2-installjenkins/_index.vi/</guid>
+      <description>Cài đặt Jenkins Ở bước này chúng ta sẽ cài đặt Jenkins và tích hợp Gitlab với Jenkins&#xA;Nội dung Cài đặt EC2 làm máy chủ Jenkins SSH vào EC2 để cài Jenkins Thiết lập kết nối giữa Jenkins và Gitlab </description>
+    </item>
+    <item>
+      <title>Jenkins</title>
+      <link>//localhost:60662/1-introduce/1.2-jenkins/_index.vi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:60662/1-introduce/1.2-jenkins/_index.vi/</guid>
+      <description>Jenkins Jenkins là một công cụ tự động hóa mã nguồn mở giúp tự động hóa các phần khác nhau của quá trình phát triển phần mềm như build, test và triển khai ứng dụng. Nó hỗ trợ tích hợp liên tục (Continuous Integration) và phân phối liên tục (Continuous Delivery).&#xA;Bạn có thể sử dụng Amazon Elastic Computer Cloud (Amazon EC2) để triển khai ứng dụng Jenkins trên AWS chỉ trong vài phút.</description>
+    </item>
+    <item>
+      <title>SSH vào EC2 để cài Jenkins</title>
+      <link>//localhost:60662/2-installjenkins/2.2-sshec2/_index.vi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:60662/2-installjenkins/2.2-sshec2/_index.vi/</guid>
+      <description>SSH vào EC2 để cài Jenkins Copy đường dẫn trong mục Example Vào thư mục chứa file key-pair vừa tải về ở mục 2.1, mở bằng Git bash và dán đường dẫn để ssh vào EC2 Tạo network cho 2 container sudo chmod 666 /var/run/docker.sock&#xD;docker network create jenkins Setup docker:dind docker run --name jenkins-docker -d --privileged --network jenkins --network-alias docker --env DOCKER_TLS_CERTDIR=/certs --volume docker-certs-jk:/certs/client --volume jenkins-home:/var/jenkins_home -p 2376:2376 docker:dind --storage-driver overlay2 Run container Jenkins docker run --name jenkins -d --network jenkins --env DOCKER_HOST=tcp://docker:2376 --env DOCKER_CERT_PATH=/certs/client --env DOCKER_TLS_VERIFY=1 -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home -v docker-certs-jk:/certs/client:ro jenkins/jenkins:2.</description>
+    </item>
+    <item>
+      <title>Thiết lập Repo Manifest</title>
+      <link>//localhost:60662/3-installargocd/3.2-setupmanifest/_index.vi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:60662/3-installargocd/3.2-setupmanifest/_index.vi/</guid>
+      <description>Thiết lập Repo Manifest Clone repo cho dự án của bạn trên Gitlab&#xA;Đối với dự án của tôi, trong repo manifest sẽ có 3 folder tương ứng với 3 phần: Front-end, Back-end và Database&#xA;Chạy các pod tương ứng với 3 phần trên kubectl apply -f [folder_name] Trong đó [folder_name] chính là tên của 3 folder vừa clone về&#xA;Kiểm tra trạng thái các pod&#xA;minikube dashboard Khi các pod đã chạy xong, thực hiện import dữ liệu vào cho database</description>
+    </item>
+    <item>
+      <title>Argo CD</title>
+      <link>//localhost:60662/1-introduce/1.3-argocd/_index.vi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:60662/1-introduce/1.3-argocd/_index.vi/</guid>
+      <description>Argo CD Argo CD là một dự án mã nguồn mở chỉ định để cung cấp triển khai tự động cho các dự án Kubernetes. Nó tuân theo nguyên lý &amp;ldquo;GitOps&amp;rdquo;, tự động đồng bộ hóa các dự án trên Kubernetes để phù hợp với mã nguồn trong git repo. Chỉ cần commit các thay đổi vào git, Argo CD sẽ đảm nhiệm việc cập nhật lại các dự án trong Kubernetes.</description>
+    </item>
+    <item>
+      <title>Thiết lập kết nối giữa Jenkins và Gitlab</title>
+      <link>//localhost:60662/2-installjenkins/2.3-connectec2/_index.vi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:60662/2-installjenkins/2.3-connectec2/_index.vi/</guid>
+      <description>Thiết lập kết nối giữa Jenkins và Gitlab Cài đặt plugin jenkins Truy cập vào Manage Jenkins -&amp;gt; Plugin -&amp;gt; Available plugin tiến hành cài đặt plugin phù hợp cho project: Gitlab , Docker và Docker pipeline Cài đặt Tools jenkins&#xA;Manage Jenkins -&amp;gt; Tools, kéo xuống phần JDK installations ấn vào Add JDK Trong phần Name đặt là Jdk Tích Install automatically Đối với Git, Docker, Maven làm tương tự Tạo item</description>
+    </item>
+    <item>
+      <title>Triển khai Argo CD </title>
+      <link>//localhost:60662/3-installargocd/_index.vi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:60662/3-installargocd/_index.vi/</guid>
+      <description>Triển khai Argo CD Trong bước này, chúng tôi sẽ trình bày cách cài đặt Argo CD trên Minikube và triển khai các ứng dụng trên Minikube bằng giao diện Argo CD.&#xA;Nội dung Cài đặt và triển khai Argo CD Thiết lập Repo Manifest </description>
+    </item>
+    <item>
+      <title>Dọn dẹp tài nguyên</title>
+      <link>//localhost:60662/4-cleanup/_index.vi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:60662/4-cleanup/_index.vi/</guid>
+      <description>Terminate các EC2 Instance. Terminate EC2 instance. Truy cập Amazon EC2 console tại địa chỉ EC2. Trên thanh điều hướng bên trái, chọn Intances Chọn tất cả EC2 Instance liên quan tới bài lab. Chọn Instance state Chọn Terminate instance Xác nhận terminate. </description>
+    </item>
   </channel>
 </rss>
