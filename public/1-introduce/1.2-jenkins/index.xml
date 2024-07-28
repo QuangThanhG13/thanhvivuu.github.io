@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jenkins on </title>
+    <title>Jenkins on Implementing CI/CD using Jenkins and Argo CD.</title>
     <link>//localhost:1313/1-introduce/1.2-jenkins/</link>
-    <description>Recent content in Jenkins on </description>
+    <description>Recent content in Jenkins on Implementing CI/CD using Jenkins and Argo CD.</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="//localhost:1313/1-introduce/1.2-jenkins/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Jenkins</title>
-      <link>//localhost:1313/1-introduce/1.2-jenkins/_index.vi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/1-introduce/1.2-jenkins/_index.vi/</guid>
-      <description>Jenkins Jenkins là một công cụ tự động hóa mã nguồn mở giúp tự động hóa các phần khác nhau của quá trình phát triển phần mềm như build, test và triển khai ứng dụng. Nó hỗ trợ tích hợp liên tục (Continuous Integration) và phân phối liên tục (Continuous Delivery).&#xA;Bạn có thể sử dụng Amazon Elastic Computer Cloud (Amazon EC2) để triển khai ứng dụng Jenkins trên AWS chỉ trong vài phút.</description>
-    </item>
   </channel>
 </rss>

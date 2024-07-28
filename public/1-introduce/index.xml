@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Introduction on </title>
+    <title>Introduction on Implementing CI/CD using Jenkins and Argo CD.</title>
     <link>//localhost:1313/1-introduce/</link>
-    <description>Recent content in Introduction on </description>
+    <description>Recent content in Introduction on Implementing CI/CD using Jenkins and Argo CD.</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="//localhost:1313/1-introduce/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Giới thiệu</title>
-      <link>//localhost:1313/1-introduce/_index.vi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/1-introduce/_index.vi/</guid>
-      <description>Giới thiệu CI/CD, Jenkins và ArgoCD CI/CD là viết tắt của Continuous Integration/Continuous Delivery hoặc Continuous Deployment. Đây là một phương pháp phát triển phần mềm mục tiêu đến việc tự động hóa quá trình tích hợp, kiểm thử, phân phối và triển khai ứng dụng.&#xA;CI/CD sẽ liên tục kiểm tra test code mới. Điều này giúp ngăn chặn các lỗi trong hệ thống trước khi code mới được cập nhật lên server.</description>
-    </item>
   </channel>
 </rss>
