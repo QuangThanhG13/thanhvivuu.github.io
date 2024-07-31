@@ -1,48 +1,48 @@
 [
 {
-	"uri": "//localhost:62039/vi/1-introduce/",
+	"uri": "//localhost:1313/vi/1-introduce/",
 	"title": "Giới thiệu",
 	"tags": [],
 	"description": "",
 	"content": "Giới thiệu CI/CD, Jenkins và ArgoCD CI/CD là viết tắt của Continuous Integration/Continuous Delivery hoặc Continuous Deployment. Đây là một phương pháp phát triển phần mềm mục tiêu đến việc tự động hóa quá trình tích hợp, kiểm thử, phân phối và triển khai ứng dụng.\nCI/CD sẽ liên tục kiểm tra test code mới. Điều này giúp ngăn chặn các lỗi trong hệ thống trước khi code mới được cập nhật lên server. Việc tích hợp và kiểm thử thường xuyên giúp phát hiện và sửa lỗi sớm, tránh được các vấn đề lớn ở giai đoạn sau. CI/CD tự động hóa quá trình phát triển và triển khai, giúp teams đẩy nhanh việc release sản phẩm mới.\nCác công cụ phổ biến hỗ trợ CI/CD bao gồm Jenkins, GitLab CI, Travis CI, CircleCI, và ArgoCD cho Kubernetes. Thông thường, hay được sử dụng nhất là:\nJenkins - một công cụ open-source tự động hóa các nhiệm vụ phát triển phần mềm như build, test và deploy. ArgoCD - một công cụ điều phối liên tục dành cho Kubernetes, giúp tự động hóa việc triển khai ứng dụng trong kiến trúc microservices và quản lý nhiều môi trường Kubernetes một cách nhất quán. Cách tiếp cận này không chỉ cải thiện hiệu suất làm việc nhóm mà còn giúp sản phẩm của bạn đạt đến tay người dùng nhanh chóng với chất lượng cao hơn. Ở môi trường điện toán đám mây, các nhà phát triển thường sử dụng Docker để đóng gói và Kubernetes để điều phối.\nNội dung Quy trình hoạt động CI/CD Jenkins ArgoCD Bây giờ chúng ta sẽ cùng nhau đi qua các khái niệm cơ bản nhất của CI/CD, Jenkins và ArgoCD nhé.\n"
 },
 {
-	"uri": "//localhost:62039/vi/1-introduce/1.1-cicdprocess/",
+	"uri": "//localhost:1313/vi/1-introduce/1.1-cicdprocess/",
 	"title": "Quy trình hoạt động CI/CD",
 	"tags": [],
 	"description": "",
 	"content": "Quy trình hoạt động CI/CD Nếu muốn hiểu kỹ hơn về cách thức hoạt động của quy trình CI/CD, bạn cần nắm được các bước tiến hành cụ thể trong quy trình đó. Vậy những bước này bao gồm những gì và chúng hoạt động ra sao?\nTích hợp Liên tục (CI) là quy trình đầu tiên, nơi mà các lập trình viên thường xuyên hợp nhất code của họ vào một kho lưu trữ chung như Git, nhiều lần trong ngày. Mỗi lần hợp nhất thường được xây dựng và kiểm thử tự động để phát hiện lỗi càng sớm càng tốt, giảm thiểu việc tích tụ lỗi và giảm thời gian cần thiết để hoàn thành và cho ra sản phẩm chất lượng. Phân phối liên tục (CD) là mở rộng CI bằng cách đảm bảo rằng bạn có thể phát hành phiên bản mới của phần mềm vào bất kỳ thời điểm nào. Trong CD, việc xây dựng, kiểm thử và chuẩn bị cho việc phát hành mã nguồn được tự động hóa. Triển khai liên tục (CD) là một bước tiếp theo của CD, nơi phát hành tự động các thay đổi mã nguồn đã qua kiểm thử vào môi trường sản xuất. Điều này giúp mọi thay đổi sau khi được kiểm tra có thể được triển khai một cách tự động. Quá trình vòng đời phát triển cùng với các bước làm việc trong CI/CD diễn ra như sau:\nBuild: Tạo sản phẩm từ mã nguồn, tích hợp và phát hiện lỗi. Test: Tự động kiểm tra tính năng mới và code thay đổi. Deliver: Đưa code đã kiểm tra vào môi trường test, có thể tự động hoặc sau khi được chấp thuận từ con người. Deploy: Áp dụng các thay đổi lên sản phẩm, tự động hoặc theo phê duyệt từ con người. "
 },
 {
-	"uri": "//localhost:62039/vi/1-introduce/1.2-jenkins/",
+	"uri": "//localhost:1313/vi/1-introduce/1.2-jenkins/",
 	"title": "Jenkins",
 	"tags": [],
 	"description": "",
 	"content": "Jenkins Jenkins là một công cụ tự động hóa mã nguồn mở giúp tự động hóa các phần khác nhau của quá trình phát triển phần mềm như build, test và triển khai ứng dụng. Nó hỗ trợ tích hợp liên tục (Continuous Integration) và phân phối liên tục (Continuous Delivery).\nBạn có thể sử dụng Amazon Elastic Computer Cloud (Amazon EC2) để triển khai ứng dụng Jenkins trên AWS chỉ trong vài phút.\nTrong bài viết này sẽ hướng dẫn bạn quá trình triển khai một ứng dụng Jenkins. Bạn sẽ khởi chạy một EC2 instance, cài đặt và cấu hình Jenkins trên instance đó.\n"
 },
 {
-	"uri": "//localhost:62039/vi/1-introduce/1.3-argocd/",
+	"uri": "//localhost:1313/vi/1-introduce/1.3-argocd/",
 	"title": "Argo CD",
 	"tags": [],
 	"description": "",
 	"content": "Argo CD Argo CD là một dự án mã nguồn mở chỉ định để cung cấp triển khai tự động cho các dự án Kubernetes. Nó tuân theo nguyên lý \u0026ldquo;GitOps\u0026rdquo;, tự động đồng bộ hóa các dự án trên Kubernetes để phù hợp với mã nguồn trong git repo. Chỉ cần commit các thay đổi vào git, Argo CD sẽ đảm nhiệm việc cập nhật lại các dự án trong Kubernetes.\nCác tính năng chính của Argo CD bao gồm:\nTự động hóa triển khai: Khi có các commit mới vào nhánh được theo dõi trong Git repository, Argo CD tự động triển khai các thay đổi này vào Kubernetes. Quản lý đa môi trường: Argo CD có thể quản lý nhiều môi trường Kubernetes, từ phát triển (dev), kiểm thử (staging) đến sản xuất (production). Health and Integrity Checks: Nó có thể tự động kiểm tra \u0026ldquo;sức khỏe\u0026rdquo; của ứng dụng sau khi triển khai và bảo đảm sự toàn vẹn theo thời gian. Rollback \u0026amp; Rollout: Hỗ trợ quay về các phiên bản trước hoặc triển khai lần lượt các bản cập nhật mới một cách dễ dàng. "
 },
 {
-	"uri": "//localhost:62039/vi/categories/",
+	"uri": "//localhost:1313/vi/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "//localhost:62039/vi/tags/",
+	"uri": "//localhost:1313/vi/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "//localhost:62039/vi/",
+	"uri": "//localhost:1313/vi/",
 	"title": "Triển khai CI/CD sử dụng Jenkins và Argo CD ",
 	"tags": [],
 	"description": "",

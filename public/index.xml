@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Implementing CI/CD using Jenkins and Argo CD.</title>
-    <link>//localhost:62039/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on Implementing CI/CD using Jenkins and Argo CD.</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="//localhost:62039/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
