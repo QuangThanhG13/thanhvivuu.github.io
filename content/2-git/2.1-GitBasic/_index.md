@@ -4,7 +4,7 @@ title: "Theory Git"
 
 date: "`r Sys.Date()`"
 
-weight: 1
+weight: 2
 
 chapter: false
 
