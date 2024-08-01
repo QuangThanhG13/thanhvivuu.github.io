@@ -41,7 +41,7 @@ Check that your Hugo version is minimum `0.25` with `hugo version`.
 
 If you need old version for compatibility purpose, either download [theme source code from releases](https://github.com/matcornic/hugo-theme-learn/releases) or use the right git tag. For example, with `1.1.0`
 
-- Direct download way: https://github.com/matcornic/hugo-theme-learn/ archive/1.1.0.zip
+- Direct download way: https://github.com/matcornic/hugo-theme-learn/archive/1.1.0.zip
 - Git way:
 
 ```shell
