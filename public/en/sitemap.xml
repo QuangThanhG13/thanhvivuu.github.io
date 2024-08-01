@@ -28,6 +28,11 @@
   </url><url>
     <loc>//localhost:1313/1-introduce/1.4-docker/</loc>
   </url><url>
+<<<<<<< HEAD
+    <loc>//localhost:1313/2-git/</loc>
+  </url><url>
+=======
+>>>>>>> 24175d783b6048195d8aad1acf350004bfd89bd9
     <loc>//localhost:1313/1-introduce/1.2-jenkins/</loc>
     <xhtml:link
                 rel="alternate"
@@ -39,6 +44,8 @@
                 hreflang="en"
                 href="//localhost:1313/1-introduce/1.2-jenkins/"
                 />
+  </url><url>
+    <loc>//localhost:1313/2-git/2.1-gitbasic/</loc>
   </url><url>
     <loc>//localhost:1313/1-introduce/1.3-argocd/</loc>
     <xhtml:link
@@ -52,6 +59,11 @@
                 href="//localhost:1313/1-introduce/1.3-argocd/"
                 />
   </url><url>
+<<<<<<< HEAD
+=======
+    <loc>//localhost:1313/2-git/</loc>
+  </url><url>
+>>>>>>> 24175d783b6048195d8aad1acf350004bfd89bd9
     <loc>//localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
