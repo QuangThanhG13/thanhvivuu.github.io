@@ -1,13 +1,4 @@
 ---
-<<<<<<< HEAD
-title : "Theory Git"
-date :  "`r Sys.Date()`" 
-weight : 2
-chapter : false
-pre : " <b> 2.1 </b> "
----
-
-=======
 
 title: "Theory Git"
 
@@ -22,7 +13,6 @@ pre: "<b>2.1</b>"
 ---
 
 
->>>>>>> 24175d783b6048195d8aad1acf350004bfd89bd9
 # Theory GitHub Basics
 
 
