@@ -1,14 +1,23 @@
 
-J
-<<<<<<< HEAD
-.github/workflows/main.yml,c/7/c778226b6c4c0fb51cf7942c8ee1f3d9fc1249d0
-=======
-.github/workflows/main.yml,c/7/c778226b6c4c0fb51cf7942c8ee1f3d9fc1249d0
-<<<<<<< HEAD
-9
-	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-=======
+R
+"themes/hugo-theme-learn/LICENSE.md,6/2/6268345947e6a80440a7f1e51c262c902e8d27b0
+T
+$themes/hugo-theme-learn/netlify.toml,d/d/ddbd7e4624d5a413e85a7dbf77ac36bdecc66a7c
+R
+"themes/hugo-theme-learn/theme.toml,c/0/c0abec327dc24804689e9f3e1de27e3f2689f26e
 Q
 !themes/hugo-theme-learn/README.md,d/5/d54efcf6fe2f12bc6ea6f76955c07d8f113de56f
->>>>>>> f4b60757801f384447e4add13c943ed573895c49
->>>>>>> bc0f92d421589bbae6120a091385ddc690301eb1
+S
+#themes/hugo-theme-learn/wercker.yml,8/c/8c07951e7e3353b2685a613dbbb2663e1b825a14
+R
+"themes/hugo-theme-learn/.gitignore,d/9/d9dce9e4b0f145d420822f0eb20c08268425314b
+U
+%themes/hugo-theme-learn/.editorconfig,0/8/089b18bccd7b1e6599f0978349938c0339ed96e7
+S
+#themes/hugo-theme-learn/.grenrc.yml,c/6/c6886b3bfcf493bac9971cdd3a2086aa0bf6a168
+T
+$themes/hugo-theme-learn/CHANGELOG.md,2/7/27e92f38f03c8ab6370a69c9630575b90f3b0913
+G
+content/2-git/_index.md,2/9/297b565a6d91e769889c9474b0e53e28e9218071
+T
+$content/2-git/2.1-GitBasic/_index.md,e/f/efd459b1e47a643608d3cd63f288c9fea3298dc7

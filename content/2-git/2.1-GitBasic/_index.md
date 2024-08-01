@@ -1,6 +1,5 @@
 ---
-<<<<<<< HEAD
-title : "Theory Git"
+<<<<<<< HEADtitle : "Theory Git"
 date :  "`r Sys.Date()`" 
 weight : 2
 chapter : false
