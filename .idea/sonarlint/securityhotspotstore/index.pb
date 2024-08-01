@@ -9,6 +9,11 @@ P
  content/1-Introduce/_index.vi.md,3/9/39234976869e1980a90f87a6fc0d92c07fbe85d5
 X
 (content/1-Introduce/1.4-Docker/_index.md,7/c/7c4acc17e2cc01cdb71e3fb8dfec105f2365afd6
+<<<<<<< HEAD
+=======
+9
+	hugo.yaml,6/f/6fb041b5b784861b6ca2a2cc6c4c65cbc3313638
+>>>>>>> 24175d783b6048195d8aad1acf350004bfd89bd9
 X
 (content/1-Introduce/1.3-ArgoCD/_index.md,7/4/74517634b4c1dcd0f2b8d9d3e177d448142f58bf
 [
@@ -17,6 +22,13 @@ Y
 )content/1-Introduce/1.2-Jenkins/_index.md,b/c/bcdbfe9d7c9180e2dd3cb94b4ec8405c253f0a45
 ]
 -content/1-Introduce/1.1-CICDProcess/_index.md,b/8/b8bef583dea2215541339fec3cc735fc430829f3
+<<<<<<< HEAD
+=======
+`
+0content/2-InstallJenkins/2.1-CreateEc2/_index.md,0/1/01c44653ab09826a65728993747a092c5d1b47c1
+c
+3content/2-InstallJenkins/2.1-CreateEc2/_index.vi.md,c/9/c92dc1b7157740e8613905c676859c4267fb3702
+>>>>>>> 24175d783b6048195d8aad1acf350004bfd89bd9
 W
 'static/css/fonts/monogramos-webfont.svg,a/3/a3f7fa4084480a25d9f8b504363369923f892e53
 `
@@ -24,6 +36,7 @@ W
 @
 .hugo_build.lock,8/6/8653f83311a35ac6d3c4ba9997f4cd41e60e9d00
 ;
+<<<<<<< HEAD
 config.toml,c/2/c2996dfd59d9c152da4b8148714e209d60f21ffa
 S
 #layouts/partials/custom-footer.html,3/a/3a0030a290add94361dbc56e1b916436c989656c
@@ -84,3 +97,6 @@ L
 public/categories/index.html,b/9/b9ef9a2d3186ab91cf1cd49710a764828341b8d3
 K
 public/categories/index.xml,3/e/3ed396b61a1a3b89b4438df40fb75900c38cf568
+=======
+config.toml,c/2/c2996dfd59d9c152da4b8148714e209d60f21ffa
+>>>>>>> 24175d783b6048195d8aad1acf350004bfd89bd9
