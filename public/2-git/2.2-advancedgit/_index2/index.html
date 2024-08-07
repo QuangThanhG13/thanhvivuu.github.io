@@ -12,21 +12,21 @@
     <title>GibHub homework :: Implementing CI/CD using Jenkins and Argo CD.</title>
 
     
-    <link href="/css/nucleus.css?1723051109" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1723051109" rel="stylesheet">
-    <link href="/css/hybrid.css?1723051109" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1723051109" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1723051109" rel="stylesheet">
-    <link href="/css/auto-complete.css?1723051109" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1723051109" rel="stylesheet">
-    <link href="/css/theme.css?1723051109" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1723051109" rel="stylesheet">
+    <link href="/css/nucleus.css?1723051981" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1723051981" rel="stylesheet">
+    <link href="/css/hybrid.css?1723051981" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1723051981" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1723051981" rel="stylesheet">
+    <link href="/css/auto-complete.css?1723051981" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1723051981" rel="stylesheet">
+    <link href="/css/theme.css?1723051981" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1723051981" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1723051109" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1723051981" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1723051109"></script>
+    <script src="/js/jquery-3.3.1.min.js?1723051981"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1723051109"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1723051109"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1723051981"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1723051981"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1723051109"></script>
+<script type="text/javascript" src="/js/search.js?1723051981"></script>
 
     
   </div>
@@ -512,7 +512,7 @@
 <li>Prepares the Project for Version Control : Flow the changes from the</li>
 <li>Sets Up the Initial Branch: By default, <code>git init</code> &ndash;&gt; creates a new branch called <code>main</code></li>
 </ul>
-<p><img alt="1" src="/images/images/1.png"></p>
+<p><img alt="1" src="/thanhvivuu.github.io/images/images/1.png?raw=true"></p>
 <h2 id="step-4-add-and-commit-changes">Step 4: Add and Commit Changes</h2>
 <ol>
 <li>Create a README.md file and add a description:</li>
@@ -528,13 +528,13 @@
 <li>Create and switch to a new branch:</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git checkout -b feature-branch
-</span></span></code></pre></div><p><img alt="2" src="/images/images/2.png"></p>
+</span></span></code></pre></div><p><img alt="2" src="/thanhvivuu.github.io/images/images/2.png?raw=true"></p>
 <ol start="2">
 <li>Create a feature.txt file, add content, and commit the changes</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>   echo <span style="color:#e6db74">&#34;This is a new feature&#34;</span> &gt;&gt; feature.txt
 </span></span><span style="display:flex;"><span>   git add feature.txt
-</span></span></code></pre></div><p><img alt="3" src="/images/images/3.png">
+</span></span></code></pre></div><p><img alt="3" src="/thanhvivuu.github.io/images/images/3.png?raw=true">
 3. Switch back to the main branch</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git checkout main
 </span></span></code></pre></div><ol start="4">
@@ -543,7 +543,7 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;This is a hotfix&#34;</span> &gt;&gt; hotfix.txt
 </span></span><span style="display:flex;"><span>git add hotfix.txt
 </span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Add hotfix.txt&#34;</span>
-</span></span></code></pre></div><p><img alt="img_4.png" src="/images/images/4.png"></p>
+</span></span></code></pre></div><p><img alt="img_4.png" src="/thanhvivuu.github.io/images/images/4.png?raw=true"></p>
 <p>5.Rebase the feature-branch onto the main branch:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git checkout feature-branch
 </span></span><span style="display:flex;"><span>git rebase main
@@ -554,13 +554,13 @@
 <li>Lấy tất cả các <code>commit</code> từ nhánh <code>feature-branch</code> và áp dụng chúng lên đỉnh của nhánh <code>main.</code></li>
 <li>Cập nhật nhánh <code>feature-branch</code> với các thay đổi mới nhất từ nhánh <code>main</code>.</li>
 <li>Đảm bảo rằng các thay đổi trên nhánh <code>feature-branch</code> được áp dụng sau các thay đổi trên nhánh <code>main</code>, giúp lịch sử commit của nhánh <code>feature-branch</code> trở nên đồng bộ với nhánh <code>main.</code>
-<img alt="img_5.png" src="/images/images/5.png"></li>
+<img alt="img_5.png" src="/thanhvivuu.github.io/images/images/5.png?raw=true"></li>
 </ul>
 <p>-Create files here
-<img alt="img_6.png" src="/images/images/6.png"></p>
+<img alt="img_6.png" src="/thanhvivuu.github.io/images/images/6.png?raw=true"></p>
 <ul>
 <li>Nghĩa là sẽ lấy commit từ nhanh  <code>feature-branch</code> này cập nhập vào nhánh <code>main</code>.
-<img alt="img_8.png" src="/images/images/8.png"></li>
+<img alt="img_8.png" src="/thanhvivuu.github.io/images/images/8.png?raw=true"></li>
 </ul>
 <h2 id="step-6-user-cherry-picks">Step 6: User Cherry picks</h2>
 <ol>
@@ -575,13 +575,13 @@
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git checkout feature-branch
 </span></span><span style="display:flex;"><span>git cherry-pick &lt;commit-hash&gt;
-</span></span></code></pre></div><p><img alt="img_7.png" src="/images/images/8.png">
-<img alt="img_9.png" src="/images/images/9.png"></p>
+</span></span></code></pre></div><p><img alt="img_7.png" src="/thanhvivuu.github.io/images/images/7.png?raw=true">
+<img alt="img_9.png" src="/thanhvivuu.github.io/images/images/9.png?raw=true"></p>
 <ul>
 <li>Trong hình cho ta thấy <code>git cherry-pick ed7bb320f46b3b3842174c661c88e2e3ab120ded</code>  dùng để chọn và áp dụng một commit từ một nhánh khác vào nhánh hiện tại.
 <ul>
 <li>tôi đã tạo file <code>anotherfix.text</code> ở nhanh main và sử dụng <code>git cherry-pick ...</code> để chuyển sang nhánh feature
-<img alt="img_10.png" src="/images/images/10.png"></li>
+<img alt="img_10.png" src="/thanhvivuu.github.io/images/images/10.png?raw=true"></li>
 </ul>
 </li>
 </ul>
@@ -608,7 +608,7 @@
 </span></span><span style="display:flex;"><span>git stash pop
 </span></span></code></pre></div><ul>
 <li>Nếu mình chưa muốn commit vào file thì sử dụng <code>git stash</code>
-<img alt="GitNB" src="/images/images/11.png">
+<img alt="GitNB" src="/thanhvivuu.github.io/images/images/11.png?raw=true">
 <ul>
 <li><code>git stash</code>: Lưu trữ các thay đổi chưa được commit để quay lại làm việc sau.</li>
 <li><code>git stash pop</code>: Lấy lại các thay đổi từ stash và áp dụng chúng lên nhánh hiện tại.</li>
@@ -616,7 +616,7 @@
 </ul>
 </li>
 </ul>
-<p><img alt="images" src="/images/images/12.png"></p>
+<p><img alt="images" src="/thanhvivuu.github.io/images/images/12.png?raw=true"></p>
 <h2 id="step-8--use-submodule">Step 8 : Use Submodule</h2>
 <ol>
 <li>Add a submodule to your project (e.g., add a repository from GitHub):</li>
@@ -839,19 +839,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1723051109"></script>
-    <script src="/js/perfect-scrollbar.min.js?1723051109"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1723051109"></script>
-    <script src="/js/jquery.sticky.js?1723051109"></script>
-    <script src="/js/featherlight.min.js?1723051109"></script>
-    <script src="/js/highlight.pack.js?1723051109"></script>
+    <script src="/js/clipboard.min.js?1723051981"></script>
+    <script src="/js/perfect-scrollbar.min.js?1723051981"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1723051981"></script>
+    <script src="/js/jquery.sticky.js?1723051981"></script>
+    <script src="/js/featherlight.min.js?1723051981"></script>
+    <script src="/js/highlight.pack.js?1723051981"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1723051109"></script>
-    <script src="/js/learn.js?1723051109"></script>
-    <script src="/js/hugo-learn.js?1723051109"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1723051981"></script>
+    <script src="/js/learn.js?1723051981"></script>
+    <script src="/js/hugo-learn.js?1723051981"></script>
 
-    <link href="/mermaid/mermaid.css?1723051109" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1723051109"></script>
+    <link href="/mermaid/mermaid.css?1723051981" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1723051981"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

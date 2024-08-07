@@ -36,7 +36,7 @@ git init
 + Prepares the Project for Version Control : Flow the changes from the 
 + Sets Up the Initial Branch: By default, `git init` --> creates a new branch called `main`
 
-![1](/images/images/1.png)
+![1](/thanhvivuu.github.io/images/images/1.png?raw=true)
  
 ## Step 4: Add and Commit Changes 
 1. Create a README.md file and add a description:
@@ -54,14 +54,14 @@ git commit -m "Add README file"
 ```shell
 git checkout -b feature-branch
 ```
-![2](/images/images/2.png)
+![2](/thanhvivuu.github.io/images/images/2.png?raw=true)
 
 2. Create a feature.txt file, add content, and commit the changes
 ```shell 
    echo "This is a new feature" >> feature.txt
    git add feature.txt
 ```
-![3](/images/images/3.png)
+![3](/thanhvivuu.github.io/images/images/3.png?raw=true)
 3. Switch back to the main branch
 ```shell
 git checkout main
@@ -73,7 +73,7 @@ echo "This is a hotfix" >> hotfix.txt
 git add hotfix.txt
 git commit -m "Add hotfix.txt"
 ```
-![img_4.png](/images/images/4.png)
+![img_4.png](/thanhvivuu.github.io/images/images/4.png?raw=true)
 
 5.Rebase the feature-branch onto the main branch:
 ```shell
@@ -85,13 +85,13 @@ git rebase main
 + Lấy tất cả các `commit` từ nhánh `feature-branch` và áp dụng chúng lên đỉnh của nhánh `main.`
 + Cập nhật nhánh `feature-branch` với các thay đổi mới nhất từ nhánh `main`.
 + Đảm bảo rằng các thay đổi trên nhánh `feature-branch` được áp dụng sau các thay đổi trên nhánh `main`, giúp lịch sử commit của nhánh `feature-branch` trở nên đồng bộ với nhánh `main.`
-![img_5.png](/images/images/5.png)
+![img_5.png](/thanhvivuu.github.io/images/images/5.png?raw=true)
 
 -Create files here 
-![img_6.png](/images/images/6.png)
+![img_6.png](/thanhvivuu.github.io/images/images/6.png?raw=true)
 
 - Nghĩa là sẽ lấy commit từ nhanh  `feature-branch` này cập nhập vào nhánh `main`.
-![img_8.png](/images/images/8.png)
+![img_8.png](/thanhvivuu.github.io/images/images/8.png?raw=true)
 
 ## Step 6: User Cherry picks 
 1. Create a new commit on the main branch
@@ -106,12 +106,12 @@ git commit -m "Add anotherfix.txt"
 git checkout feature-branch
 git cherry-pick <commit-hash>
 ```
-![img_7.png](/images/images/8.png)
-![img_9.png](/images/images/9.png)
+![img_7.png](/thanhvivuu.github.io/images/images/7.png?raw=true)
+![img_9.png](/thanhvivuu.github.io/images/images/9.png?raw=true)
 
 - Trong hình cho ta thấy `git cherry-pick ed7bb320f46b3b3842174c661c88e2e3ab120ded`  dùng để chọn và áp dụng một commit từ một nhánh khác vào nhánh hiện tại.
   - tôi đã tạo file `anotherfix.text` ở nhanh main và sử dụng `git cherry-pick ...` để chuyển sang nhánh feature 
-![img_10.png](/images/images/10.png)
+![img_10.png](/thanhvivuu.github.io/images/images/10.png?raw=true)
 
 
 ## Step 7: Use Stash
@@ -136,12 +136,12 @@ git checkout feature-branch
 git stash pop
 ```
 - Nếu mình chưa muốn commit vào file thì sử dụng `git stash`
-![GitNB](/images/images/11.png)
+![GitNB](/thanhvivuu.github.io/images/images/11.png?raw=true)
   + `git stash`: Lưu trữ các thay đổi chưa được commit để quay lại làm việc sau.
   + `git stash pop`: Lấy lại các thay đổi từ stash và áp dụng chúng lên nhánh hiện tại.
   + `git stash list`: Xem danh sách các mục stash hiện có.
 
-![images](/images/images/12.png)
+![images](/thanhvivuu.github.io/images/images/12.png?raw=true)
 
 ## Step 8 : Use Submodule
 1. Add a submodule to your project (e.g., add a repository from GitHub):
