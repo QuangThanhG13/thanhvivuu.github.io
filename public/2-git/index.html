@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>GitHub :: Implementing CI/CD using Jenkins and Argo CD.</title>
+    <title>Advanced Git :: Implementing CI/CD using Jenkins and Argo CD.</title>
 
     
-    <link href="/css/nucleus.css?1723038157" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1723038157" rel="stylesheet">
-    <link href="/css/hybrid.css?1723038157" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1723038157" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1723038157" rel="stylesheet">
-    <link href="/css/auto-complete.css?1723038157" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1723038157" rel="stylesheet">
-    <link href="/css/theme.css?1723038157" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1723038157" rel="stylesheet">
+    <link href="/css/nucleus.css?1723051109" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1723051109" rel="stylesheet">
+    <link href="/css/hybrid.css?1723051109" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1723051109" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1723051109" rel="stylesheet">
+    <link href="/css/auto-complete.css?1723051109" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1723051109" rel="stylesheet">
+    <link href="/css/theme.css?1723051109" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1723051109" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1723038157" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1723051109" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1723038157"></script>
+    <script src="/js/jquery-3.3.1.min.js?1723051109"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1723038157"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1723038157"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1723051109"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1723051109"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1723038157"></script>
+<script type="text/javascript" src="/js/search.js?1723051109"></script>
 
     
   </div>
@@ -227,13 +227,13 @@
  
   
     
-    <li data-nav-id="/2-git/" title="GitHub" class="dd-item 
+    <li data-nav-id="/2-git/" title="Advanced Git" class="dd-item 
         
         active
         
         ">
       <a href="/2-git/">
-           <b> 2. </b> GitHub
+           <b> 2.2 </b> Advanced Git
           
             <i class="fas fa-check read-icon"></i>
           
@@ -286,35 +286,6 @@
  
   
     
-    <li data-nav-id="/2-git/2.2-advancedgit/" title="Advanced Git" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/2-git/2.2-advancedgit/">
-           <b> 2.2 </b> Advanced Git
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-      
-        <ul>
-          
-          
-          
-          
-        
-          
-            
-            
-
-
-
-
- 
-  
-    
       <li data-nav-id="/2-git/2.2-advancedgit/_index1/" title="GH flow" class="dd-item ">
         <a href="/2-git/2.2-advancedgit/_index1/">
          <b> 2.2.1 </b> GH flow
@@ -343,15 +314,6 @@
         </a>
     </li>
      
-  
- 
-
-            
-          
-        
-        </ul>
-              
-    </li>
   
  
 
@@ -467,7 +429,7 @@
             
           
           
-            <a href='/'>Implementing CI/CD using Jenkins and Argo CD.</a> > GitHub
+            <a href='/'>Implementing CI/CD using Jenkins and Argo CD.</a> > Advanced Git
           
         
           
@@ -478,7 +440,18 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-advanced-branching-and-merging">1. Advanced Branching and Merging</a></li>
+    <li><a href="#2-advanced-git-commands-and-usage">2. Advanced Git Commands and Usage</a></li>
+    <li><a href="#3-git-hooks">3. Git Hooks</a></li>
+    <li><a href="#4-managing-large-repositories-and-advanced-techniques">4. Managing Large Repositories and Advanced Techniques</a></li>
+    <li><a href="#5-security-and-access-control">5. Security and Access Control</a></li>
+    <li><a href="#6-performance-optimization">6. Performance Optimization</a></li>
+    <li><a href="#7-external-tools-and-utilities">7. External Tools and Utilities</a></li>
+    <li><a href="#8-best-practices">8. Best Practices</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -494,7 +467,7 @@
           
             <h1>
               
-              GitHub
+              Advanced Git
             </h1>
           
 
@@ -502,7 +475,57 @@
 
 
 
-	<p><img alt="img.png" src="/2-git/img.png"></p>
+	<h1 id="advanced-git">Advanced Git</h1>
+<h2 id="1-advanced-branching-and-merging">1. Advanced Branching and Merging</h2>
+<p><img alt="img.png" src="/2-git/img.png"></p>
+<ul>
+<li><strong>Branching Strategy</strong>: Branching strategies like Git Flow, GitHub Flow, and Trunk-based Development help organize and manage the development process.</li>
+<li></li>
+<li><strong>Rebase</strong>: Used to move or combine a series of commits from one branch to another. Rebase makes the commit history cleaner by removing unnecessary merge commits.</li>
+<li><strong>Cherry-pick</strong>: Selectively apply a commit from one branch to another without merging the entire branch.</li>
+<li><strong>Merge Conflicts</strong>: How to resolve merge conflicts and use tools like <code>git mergetool</code>.</li>
+</ul>
+<h2 id="2-advanced-git-commands-and-usage">2. Advanced Git Commands and Usage</h2>
+<ul>
+<li><strong>Stash</strong>: Save unfinished changes without committing them, allowing you to switch to other tasks. Use <code>git stash apply</code> or <code>git stash pop</code> to restore stashed changes.</li>
+<li><strong>Bisect</strong>: Locate bugs by bisecting the commit range to find the offending commit.</li>
+<li><strong>Filter-branch and BFG</strong>: Modify commit history, such as removing large files or sensitive information that was previously committed.</li>
+</ul>
+<h2 id="3-git-hooks">3. Git Hooks</h2>
+<p>Git hooks are scripts that execute automatically when certain events occur in Git, such as commit, push, or merge. Common hooks include:</p>
+<ul>
+<li><strong>Pre-commit</strong>: Check the source code before committing.</li>
+<li><strong>Pre-push</strong>: Validate or execute actions before pushing to a remote.</li>
+<li><strong>Post-checkout</strong>: Execute after a new branch is checked out.</li>
+</ul>
+<h2 id="4-managing-large-repositories-and-advanced-techniques">4. Managing Large Repositories and Advanced Techniques</h2>
+<ul>
+<li><strong>Shallow Clone</strong>: Clone a repository with limited depth to reduce time and storage space.</li>
+<li><strong>Sparse Checkout</strong>: Allows downloading only a portion of the repository, useful for projects with large directory structures.</li>
+<li><strong>Large File Storage (LFS)</strong>: Used to manage large binary files that Git doesn&rsquo;t handle well.</li>
+</ul>
+<h2 id="5-security-and-access-control">5. Security and Access Control</h2>
+<ul>
+<li><strong>GPG Commit Signing</strong>: Sign commits to ensure authenticity.</li>
+<li><strong>Access Control</strong>: Manage repository access permissions through platforms like GitHub, GitLab, or Bitbucket.</li>
+</ul>
+<h2 id="6-performance-optimization">6. Performance Optimization</h2>
+<ul>
+<li><strong>Garbage Collection</strong>: Use <code>git gc</code> to clean up and optimize storage space.</li>
+<li><strong>Submodules</strong>: Manage sub-repositories within a main repository.</li>
+<li><strong>Subtree</strong>: An alternative to submodules, allowing the management of code from external repositories.</li>
+</ul>
+<h2 id="7-external-tools-and-utilities">7. External Tools and Utilities</h2>
+<ul>
+<li><strong>Git GUI Tools</strong>: Graphical interface tools like SourceTree, GitKraken, and GitHub Desktop help manage repositories and workflows more easily.</li>
+<li><strong>Continuous Integration (CI)</strong>: Integrate Git with CI/CD services like Jenkins, GitLab CI, and GitHub Actions to automate testing and deployment.</li>
+</ul>
+<h2 id="8-best-practices">8. Best Practices</h2>
+<ul>
+<li><strong>Commit Messages</strong>: Write clear and meaningful commit messages.</li>
+<li><strong>Branch Naming Conventions</strong>: Use branch naming conventions for easy management and tracking.</li>
+<li><strong>Code Reviews</strong>: Conduct code reviews before merging into the main branch.</li>
+</ul>
 
 
 
@@ -671,19 +694,6 @@
                     
 
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
             
         
                     
@@ -699,9 +709,6 @@
                     
                     
 
-                    
-            
-        
                     
             
         
@@ -731,19 +738,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1723038157"></script>
-    <script src="/js/perfect-scrollbar.min.js?1723038157"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1723038157"></script>
-    <script src="/js/jquery.sticky.js?1723038157"></script>
-    <script src="/js/featherlight.min.js?1723038157"></script>
-    <script src="/js/highlight.pack.js?1723038157"></script>
+    <script src="/js/clipboard.min.js?1723051109"></script>
+    <script src="/js/perfect-scrollbar.min.js?1723051109"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1723051109"></script>
+    <script src="/js/jquery.sticky.js?1723051109"></script>
+    <script src="/js/featherlight.min.js?1723051109"></script>
+    <script src="/js/highlight.pack.js?1723051109"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1723038157"></script>
-    <script src="/js/learn.js?1723038157"></script>
-    <script src="/js/hugo-learn.js?1723038157"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1723051109"></script>
+    <script src="/js/learn.js?1723051109"></script>
+    <script src="/js/hugo-learn.js?1723051109"></script>
 
-    <link href="/mermaid/mermaid.css?1723038157" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1723038157"></script>
+    <link href="/mermaid/mermaid.css?1723051109" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1723051109"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

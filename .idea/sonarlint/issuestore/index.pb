@@ -136,3 +136,11 @@ S
 #static/fonts/monogramos-webfont.ttf,5/7/57dc6ab624ade3e01948595df71e525f81c16cbc
 U
 %static/fonts/monogramos-webfont.woff2,7/c/7c15b019eecefd63da6ddce9f115e9d18bbc8150
+W
+'public/2-git/2.2-advancedgit/index.html,4/d/4d3033d7bd6833bb075bad784bbb69aed6c5335e
+V
+&public/2-git/2.2-advancedgit/index.xml,9/c/9c66acaa91b0a1822452e1f82257f1186944a719
+G
+public/2-git/index.html,3/d/3dd69fa33f3592befc7bfc944a1ee9ce56d5a5cc
+F
+public/2-git/index.xml,6/4/64ae1def9995b1a3679f5f0f7a8da23ef153f30d
