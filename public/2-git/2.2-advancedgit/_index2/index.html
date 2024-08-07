@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.127.0">
+    <meta name="description" content="">
+<meta name="author" content="nguyenducquy.hust@gmail.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>GibHub homework :: Implementing CI/CD using Jenkins and Argo CD.</title>
+
+    
+    <link href="/css/nucleus.css?1723029343" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1723029343" rel="stylesheet">
+    <link href="/css/hybrid.css?1723029343" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1723029343" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1723029343" rel="stylesheet">
+    <link href="/css/auto-complete.css?1723029343" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1723029343" rel="stylesheet">
+    <link href="/css/theme.css?1723029343" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1723029343" rel="stylesheet">
+    
+    <link href="/css/theme-workshop.css?1723029343" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1723029343"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/2-git/2.2-advancedgit/_index2/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1723029343"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1723029343"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/\/localhost:1313\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1723029343"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-introduce/" title="Introduction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-introduce/">
+           <b> 1. </b> Introduction
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-introduce/1.1-cicdprocess/" title="The CI/CD operations process" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-introduce/1.1-cicdprocess/">
+           <b> 1.1 </b> The CI/CD operations process
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-introduce/1.4-docker/" title="Theory Docker Project" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-introduce/1.4-docker/">
+          <b> 1.4 </b>Theory Docker Project
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-introduce/1.2-jenkins/" title="Jenkins" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-introduce/1.2-jenkins/">
+           <b> 1.2 </b> Jenkins
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-introduce/1.3-argocd/" title="Argo CD" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-introduce/1.3-argocd/">
+           <b> 1.3 </b> Argo CD
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-git/" title="GitHub" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/2-git/">
+           <b> 2. </b> GitHub
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-git/2.1-gitbasic/" title="Basic Git repository" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-git/2.1-gitbasic/">
+           <b> 2.1 </b> Basic Git repository
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-git/2.2-advancedgit/" title="Advanced Git" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/2-git/2.2-advancedgit/">
+           <b> 2.2 </b> Advanced Git
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2-git/2.2-advancedgit/_index1/" title="GH flow" class="dd-item ">
+        <a href="/2-git/2.2-advancedgit/_index1/">
+         <b> 2.2.1 </b> GH flow
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2-git/2.2-advancedgit/_index2/" title="GibHub homework" class="dd-item active">
+        <a href="/2-git/2.2-advancedgit/_index2/">
+         <b> 2.2.2 </b> GibHub homework
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://aws.amazon.com/blogs"><i class='fab fa-aws'></i> AWS Study Group - Blog</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj"><i class='fab fa-facebook'></i> AWS Study Group - FB Group</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="//localhost:1313/2-git/2.2-advancedgit/_index2/" selected>English</option>
+                    
+                  
+              
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Implementing CI/CD using Jenkins and Argo CD.</a> > <a href='/2-git/'>GitHub</a> > <a href='/2-git/2.2-advancedgit/'>Advanced Git</a> > GibHub homework
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#step-1-install-git">Step 1: Install Git</a></li>
+    <li><a href="#step-2-configure-git">Step 2: Configure Git</a></li>
+    <li><a href="#step-3-initialize-a-repository">Step 3: Initialize a Repository</a></li>
+    <li><a href="#step-4-add-and-commit-changes">Step 4: Add and Commit Changes</a></li>
+    <li><a href="#step-5-create-a-new-branch-and-use-rebase">Step 5: Create a New Branch and Use Rebase</a></li>
+    <li><a href="#step-6-user-cherry-picks">Step 6: User Cherry picks</a></li>
+    <li><a href="#step-7-use-stash">Step 7: Use Stash</a></li>
+    <li><a href="#step-8--use-submodule">Step 8 : Use Submodule</a></li>
+    <li><a href="#step-9-push-to-github">Step 9: Push to GitHub</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              GibHub homework
+            </h1>
+          
+
+        
+
+
+<h1 id="advanced-exercise-project-management-with-git">Advanced Exercise: Project Management with Git</h1>
+<h2 id="step-1-install-git">Step 1: Install Git</h2>
+<ul>
+<li>Go to <a href="https://git-scm.com/">git-scm.com</a>.</li>
+<li>Download and install Git following the instructions for your operating system.</li>
+</ul>
+<h2 id="step-2-configure-git">Step 2: Configure Git</h2>
+<ol>
+<li>Open the terminal (or Command Prompt on Windows).</li>
+<li>Configure your name and email with the following commands:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>   git config --global user.name <span style="color:#e6db74">&#34;Your Name&#34;</span>
+</span></span><span style="display:flex;"><span>   git config --global user.email <span style="color:#e6db74">&#34;email@example.com&#34;</span>
+</span></span></code></pre></div><h2 id="step-3-initialize-a-repository">Step 3: Initialize a Repository</h2>
+<ol>
+<li>Create a new directory and move into it:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mkdir AdvancedGitProject
+</span></span><span style="display:flex;"><span>cd AdvancedGitProject
+</span></span></code></pre></div><ol start="2">
+<li>Initial a git repository</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git init
+</span></span></code></pre></div><ul>
+<li>git init is used to initialize a new Git repository</li>
+</ul>
+<ul>
+<li>Creates a .git Directory</li>
+<li>Prepares the Project for Version Control : Flow the changes from the</li>
+<li>Sets Up the Initial Branch: By default, <code>git init</code> &ndash;&gt; creates a new branch called <code>main</code></li>
+</ul>
+<p><img alt="img_1.png" src="/Users/vuquangthanh/Desktop/Nb_Thanhvivuu/static/images/GitNB/img_1.png"></p>
+<h2 id="step-4-add-and-commit-changes">Step 4: Add and Commit Changes</h2>
+<ol>
+<li>Create a README.md file and add a description:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;# AdvancedGitProject&#34;</span> &gt;&gt; README.md
+</span></span></code></pre></div><ol start="2">
+<li>Add and commit the changes:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git add README.md
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Add README file&#34;</span>
+</span></span></code></pre></div><h2 id="step-5-create-a-new-branch-and-use-rebase">Step 5: Create a New Branch and Use Rebase</h2>
+<ol>
+<li>Create and switch to a new branch:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git checkout -b feature-branch
+</span></span></code></pre></div><p><img alt="img_2.png" src="/Users/vuquangthanh/Desktop/Nb_Thanhvivuu/static/images/GitNB/img_2.png">
+2. Create a feature.txt file, add content, and commit the changes</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>   echo <span style="color:#e6db74">&#34;This is a new feature&#34;</span> &gt;&gt; feature.txt
+</span></span><span style="display:flex;"><span>   git add feature.txt
+</span></span></code></pre></div><p><img alt="img_3.png" src="/Users/vuquangthanh/Desktop/Nb_Thanhvivuu/static/images/GitNB/img_3.png">
+3. Switch back to the main branch</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git checkout main
+</span></span></code></pre></div><ol start="4">
+<li>Create a hotfix.txt file, add content, and commit the changes:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;This is a hotfix&#34;</span> &gt;&gt; hotfix.txt
+</span></span><span style="display:flex;"><span>git add hotfix.txt
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Add hotfix.txt&#34;</span>
+</span></span></code></pre></div><p><img alt="img_4.png" src="/images/GitNB/img_4.png">
+Maventool
+5.Rebase the feature-branch onto the main branch:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git checkout feature-branch
+</span></span><span style="display:flex;"><span>git rebase main
+</span></span></code></pre></div><ul>
+<li><code>git rebase main</code>: Rebase nhánh <code>feature-branch</code> lên nhánh <code>main</code> có nghĩa là:</li>
+</ul>
+<ul>
+<li>Lấy tất cả các <code>commit</code> từ nhánh <code>feature-branch</code> và áp dụng chúng lên đỉnh của nhánh <code>main.</code></li>
+<li>Cập nhật nhánh <code>feature-branch</code> với các thay đổi mới nhất từ nhánh <code>main</code>.</li>
+<li>Đảm bảo rằng các thay đổi trên nhánh <code>feature-branch</code> được áp dụng sau các thay đổi trên nhánh <code>main</code>, giúp lịch sử commit của nhánh <code>feature-branch</code> trở nên đồng bộ với nhánh <code>main.</code>
+<img alt="img_5.png" src="/images/GitNB/img_5.png"></li>
+</ul>
+<p>-Create files here
+<img alt="img_6.png" src="/images/GitNB/img_6.png"></p>
+<ul>
+<li>Nghĩa là sẽ lấy commit từ nhanh  <code>feature-branch</code> này cập nhập vào nhánh <code>main</code>.
+<img alt="img_8.png" src="/images/GitNB/img_8.png"></li>
+</ul>
+<h2 id="step-6-user-cherry-picks">Step 6: User Cherry picks</h2>
+<ol>
+<li>Create a new commit on the main branch</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git checkout main
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Another fix&#34;</span> &gt;&gt; anotherfix.txt
+</span></span><span style="display:flex;"><span>git add anotherfix.txt
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Add anotherfix.txt&#34;</span>
+</span></span></code></pre></div><ol start="2">
+<li>Cherry-pick this commit onto the <code>feature-branch</code>:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git checkout feature-branch
+</span></span><span style="display:flex;"><span>git cherry-pick &lt;commit-hash&gt;
+</span></span></code></pre></div><p><img alt="img_7.png" src="/images/GitNB/img_7.png">
+<img alt="img_9.png" src="/images/GitNB/img_9.png"></p>
+<ul>
+<li>Trong hình cho ta thấy <code>git cherry-pick ed7bb320f46b3b3842174c661c88e2e3ab120ded</code>  dùng để chọn và áp dụng một commit từ một nhánh khác vào nhánh hiện tại.
+<ul>
+<li>tôi đã tạo file <code>anotherfix.text</code> ở nhanh main và sử dụng <code>git cherry-pick ...</code> để chuyển sang nhánh feature
+<img alt="img_10.png" src="/images/GitNB/img_10.png"></li>
+</ul>
+</li>
+</ul>
+<h2 id="step-7-use-stash">Step 7: Use Stash</h2>
+<ol>
+<li>Make some changes on the <code>feature-branch</code> that you don&rsquo;t want to commit yet</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Some temporary changes&#34;</span> &gt;&gt; temp.txt
+</span></span></code></pre></div><ol start="2">
+<li>Stash the changes:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git stash
+</span></span></code></pre></div><ol start="3">
+<li>Perform other tasks:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>   git checkout main
+</span></span><span style="display:flex;"><span>   echo <span style="color:#e6db74">&#34;Work on another task&#34;</span> &gt;&gt; another_task.txt
+</span></span><span style="display:flex;"><span>   git add another_task.txt
+</span></span><span style="display:flex;"><span>   git commit -m <span style="color:#e6db74">&#34;Work on another task&#34;</span>
+</span></span></code></pre></div><ol start="4">
+<li>Retrieve the changes from the stash</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git checkout feature-branch
+</span></span><span style="display:flex;"><span>git stash pop
+</span></span></code></pre></div><ul>
+<li>Nếu mình chưa muốn commit vào file thì sử dụng <code>git stash</code>
+<img alt="img_11.png" src="/images/GitNB/img_11.png">
+<ul>
+<li><code>git stash</code>: Lưu trữ các thay đổi chưa được commit để quay lại làm việc sau.</li>
+<li><code>git stash pop</code>: Lấy lại các thay đổi từ stash và áp dụng chúng lên nhánh hiện tại.</li>
+<li><code>git stash list</code>: Xem danh sách các mục stash hiện có.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="img_12.png" src="/images/GitNB/img_12.png"></p>
+<h2 id="step-8--use-submodule">Step 8 : Use Submodule</h2>
+<ol>
+<li>Add a submodule to your project (e.g., add a repository from GitHub):</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git submodule add &lt;repository-url&gt;
+</span></span></code></pre></div><h2 id="step-9-push-to-github">Step 9: Push to GitHub</h2>
+<ol>
+<li>Push your changes to GitHub</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git remote add origin &lt;repository-url&gt;
+</span></span><span style="display:flex;"><span>git branch -M main
+</span></span><span style="display:flex;"><span>git push -u origin main
+</span></span></code></pre></div>
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/2-git/2.2-advancedgit/_index1/" title="GH flow"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/2-git/2.2-advancedgit/_index1/" title="GH flow" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1723029343"></script>
+    <script src="/js/perfect-scrollbar.min.js?1723029343"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1723029343"></script>
+    <script src="/js/jquery.sticky.js?1723029343"></script>
+    <script src="/js/featherlight.min.js?1723029343"></script>
+    <script src="/js/highlight.pack.js?1723029343"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1723029343"></script>
+    <script src="/js/learn.js?1723029343"></script>
+    <script src="/js/hugo-learn.js?1723029343"></script>
+
+    <link href="/mermaid/mermaid.css?1723029343" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1723029343"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+  </body>
+</html>
+

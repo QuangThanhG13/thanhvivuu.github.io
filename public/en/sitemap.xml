@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/2-git/2.1-gitbasic/</loc>
+  </url><url>
     <loc>//localhost:1313/1-introduce/</loc>
     <xhtml:link
                 rel="alternate"
@@ -28,7 +30,11 @@
   </url><url>
     <loc>//localhost:1313/1-introduce/1.4-docker/</loc>
   </url><url>
-    <loc>//localhost:1313/2-git/2.1-gitbasic/</loc>
+    <loc>//localhost:1313/2-git/2.2-advancedgit/</loc>
+  </url><url>
+    <loc>//localhost:1313/2-git/2.2-advancedgit/_index1/</loc>
+  </url><url>
+    <loc>//localhost:1313/2-git/2.2-advancedgit/_index2/</loc>
   </url><url>
     <loc>//localhost:1313/2-git/</loc>
   </url><url>

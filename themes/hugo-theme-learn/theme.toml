@@ -19,3 +19,11 @@ min_version = 0.25
   name = "Grav Learn"
   homepage = "https://learn.getgrav.org/"
   repo = "https://github.com/getgrav/grav-learn"
+
+[[module.mounts]]
+source = 'static'
+target = 'static'
+
+[[module.mounts]]
+source = 'images'
+target = 'static/images'

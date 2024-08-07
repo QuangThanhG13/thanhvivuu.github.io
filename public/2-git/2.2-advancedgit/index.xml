@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Advanced Git on Implementing CI/CD using Jenkins and Argo CD.</title>
+    <link>//localhost:1313/2-git/2.2-advancedgit/</link>
+    <description>Recent content in Advanced Git on Implementing CI/CD using Jenkins and Argo CD.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="//localhost:1313/2-git/2.2-advancedgit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GH flow</title>
+      <link>//localhost:1313/2-git/2.2-advancedgit/_index1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2-git/2.2-advancedgit/_index1/</guid>
+      <description>Examples of Branching Strategies 1. Git Flow Example Scenario: A development team is preparing to release version 1.0 of an application.&#xA;Main Branch (main): Contains the stable, released version of the application.&#xA;Develop Branch (develop): Contains the latest development changes for the next release.&#xA;Steps:&#xA;Feature Branches:&#xA;feature/user-authentication: A developer creates this branch from develop to add user authentication functionality.&#xA;feature/payment-integration: Another developer creates this branch from develop to add payment integration.</description>
+    </item>
+    <item>
+      <title>GibHub homework</title>
+      <link>//localhost:1313/2-git/2.2-advancedgit/_index2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2-git/2.2-advancedgit/_index2/</guid>
+      <description>Advanced Exercise: Project Management with Git Step 1: Install Git Go to git-scm.com. Download and install Git following the instructions for your operating system. Step 2: Configure Git Open the terminal (or Command Prompt on Windows). Configure your name and email with the following commands: git config --global user.name &amp;#34;Your Name&amp;#34; git config --global user.email &amp;#34;email@example.com&amp;#34; Step 3: Initialize a Repository Create a new directory and move into it: mkdir AdvancedGitProject cd AdvancedGitProject Initial a git repository git init git init is used to initialize a new Git repository Creates a .</description>
+    </item>
+  </channel>
+</rss>

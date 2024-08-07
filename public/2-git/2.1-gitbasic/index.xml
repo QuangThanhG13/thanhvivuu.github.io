@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Implementing CI/CD using Jenkins and Argo CD.</title>
+    <title>Basic Git repository on Implementing CI/CD using Jenkins and Argo CD.</title>
     <link>//localhost:1313/2-git/2.1-gitbasic/</link>
-    <description>Recent content on Implementing CI/CD using Jenkins and Argo CD.</description>
+    <description>Recent content in Basic Git repository on Implementing CI/CD using Jenkins and Argo CD.</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="//localhost:1313/2-git/2.1-gitbasic/index.xml" rel="self" type="application/rss+xml" />

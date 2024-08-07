@@ -100,3 +100,11 @@ weight = 20
 name = "<i class='fas fa-fw fa-bullhorn'></i> 鸣谢"
 url = "/credits"
 weight = 30
+
+[[module.mounts]]
+source = 'static'
+target = 'static'
+
+[[module.mounts]]
+source = 'images'
+target = 'static/images'

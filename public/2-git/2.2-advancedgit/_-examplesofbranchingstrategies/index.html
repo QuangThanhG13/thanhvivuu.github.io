@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.127.0">
+    <meta name="description" content="">
+<meta name="author" content="nguyenducquy.hust@gmail.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Examples of Branching Strategies(GH flow) :: Implementing CI/CD using Jenkins and Argo CD.</title>
+
+    
+    <link href="/css/nucleus.css?1722612567" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1722612567" rel="stylesheet">
+    <link href="/css/hybrid.css?1722612567" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1722612567" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1722612567" rel="stylesheet">
+    <link href="/css/auto-complete.css?1722612567" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1722612567" rel="stylesheet">
+    <link href="/css/theme.css?1722612567" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1722612567" rel="stylesheet">
+    
+    <link href="/css/theme-workshop.css?1722612567" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1722612567"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/2-git/2.2-advancedgit/_-examplesofbranchingstrategies/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1722612567"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1722612567"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/\/localhost:1313\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1722612567"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-introduce/" title="Introduction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-introduce/">
+           <b> 1. </b> Introduction
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-introduce/1.1-cicdprocess/" title="The CI/CD operations process" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-introduce/1.1-cicdprocess/">
+           <b> 1.1 </b> The CI/CD operations process
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-introduce/1.4-docker/" title="Theory Docker Project" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-introduce/1.4-docker/">
+          <b> 1.4 </b>Theory Docker Project
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-introduce/1.2-jenkins/" title="Jenkins" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-introduce/1.2-jenkins/">
+           <b> 1.2 </b> Jenkins
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-introduce/1.3-argocd/" title="Argo CD" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-introduce/1.3-argocd/">
+           <b> 1.3 </b> Argo CD
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-git/" title="GitHub" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/2-git/">
+           <b> 2. </b> GitHub
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-git/2.1-gitbasic/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-git/2.1-gitbasic/">
+           <b> 2.1 </b> 
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-git/2.2-advancedgit/" title="Advanced Git" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/2-git/2.2-advancedgit/">
+           <b> 2.1 </b> Advanced Git
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2-git/2.2-advancedgit/_-examplesofbranchingstrategies/" title="Examples of Branching Strategies(GH flow)" class="dd-item active">
+        <a href="/2-git/2.2-advancedgit/_-examplesofbranchingstrategies/">
+         <b> 2.1.1 </b> Examples of Branching Strategies(GH flow)
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://aws.amazon.com/blogs"><i class='fab fa-aws'></i> AWS Study Group - Blog</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj"><i class='fab fa-facebook'></i> AWS Study Group - FB Group</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="//localhost:1313/2-git/2.2-advancedgit/_-examplesofbranchingstrategies/" selected>English</option>
+                    
+                  
+              
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Implementing CI/CD using Jenkins and Argo CD.</a> > <a href='/2-git/'>GitHub</a> > <a href='/2-git/2.2-advancedgit/'>Advanced Git</a> > Examples of Branching Strategies(GH flow)
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-git-flow-example">1. Git Flow Example</a></li>
+    <li><a href="#2-github-flow-example">2. GitHub Flow Example</a></li>
+    <li><a href="#3-trunk-based-development-example">3. Trunk-Based Development Example</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Examples of Branching Strategies(GH flow)
+            </h1>
+          
+
+        
+
+
+<h1 id="examples-of-branching-strategies">Examples of Branching Strategies</h1>
+<h2 id="1-git-flow-example">1. Git Flow Example</h2>
+<p><strong>Scenario</strong>: A development team is preparing to release version 1.0 of an application.</p>
+<ul>
+<li><strong>Main Branch (<code>main</code>)</strong>: Contains the stable, released version of the application.</li>
+<li><strong>Develop Branch (<code>develop</code>)</strong>: Contains the latest development changes for the next release.</li>
+</ul>
+<p><strong>Steps</strong>:</p>
+<ol>
+<li>
+<p><strong>Feature Branches</strong>:</p>
+<ul>
+<li><strong><code>feature/user-authentication</code></strong>: A developer creates this branch from <code>develop</code> to add user authentication functionality.</li>
+<li><strong><code>feature/payment-integration</code></strong>: Another developer creates this branch from <code>develop</code> to add payment integration.</li>
+</ul>
+</li>
+<li>
+<p><strong>Merging Features</strong>:</p>
+<ul>
+<li>After completing and testing features, they are merged into <code>develop</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Release Branch</strong>:</p>
+<ul>
+<li>When features are ready for release, a <strong><code>release/1.0</code></strong> branch is created from <code>develop</code>. This branch is used for final bug fixes and release preparation.</li>
+<li>Once ready, <code>release/1.0</code> is merged into both <code>main</code> and <code>develop</code>, updating the official release and ensuring bug fixes are also in the development branch.</li>
+</ul>
+</li>
+<li>
+<p><strong>Hotfix Branch</strong>:</p>
+<ul>
+<li>If an urgent issue needs fixing in version 1.0, a <strong><code>hotfix/1.0.1</code></strong> branch is created from <code>main</code>, the issue is fixed, and the branch is merged into both <code>main</code> and <code>develop</code>.</li>
+</ul>
+</li>
+</ol>
+<h2 id="2-github-flow-example">2. GitHub Flow Example</h2>
+<p><strong>Scenario</strong>: A development team is adding an &ldquo;About Us&rdquo; page to the company&rsquo;s website.</p>
+<p><strong>Steps</strong>:</p>
+<ol>
+<li>
+<p><strong>Create a Branch</strong>:</p>
+<ul>
+<li>A developer creates the <strong><code>add-about-page</code></strong> branch from <code>main</code> to work on the &ldquo;About Us&rdquo; page.</li>
+</ul>
+</li>
+<li>
+<p><strong>Make Changes</strong>:</p>
+<ul>
+<li>On the <code>add-about-page</code> branch, the developer adds HTML and CSS files for the &ldquo;About Us&rdquo; page. Each significant change is committed and pushed with descriptive messages like <code>add initial about page content</code> and <code>style about page</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Create a Pull Request</strong>:</p>
+<ul>
+<li>Upon completion, the developer creates a pull request from <code>add-about-page</code> to <code>main</code>, describing the changes and their purpose. They also link the pull request to a relevant issue.</li>
+</ul>
+</li>
+<li>
+<p><strong>Review and Feedback</strong>:</p>
+<ul>
+<li>Colleagues review the pull request, leaving comments or suggestions. The developer may make additional commits to address the feedback.</li>
+</ul>
+</li>
+<li>
+<p><strong>Merge and Deploy</strong>:</p>
+<ul>
+<li>Once the pull request is approved, it is merged into <code>main</code>, and the changes are deployed to the website.</li>
+</ul>
+</li>
+<li>
+<p><strong>Delete the Branch</strong>:</p>
+<ul>
+<li>After merging, the <code>add-about-page</code> branch is deleted to avoid confusion with other ongoing work.</li>
+</ul>
+</li>
+</ol>
+<h2 id="3-trunk-based-development-example">3. Trunk-Based Development Example</h2>
+<p><strong>Scenario</strong>: A company continuously develops a web application with frequent feature additions.</p>
+<p><strong>Steps</strong>:</p>
+<ol>
+<li>
+<p><strong>Direct Commits to Trunk (<code>main</code>)</strong>:</p>
+<ul>
+<li>All developers work directly on the <code>main</code> branch, committing small, frequent changes.</li>
+</ul>
+</li>
+<li>
+<p><strong>Short-lived Feature Branches</strong>:</p>
+<ul>
+<li>If necessary, developers can create short-lived feature branches (e.g., <code>feature/update-dashboard</code>) for complex features but must complete and merge them back into <code>main</code> quickly.</li>
+</ul>
+</li>
+<li>
+<p><strong>Continuous Integration</strong>:</p>
+<ul>
+<li>Each commit to <code>main</code> triggers an automatic CI process, running tests and deploying changes if all tests pass.</li>
+</ul>
+</li>
+<li>
+<p><strong>Feature Flags</strong>:</p>
+<ul>
+<li>Incomplete new features are hidden behind feature flags, allowing them to be deployed without impacting users.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Summary</strong>:<br>
+In Trunk-Based Development, the <code>main</code> branch is always kept stable and deployable. Features and bug fixes are integrated continuously and quickly.</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/2-git/2.2-advancedgit/" title="Advanced Git"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/2-git/2.1-gitbasic/" title="" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1722612567"></script>
+    <script src="/js/perfect-scrollbar.min.js?1722612567"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1722612567"></script>
+    <script src="/js/jquery.sticky.js?1722612567"></script>
+    <script src="/js/featherlight.min.js?1722612567"></script>
+    <script src="/js/highlight.pack.js?1722612567"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1722612567"></script>
+    <script src="/js/learn.js?1722612567"></script>
+    <script src="/js/hugo-learn.js?1722612567"></script>
+
+    <link href="/mermaid/mermaid.css?1722612567" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1722612567"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+  </body>
+</html>
+
