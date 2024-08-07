@@ -109,7 +109,7 @@ git cherry-pick <commit-hash>
 
 - Trong hình cho ta thấy `git cherry-pick ed7bb320f46b3b3842174c661c88e2e3ab120ded`  dùng để chọn và áp dụng một commit từ một nhánh khác vào nhánh hiện tại.
   - tôi đã tạo file `anotherfix.text` ở nhanh main và sử dụng `git cherry-pick ...` để chuyển sang nhánh feature 
-  ![GitNB](/images/GitNB/img_10.png)
+![GitNB](/images/GitNB/img_10.png)
 
 
 ## Step 7: Use Stash
