@@ -3,7 +3,7 @@ title : "Advanced Git"
 date :  "`r Sys.Date()`" 
 weight : 2
 chapter : false
-pre : " <b> 2.2 </b> "
+pre : " <b> 2 </b> "
 ---
 
 # Advanced Git

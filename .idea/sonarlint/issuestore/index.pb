@@ -25,8 +25,6 @@ P
  content/1-Introduce/_index.vi.md,3/9/39234976869e1980a90f87a6fc0d92c07fbe85d5
 M
 content/1-Introduce/_index.md,c/1/c18f0771fd5f7358e43f818ffb92b2b484f81126
-W
-'content/2-git/2.2-Advancedgit/_index.md,1/6/164beb72608f090498f61e62741b06a64e1b390c
 X
 (content/2-git/2.2-Advancedgit/_index1.md,4/3/4325ded7aae52f9f8bdd16368d7adc046be0619d
 ]
@@ -106,8 +104,6 @@ d
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 _
 /public/2-git/2.2-advancedgit/_index2/index.html,5/c/5c9498aea2253c078569311675bad6767b4367db
-w
-Gpublic/2-git/2.2-advancedgit/_-examplesofbranchingstrategies/index.html,5/4/549755677f9edaa0f52a433ceced153bab434af5
 K
 public/3-picoctf/index.html,1/d/1d7275adeef4893dbae368b07d9b1d880834bffd
 J
@@ -144,3 +140,11 @@ G
 public/2-git/index.html,3/d/3dd69fa33f3592befc7bfc944a1ee9ce56d5a5cc
 F
 public/2-git/index.xml,6/4/64ae1def9995b1a3679f5f0f7a8da23ef153f30d
+Q
+!content/3-Hotel Manager/_index.md,b/4/b4d97bdce239ea317e019c16b4444ba0c349ed18
+\
+,content/3-Hotel Manager/3.1-Theory/_index.md,e/0/e05638bc6140f472d127a467b1459ab6c94eade1
+e
+5content/3-Hotel Manager/3.2-Code Deployment/_index.md,1/3/1341307c1469c7a6df708db199e1f7a26c75ee25
+d
+4content/3-Hotel Manager/3.3-More Question /_index.md,8/b/8bf81ef4230921bed916faf57d4e7795ca90f8e1

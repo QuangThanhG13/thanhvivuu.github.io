@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>The CI/CD operations process :: Implementing CI/CD using Jenkins and Argo CD.</title>
+    <title>Hotels management  :: Implementing CI/CD using Jenkins and Argo CD.</title>
 
     
-    <link href="/css/nucleus.css?1723546167" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1723546167" rel="stylesheet">
-    <link href="/css/hybrid.css?1723546167" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1723546167" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1723546167" rel="stylesheet">
-    <link href="/css/auto-complete.css?1723546167" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1723546167" rel="stylesheet">
-    <link href="/css/theme.css?1723546167" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1723546167" rel="stylesheet">
+    <link href="/css/nucleus.css?1723546168" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1723546168" rel="stylesheet">
+    <link href="/css/hybrid.css?1723546168" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1723546168" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1723546168" rel="stylesheet">
+    <link href="/css/auto-complete.css?1723546168" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1723546168" rel="stylesheet">
+    <link href="/css/theme.css?1723546168" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1723546168" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1723546167" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1723546168" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1723546167"></script>
+    <script src="/js/jquery-3.3.1.min.js?1723546168"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/1-introduce/1.1-cicdprocess/">
+  <body class="" data-url="/3-hotel-manager/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1723546167"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1723546167"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1723546168"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1723546168"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1723546167"></script>
+<script type="text/javascript" src="/js/search.js?1723546168"></script>
 
     
   </div>
@@ -78,7 +78,7 @@
   
     
     <li data-nav-id="/1-introduce/" title="Introduction" class="dd-item 
-        parent
+        
         
         
         ">
@@ -110,7 +110,7 @@
     
     <li data-nav-id="/1-introduce/1.1-cicdprocess/" title="The CI/CD operations process" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/1-introduce/1.1-cicdprocess/">
@@ -337,7 +337,7 @@
     
     <li data-nav-id="/3-hotel-manager/" title="Hotels management " class="dd-item 
         
-        
+        active
         
         ">
       <a href="/3-hotel-manager/">
@@ -488,22 +488,10 @@
                   
                     
                     
-                      <option id="en" value="//localhost:1313/1-introduce/1.1-cicdprocess/" selected>English</option>
+                      <option id="en" value="//localhost:1313/3-hotel-manager/" selected>English</option>
                     
                   
               
-                  
-              
-          
-              
-              
-                  
-              
-                  
-                    
-                    
-                      <option id="vi" value="//localhost:1313/vi/1-introduce/1.1-cicdprocess/">Tiếng Việt</option>
-                    
                   
               
           
@@ -563,13 +551,7 @@
             
           
           
-            
-            
-          
-          
-            <a href='/'>Implementing CI/CD using Jenkins and Argo CD.</a> > <a href='/1-introduce/'>Introduction</a> > The CI/CD operations process
-          
-        
+            <a href='/'>Implementing CI/CD using Jenkins and Argo CD.</a> > Hotels management 
           
         
           
@@ -580,11 +562,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#the-cicd-operations-process">The CI/CD operations process</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -600,7 +578,7 @@
           
             <h1>
               
-              The CI/CD operations process
+              Hotels management 
             </h1>
           
 
@@ -608,22 +586,7 @@
 
 
 
-	<h2 id="the-cicd-operations-process">The CI/CD operations process</h2>
-<p>To gain a deeper understanding of how the CI/CD process works, one needs to grasp the specific steps involved. So what do these steps include, and how do they function?</p>
-<ul>
-<li><strong>Continuous Integration (CI)</strong> is the first process, where developers frequently merge their code into a common repository such as Git, multiple times a day. Each merge is often automatically built and tested to detect errors as early as possible, minimizing bug accumulation and reducing the time needed to deliver high-quality products.</li>
-<li><strong>Continuous Delivery (CD)</strong> extends CI by ensuring that you can release a new version of the software at any time. In CD, the processes of building, testing, and preparing code for release are automated.</li>
-<li><strong>Continuous Deployment (CD)</strong> is a further step beyond CD, where tested changes to the code are automatically released into the production environment. This ensures that any change, once verified, can be deployed automatically.</li>
-</ul>
-<p>The development lifecycle process along with the steps in CI/CD occur as follows:</p>
-<ul>
-<li><strong>Build</strong>: Create products from the source code, integrate, and detect errors.</li>
-<li><strong>Test</strong>: Automatically examine new features and changed code.</li>
-<li><strong>Deliver</strong>: Move tested code to a test environment, which can be automatic or after human approval.</li>
-<li><strong>Deploy</strong>: Implement changes to the product, automatically or according to human approval.</li>
-</ul>
-<p><img alt="CI/CD Process" src="../../../static/images/1-Introduce/cicdprocess.jpg"></p>
-
+	
 
 
 
@@ -663,6 +626,8 @@
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -673,42 +638,6 @@
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -725,40 +654,6 @@
                     
             
         
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
                     
                         
             
@@ -830,6 +725,76 @@
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -886,10 +851,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/1-introduce/" title="Introduction"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/2-git/2.2-advancedgit/_index2/" title="GibHub homework"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/1-introduce/1.4-docker/" title="Theory Docker Project" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/3-hotel-manager/3.2-code-deployment/" title="Code Deployment" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -899,19 +864,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1723546167"></script>
-    <script src="/js/perfect-scrollbar.min.js?1723546167"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1723546167"></script>
-    <script src="/js/jquery.sticky.js?1723546167"></script>
-    <script src="/js/featherlight.min.js?1723546167"></script>
-    <script src="/js/highlight.pack.js?1723546167"></script>
+    <script src="/js/clipboard.min.js?1723546168"></script>
+    <script src="/js/perfect-scrollbar.min.js?1723546168"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1723546168"></script>
+    <script src="/js/jquery.sticky.js?1723546168"></script>
+    <script src="/js/featherlight.min.js?1723546168"></script>
+    <script src="/js/highlight.pack.js?1723546168"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1723546167"></script>
-    <script src="/js/learn.js?1723546167"></script>
-    <script src="/js/hugo-learn.js?1723546167"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1723546168"></script>
+    <script src="/js/learn.js?1723546168"></script>
+    <script src="/js/hugo-learn.js?1723546168"></script>
 
-    <link href="/mermaid/mermaid.css?1723546167" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1723546167"></script>
+    <link href="/mermaid/mermaid.css?1723546168" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1723546168"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

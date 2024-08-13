@@ -32,6 +32,8 @@
   </url><url>
     <loc>//localhost:1313/2-git/</loc>
   </url><url>
+    <loc>//localhost:1313/3-hotel-manager/3.2-code-deployment/</loc>
+  </url><url>
     <loc>//localhost:1313/2-git/2.2-advancedgit/_index1/</loc>
   </url><url>
     <loc>//localhost:1313/2-git/2.2-advancedgit/_index2/</loc>
@@ -59,6 +61,12 @@
                 hreflang="en"
                 href="//localhost:1313/1-introduce/1.3-argocd/"
                 />
+  </url><url>
+    <loc>//localhost:1313/3-hotel-manager/</loc>
+  </url><url>
+    <loc>//localhost:1313/3-hotel-manager/3.3-more-question-/</loc>
+  </url><url>
+    <loc>//localhost:1313/3-hotel-manager/3.1-theory/</loc>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
     <xhtml:link

@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>The CI/CD operations process :: Implementing CI/CD using Jenkins and Argo CD.</title>
+    <title>More questions :: Implementing CI/CD using Jenkins and Argo CD.</title>
 
     
     <link href="/css/nucleus.css?1723546167" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/1-introduce/1.1-cicdprocess/">
+  <body class="" data-url="/3-hotel-manager/3.3-more-question-/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -78,7 +78,7 @@
   
     
     <li data-nav-id="/1-introduce/" title="Introduction" class="dd-item 
-        parent
+        
         
         
         ">
@@ -110,7 +110,7 @@
     
     <li data-nav-id="/1-introduce/1.1-cicdprocess/" title="The CI/CD operations process" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/1-introduce/1.1-cicdprocess/">
@@ -336,7 +336,7 @@
   
     
     <li data-nav-id="/3-hotel-manager/" title="Hotels management " class="dd-item 
-        
+        parent
         
         
         ">
@@ -396,7 +396,7 @@
     
     <li data-nav-id="/3-hotel-manager/3.3-more-question-/" title="More questions" class="dd-item 
         
-        
+        active
         
         ">
       <a href="/3-hotel-manager/3.3-more-question-/">
@@ -488,22 +488,10 @@
                   
                     
                     
-                      <option id="en" value="//localhost:1313/1-introduce/1.1-cicdprocess/" selected>English</option>
+                      <option id="en" value="//localhost:1313/3-hotel-manager/3.3-more-question-/" selected>English</option>
                     
                   
               
-                  
-              
-          
-              
-              
-                  
-              
-                  
-                    
-                    
-                      <option id="vi" value="//localhost:1313/vi/1-introduce/1.1-cicdprocess/">Tiếng Việt</option>
-                    
                   
               
           
@@ -567,7 +555,7 @@
             
           
           
-            <a href='/'>Implementing CI/CD using Jenkins and Argo CD.</a> > <a href='/1-introduce/'>Introduction</a> > The CI/CD operations process
+            <a href='/'>Implementing CI/CD using Jenkins and Argo CD.</a> > <a href='/3-hotel-manager/'>Hotels management </a> > More questions
           
         
           
@@ -582,7 +570,11 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#the-cicd-operations-process">The CI/CD operations process</a></li>
+    <li><a href="#more-question-in-project-hotel-booking-app">More Question In Project <code>Hotel Booking App</code></a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
@@ -600,7 +592,7 @@
           
             <h1>
               
-              The CI/CD operations process
+              More questions
             </h1>
           
 
@@ -608,22 +600,50 @@
 
 
 
-	<h2 id="the-cicd-operations-process">The CI/CD operations process</h2>
-<p>To gain a deeper understanding of how the CI/CD process works, one needs to grasp the specific steps involved. So what do these steps include, and how do they function?</p>
+	<h2 id="more-question-in-project-hotel-booking-app">More Question In Project <code>Hotel Booking App</code></h2>
+<h4 id="question-1--tại-sao-trong-setter-của-phương-thứ-setnumberofadults-và-setnumberofchildren-lại-truyền-caculatetotolnumberofguests">Question 1 : Tại sao trong setter của phương thứ <code>setNumberOfAdults</code> và <code>setNumberOfChildren</code> lại truyền <code>caculateTotolNumberOfGuests</code></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setNumberOfAdults</span>(<span style="color:#66d9ef">int</span> numberOfAdults) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">numberOfAdults</span> <span style="color:#f92672">=</span> numberOfAdults;
+</span></span><span style="display:flex;"><span>        caculateTotolNumberOfGuests();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setNumberOfChildren</span>(<span style="color:#66d9ef">int</span> numberOfChildren) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">numberOfChildren</span> <span style="color:#f92672">=</span> numberOfChildren;
+</span></span><span style="display:flex;"><span>        caculateTotolNumberOfGuests();
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><h5 id="giải-thích-">giải thích :</h5>
+<p>Khi Số Lượng Người Lớn Thay Đổi:</p>
 <ul>
-<li><strong>Continuous Integration (CI)</strong> is the first process, where developers frequently merge their code into a common repository such as Git, multiple times a day. Each merge is often automatically built and tested to detect errors as early as possible, minimizing bug accumulation and reducing the time needed to deliver high-quality products.</li>
-<li><strong>Continuous Delivery (CD)</strong> extends CI by ensuring that you can release a new version of the software at any time. In CD, the processes of building, testing, and preparing code for release are automated.</li>
-<li><strong>Continuous Deployment (CD)</strong> is a further step beyond CD, where tested changes to the code are automatically released into the production environment. This ensures that any change, once verified, can be deployed automatically.</li>
+<li>Phương thức setNumberOfAdults(int numberOfAdults) được gọi với giá trị mới.</li>
+<li>Trong phương thức setter, numberOfAdults được cập nhật.</li>
+<li>Gọi calculateTotalNumberOfGuests() để tính lại tổng số khách, bao gồm số người lớn mới cộng với số trẻ em hiện tại.</li>
 </ul>
-<p>The development lifecycle process along with the steps in CI/CD occur as follows:</p>
+<p>Khi Số Lượng Trẻ Em Thay Đổi:</p>
 <ul>
-<li><strong>Build</strong>: Create products from the source code, integrate, and detect errors.</li>
-<li><strong>Test</strong>: Automatically examine new features and changed code.</li>
-<li><strong>Deliver</strong>: Move tested code to a test environment, which can be automatic or after human approval.</li>
-<li><strong>Deploy</strong>: Implement changes to the product, automatically or according to human approval.</li>
+<li>Phương thức setNumberOfChildren(int numberOfChildren) được gọi với giá trị mới.</li>
+<li>Trong phương thức setter, numberOfChildren được cập nhật.</li>
+<li>Gọi calculateTotalNumberOfGuests() để tính lại tổng số khách, bao gồm số trẻ em mới cộng với số người lớn hiện tại.</li>
 </ul>
-<p><img alt="CI/CD Process" src="../../../static/images/1-Introduce/cicdprocess.jpg"></p>
-
+<h5 id="ví-dụ">Ví dụ</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Tạo một đối tượng Booking</span>
+</span></span><span style="display:flex;"><span>    Booking booking <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Booking();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Thiết lập số lượng người lớn và trẻ em</span>
+</span></span><span style="display:flex;"><span>    booking.<span style="color:#a6e22e">setNumberOfAdults</span>(2); <span style="color:#75715e">// Đặt số lượng người lớn là 2</span>
+</span></span><span style="display:flex;"><span>    booking.<span style="color:#a6e22e">setNumberOfChildren</span>(3); <span style="color:#75715e">// Đặt số lượng trẻ em là 3</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// In ra tổng số khách</span>
+</span></span><span style="display:flex;"><span>    System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Total number of guests: &#34;</span> <span style="color:#f92672">+</span> booking.<span style="color:#a6e22e">getTotalNumberOfGuests</span>()); <span style="color:#75715e">// Kết quả: 5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Thay đổi số lượng người lớn và trẻ em</span>
+</span></span><span style="display:flex;"><span>    booking.<span style="color:#a6e22e">setNumberOfAdults</span>(3); <span style="color:#75715e">// Thay đổi số lượng người lớn thành 3</span>
+</span></span><span style="display:flex;"><span>    booking.<span style="color:#a6e22e">setNumberOfChildren</span>(4); <span style="color:#75715e">// Thay đổi số lượng trẻ em thành 4</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// In ra tổng số khách sau khi thay đổi</span>
+</span></span><span style="display:flex;"><span>    System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Updated total number of guests: &#34;</span> <span style="color:#f92672">+</span> booking.<span style="color:#a6e22e">getTotalNumberOfGuests</span>()); <span style="color:#75715e">// Kết quả: 7</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 
 
 
@@ -663,6 +683,8 @@
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -673,42 +695,6 @@
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -725,40 +711,6 @@
                     
             
         
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
                     
                         
             
@@ -862,6 +814,80 @@
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -886,10 +912,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/1-introduce/" title="Introduction"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/3-hotel-manager/3.2-code-deployment/" title="Code Deployment"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/1-introduce/1.4-docker/" title="Theory Docker Project" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/3-hotel-manager/3.1-theory/" title="" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
