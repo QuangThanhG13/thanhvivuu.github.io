@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>GibHub homework :: Implementing CI/CD using Jenkins and Argo CD.</title>
+    <title> More Questions  :: Implementing CI/CD using Jenkins and Argo CD.</title>
 
     
     <link href="/css/nucleus.css?1724348513" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/2-git/2.2-advancedgit/_index2/">
+  <body class="" data-url="/4-java_core/4.1-more-question/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -228,7 +228,7 @@
   
     
     <li data-nav-id="/2-git/" title="Advanced Git" class="dd-item 
-        parent
+        
         
         
         ">
@@ -307,7 +307,7 @@
  
   
     
-      <li data-nav-id="/2-git/2.2-advancedgit/_index2/" title="GibHub homework" class="dd-item active">
+      <li data-nav-id="/2-git/2.2-advancedgit/_index2/" title="GibHub homework" class="dd-item ">
         <a href="/2-git/2.2-advancedgit/_index2/">
          <b> 2.2.2 </b> GibHub homework
         <i class="fas fa-check read-icon"></i>
@@ -458,7 +458,7 @@
   
     
     <li data-nav-id="/4-java_core/" title="Java Core " class="dd-item 
-        
+        parent
         
         
         ">
@@ -490,7 +490,7 @@
     
     <li data-nav-id="/4-java_core/4.1-more-question/" title=" More Questions " class="dd-item 
         
-        
+        active
         
         ">
       <a href="/4-java_core/4.1-more-question/">
@@ -554,7 +554,7 @@
                   
                     
                     
-                      <option id="en" value="//localhost:1313/2-git/2.2-advancedgit/_index2/" selected>English</option>
+                      <option id="en" value="//localhost:1313/4-java_core/4.1-more-question/" selected>English</option>
                     
                   
               
@@ -621,7 +621,7 @@
             
           
           
-            <a href='/'>Implementing CI/CD using Jenkins and Argo CD.</a> > <a href='/2-git/'>Advanced Git</a> > GibHub homework
+            <a href='/'>Implementing CI/CD using Jenkins and Argo CD.</a> > <a href='/4-java_core/'>Java Core </a> >  More Questions 
           
         
           
@@ -634,19 +634,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#step-1-install-git">Step 1: Install Git</a></li>
-    <li><a href="#step-2-configure-git">Step 2: Configure Git</a></li>
-    <li><a href="#step-3-initialize-a-repository">Step 3: Initialize a Repository</a></li>
-    <li><a href="#step-4-add-and-commit-changes">Step 4: Add and Commit Changes</a></li>
-    <li><a href="#step-5-create-a-new-branch-and-use-rebase">Step 5: Create a New Branch and Use Rebase</a></li>
-    <li><a href="#step-6-user-cherry-picks">Step 6: User Cherry picks</a></li>
-    <li><a href="#step-7-use-stash">Step 7: Use Stash</a></li>
-    <li><a href="#step-8--use-submodule">Step 8 : Use Submodule</a></li>
-    <li><a href="#step-9-push-to-github">Step 9: Push to GitHub</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -662,164 +650,20 @@
           
             <h1>
               
-              GibHub homework
+               More Questions 
             </h1>
           
 
         
 
 
-<h1 id="advanced-exercise-project-management-with-git">Advanced Exercise: Project Management with Git</h1>
-<h2 id="step-1-install-git">Step 1: Install Git</h2>
-<ul>
-<li>Go to <a href="https://git-scm.com/">git-scm.com</a>.</li>
-<li>Download and install Git following the instructions for your operating system.</li>
-</ul>
-<h2 id="step-2-configure-git">Step 2: Configure Git</h2>
-<ol>
-<li>Open the terminal (or Command Prompt on Windows).</li>
-<li>Configure your name and email with the following commands:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>   git config --global user.name <span style="color:#e6db74">&#34;Your Name&#34;</span>
-</span></span><span style="display:flex;"><span>   git config --global user.email <span style="color:#e6db74">&#34;email@example.com&#34;</span>
-</span></span></code></pre></div><h2 id="step-3-initialize-a-repository">Step 3: Initialize a Repository</h2>
-<ol>
-<li>Create a new directory and move into it:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mkdir AdvancedGitProject
-</span></span><span style="display:flex;"><span>cd AdvancedGitProject
-</span></span></code></pre></div><ol start="2">
-<li>Initial a git repository</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git init
-</span></span></code></pre></div><ul>
-<li>git init is used to initialize a new Git repository</li>
-</ul>
-<ul>
-<li>Creates a .git Directory</li>
-<li>Prepares the Project for Version Control : Flow the changes from the</li>
-<li>Sets Up the Initial Branch: By default, <code>git init</code> &ndash;&gt; creates a new branch called <code>main</code></li>
-</ul>
-<p><img alt="1" src="/thanhvivuu.github.io/images/images/1.png?raw=true"></p>
-<h2 id="step-4-add-and-commit-changes">Step 4: Add and Commit Changes</h2>
-<ol>
-<li>Create a README.md file and add a description:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;# AdvancedGitProject&#34;</span> &gt;&gt; README.md
-</span></span></code></pre></div><ol start="2">
-<li>Add and commit the changes:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git add README.md
-</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Add README file&#34;</span>
-</span></span></code></pre></div><h2 id="step-5-create-a-new-branch-and-use-rebase">Step 5: Create a New Branch and Use Rebase</h2>
-<ol>
-<li>Create and switch to a new branch:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git checkout -b feature-branch
-</span></span></code></pre></div><p><img alt="2" src="/thanhvivuu.github.io/images/images/2.png?raw=true"></p>
-<ol start="2">
-<li>Create a feature.txt file, add content, and commit the changes</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>   echo <span style="color:#e6db74">&#34;This is a new feature&#34;</span> &gt;&gt; feature.txt
-</span></span><span style="display:flex;"><span>   git add feature.txt
-</span></span></code></pre></div><p><img alt="3" src="/thanhvivuu.github.io/images/images/3.png?raw=true">
-3. Switch back to the main branch</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git checkout main
-</span></span></code></pre></div><ol start="4">
-<li>Create a hotfix.txt file, add content, and commit the changes:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;This is a hotfix&#34;</span> &gt;&gt; hotfix.txt
-</span></span><span style="display:flex;"><span>git add hotfix.txt
-</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Add hotfix.txt&#34;</span>
-</span></span></code></pre></div><p><img alt="img_4.png" src="/thanhvivuu.github.io/images/images/4.png?raw=true"></p>
-<p>5.Rebase the feature-branch onto the main branch:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git checkout feature-branch
-</span></span><span style="display:flex;"><span>git rebase main
-</span></span></code></pre></div><ul>
-<li><code>git rebase main</code>: Rebase nhánh <code>feature-branch</code> lên nhánh <code>main</code> có nghĩa là:</li>
-</ul>
-<ul>
-<li>Lấy tất cả các <code>commit</code> từ nhánh <code>feature-branch</code> và áp dụng chúng lên đỉnh của nhánh <code>main.</code></li>
-<li>Cập nhật nhánh <code>feature-branch</code> với các thay đổi mới nhất từ nhánh <code>main</code>.</li>
-<li>Đảm bảo rằng các thay đổi trên nhánh <code>feature-branch</code> được áp dụng sau các thay đổi trên nhánh <code>main</code>, giúp lịch sử commit của nhánh <code>feature-branch</code> trở nên đồng bộ với nhánh <code>main.</code>
-<img alt="img_5.png" src="/thanhvivuu.github.io/images/images/5.png?raw=true"></li>
-</ul>
-<p>-Create files here
-<img alt="img_6.png" src="/thanhvivuu.github.io/images/images/6.png?raw=true"></p>
-<ul>
-<li>Nghĩa là sẽ lấy commit từ nhanh  <code>feature-branch</code> này cập nhập vào nhánh <code>main</code>.
-<img alt="img_8.png" src="/thanhvivuu.github.io/images/images/8.png?raw=true"></li>
-</ul>
-<h2 id="step-6-user-cherry-picks">Step 6: User Cherry picks</h2>
-<ol>
-<li>Create a new commit on the main branch</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git checkout main
-</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Another fix&#34;</span> &gt;&gt; anotherfix.txt
-</span></span><span style="display:flex;"><span>git add anotherfix.txt
-</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Add anotherfix.txt&#34;</span>
-</span></span></code></pre></div><ol start="2">
-<li>Cherry-pick this commit onto the <code>feature-branch</code>:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git checkout feature-branch
-</span></span><span style="display:flex;"><span>git cherry-pick &lt;commit-hash&gt;
-</span></span></code></pre></div><p><img alt="img_7.png" src="/thanhvivuu.github.io/images/images/7.png?raw=true">
-<img alt="img_9.png" src="/thanhvivuu.github.io/images/images/9.png?raw=true"></p>
-<ul>
-<li>Trong hình cho ta thấy <code>git cherry-pick ed7bb320f46b3b3842174c661c88e2e3ab120ded</code>  dùng để chọn và áp dụng một commit từ một nhánh khác vào nhánh hiện tại.
-<ul>
-<li>tôi đã tạo file <code>anotherfix.text</code> ở nhanh main và sử dụng <code>git cherry-pick ...</code> để chuyển sang nhánh feature
-<img alt="img_10.png" src="/thanhvivuu.github.io/images/images/10.png?raw=true"></li>
-</ul>
-</li>
-</ul>
-<h2 id="step-7-use-stash">Step 7: Use Stash</h2>
-<ol>
-<li>Make some changes on the <code>feature-branch</code> that you don&rsquo;t want to commit yet</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Some temporary changes&#34;</span> &gt;&gt; temp.txt
-</span></span></code></pre></div><ol start="2">
-<li>Stash the changes:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git stash
-</span></span></code></pre></div><ol start="3">
-<li>Perform other tasks:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>   git checkout main
-</span></span><span style="display:flex;"><span>   echo <span style="color:#e6db74">&#34;Work on another task&#34;</span> &gt;&gt; another_task.txt
-</span></span><span style="display:flex;"><span>   git add another_task.txt
-</span></span><span style="display:flex;"><span>   git commit -m <span style="color:#e6db74">&#34;Work on another task&#34;</span>
-</span></span></code></pre></div><ol start="4">
-<li>Retrieve the changes from the stash</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git checkout feature-branch
-</span></span><span style="display:flex;"><span>git stash pop
-</span></span></code></pre></div><ul>
-<li>Nếu mình chưa muốn commit vào file thì sử dụng <code>git stash</code>
-<img alt="GitNB" src="/thanhvivuu.github.io/images/images/11.png?raw=true">
-<ul>
-<li><code>git stash</code>: Lưu trữ các thay đổi chưa được commit để quay lại làm việc sau.</li>
-<li><code>git stash pop</code>: Lấy lại các thay đổi từ stash và áp dụng chúng lên nhánh hiện tại.</li>
-<li><code>git stash list</code>: Xem danh sách các mục stash hiện có.</li>
-</ul>
-</li>
-</ul>
-<p><img alt="images" src="/thanhvivuu.github.io/images/images/12.png?raw=true"></p>
-<h2 id="step-8--use-submodule">Step 8 : Use Submodule</h2>
-<ol>
-<li>Add a submodule to your project (e.g., add a repository from GitHub):</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git submodule add &lt;repository-url&gt;
-</span></span></code></pre></div><h2 id="step-9-push-to-github">Step 9: Push to GitHub</h2>
-<ol>
-<li>Push your changes to GitHub</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git remote add origin &lt;repository-url&gt;
-</span></span><span style="display:flex;"><span>git branch -M main
-</span></span><span style="display:flex;"><span>git push -u origin main
-</span></span></code></pre></div>
 
-<footer class="footline">
+	
+
+
+
+
+<footer class=" footline" >
 	
 </footer>
 
@@ -939,80 +783,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -1093,6 +863,74 @@
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -1117,10 +955,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/2-git/2.2-advancedgit/_index1/" title="GH flow"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/4-java_core/" title="Java Core "> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/3-hotel-manager/" title="Hotels management " style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/1-introduce/" title="Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1149,4 +987,3 @@
     
   </body>
 </html>
-

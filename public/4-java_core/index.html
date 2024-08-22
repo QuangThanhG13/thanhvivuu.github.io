@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.127.0">
+    <meta name="description" content="">
+<meta name="author" content="nguyenducquy.hust@gmail.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Java Core  :: Implementing CI/CD using Jenkins and Argo CD.</title>
+
+    
+    <link href="/css/nucleus.css?1724348513" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1724348513" rel="stylesheet">
+    <link href="/css/hybrid.css?1724348513" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1724348513" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1724348513" rel="stylesheet">
+    <link href="/css/auto-complete.css?1724348513" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1724348513" rel="stylesheet">
+    <link href="/css/theme.css?1724348513" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1724348513" rel="stylesheet">
+    
+    <link href="/css/theme-workshop.css?1724348513" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1724348513"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/4-java_core/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1724348513"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1724348513"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/\/localhost:1313\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1724348513"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-introduce/" title="Introduction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-introduce/">
+           <b> 1. </b> Introduction
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-introduce/1.1-cicdprocess/" title="The CI/CD operations process" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-introduce/1.1-cicdprocess/">
+           <b> 1.1 </b> The CI/CD operations process
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-introduce/1.4-docker/" title="Theory Docker Project" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-introduce/1.4-docker/">
+          <b> 1.4 </b>Theory Docker Project
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-introduce/1.2-jenkins/" title="Jenkins" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-introduce/1.2-jenkins/">
+           <b> 1.2 </b> Jenkins
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-introduce/1.3-argocd/" title="Argo CD" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/1-introduce/1.3-argocd/">
+           <b> 1.3 </b> Argo CD
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-git/" title="Advanced Git" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-git/">
+           <b> 2 </b> Advanced Git
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-git/2.1-gitbasic/" title="Basic Git repository" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-git/2.1-gitbasic/">
+           <b> 2.1 </b> Basic Git repository
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2-git/2.2-advancedgit/_index1/" title="GH flow" class="dd-item ">
+        <a href="/2-git/2.2-advancedgit/_index1/">
+         <b> 2.2.1 </b> GH flow
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2-git/2.2-advancedgit/_index2/" title="GibHub homework" class="dd-item ">
+        <a href="/2-git/2.2-advancedgit/_index2/">
+         <b> 2.2.2 </b> GibHub homework
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-hotel-manager/" title="Hotels management " class="dd-item 
+        
+        
+        
+        ">
+      <a href="/3-hotel-manager/">
+           <b> 3 </b> Hotels management 
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-hotel-manager/3.2-code-deployment/" title="Code Deployment" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/3-hotel-manager/3.2-code-deployment/">
+          <b>3.2</b>Code Deployment
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-hotel-manager/3.3-more-question-/" title="More questions" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/3-hotel-manager/3.3-more-question-/">
+          <b>3.3</b>More questions
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-hotel-manager/3.1-theory/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/3-hotel-manager/3.1-theory/">
+          
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-java_core/" title="Java Core " class="dd-item 
+        
+        active
+        
+        ">
+      <a href="/4-java_core/">
+           <b> 4 </b> Java Core 
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-java_core/4.1-more-question/" title=" More Questions " class="dd-item 
+        
+        
+        
+        ">
+      <a href="/4-java_core/4.1-more-question/">
+           <b> 4.1 </b>  More Questions 
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://aws.amazon.com/blogs"><i class='fab fa-aws'></i> AWS Study Group - Blog</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj"><i class='fab fa-facebook'></i> AWS Study Group - FB Group</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="//localhost:1313/4-java_core/" selected>English</option>
+                    
+                  
+              
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/'>Implementing CI/CD using Jenkins and Argo CD.</a> > Java Core 
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#java-core-theory"><strong>Java Core Theory</strong></a>
+      <ul>
+        <li><a href="#1-lớp-và-đối-tượng-class--object"><strong>1. Lớp và Đối Tượng (Class &amp; Object)</strong></a></li>
+        <li><a href="#2-kế-thừa-inheritance"><strong>2. Kế Thừa (Inheritance)</strong></a></li>
+        <li><a href="#3-đa-hình-polymorphism"><strong>3. Đa hình (Polymorphism)</strong></a></li>
+        <li><a href="#4-tính-đóng-gói-encapsulation"><strong>4. Tính đóng gói (Encapsulation)</strong></a></li>
+        <li><a href="#5tính-trừu-tượng-abstract-class"><strong>5.Tính Trừu Tượng (Abstract Class)</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Java Core 
+            </h1>
+          
+
+        
+
+
+
+	<h2 id="java-core-theory"><strong>Java Core Theory</strong></h2>
+<p>Java Core là nền tảng cốt lõi của ngôn ngữ lập trình Java. Các khái niệm cơ bản và thành phần chính của Java bao gồm cú pháp cơ bản, lớp, đối tượng, kế thừa, đa hình, xử lý ngoại lệ, và các khái niệm hướng đối tượng khác.
+Java Core giúp lập trình viên hiểu sâu hơn về cơ cấu và cách hoạt động của ngôn ngữ Java.</p>
+<h3 id="1-lớp-và-đối-tượng-class--object"><strong>1. Lớp và Đối Tượng (Class &amp; Object)</strong></h3>
+<ul>
+<li><strong>Lớp (Class)</strong> là một bản thiết kế (blueprint) từ đó các đối tượng được tạo ra.</li>
+<li>Nó chứa các <code>thuộc tính</code>và <code>phương thức</code> mô tả hành vi của đối tượng.</li>
+<li><strong>Đối tượng (Object)</strong> là một thực thể cụ thể của lớp. Một đối tượng có trạng thái (biến) và hành vi (phương thức).</li>
+</ul>
+<p><strong>Ví dụ:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Animal</span> {
+</span></span><span style="display:flex;"><span>    String name;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> age;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">sound</span>() {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; makes a sound&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        Animal dog <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Animal();
+</span></span><span style="display:flex;"><span>        dog.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Dog&#34;</span>;
+</span></span><span style="display:flex;"><span>        dog.<span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> 5;
+</span></span><span style="display:flex;"><span>        dog.<span style="color:#a6e22e">sound</span>();  <span style="color:#75715e">// Output: Dog makes a sound</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="2-kế-thừa-inheritance"><strong>2. Kế Thừa (Inheritance)</strong></h3>
+<ul>
+<li><strong>Kế thừa</strong> là một tính năng cho phép một lớp con (subclass) <code>thừa hưởng</code> các <code>thuộc tính</code> và <code>phương thức</code> từ lớp cha (superclass). Điều này giúp tái sử dụng mã và tăng tính linh hoạt.
+<strong>Ví dụ</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Animal</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">sound</span>() {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Animal makes a sound&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Dog</span> <span style="color:#66d9ef">extends</span> Animal {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">sound</span>() {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Dog barks&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        Dog dog <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Dog();
+</span></span><span style="display:flex;"><span>        dog.<span style="color:#a6e22e">sound</span>();  <span style="color:#75715e">// Output: Dog barks</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="3-đa-hình-polymorphism"><strong>3. Đa hình (Polymorphism)</strong></h3>
+<ul>
+<li><strong>Đa hình</strong> cho phép một hành động có thể được thực hiện theo nhiều cách khác nhau. Trong Java, điều này có thể đạt được thông qua ghi đè phương thức (method overriding) và nạp chồng phương thức (method overloading).</li>
+<li><strong>Ví Dụ Tính Đa Hình Trong Thực Tế</strong> : Mình có 2 con vật, khi nhận mệnh lệnh kêu thì chó sẽ kêu &ldquo;gâu gâu&rdquo; con mèo sẽ kêu &ldquo;meo meo&rdquo;.</li>
+</ul>
+<blockquote>
+<p>Thì 2 con vật trên đều được nhận mệnh lệnh là hãy kêu nx mà thực hiện theo cách của chúng</p>
+</blockquote>
+<ul>
+<li><strong>Ví Dụ</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Animal</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">sound</span>() {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Animal makes a sound&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Cat</span> <span style="color:#66d9ef">extends</span> Animal {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">sound</span>() {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Cat meows&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        Animal animal <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Cat();
+</span></span><span style="display:flex;"><span>        animal.<span style="color:#a6e22e">sound</span>();  <span style="color:#75715e">// Output: Cat meows</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="4-tính-đóng-gói-encapsulation"><strong>4. Tính đóng gói (Encapsulation)</strong></h3>
+<ul>
+<li>
+<p><strong>Tính đóng gói (Encapsulation)</strong> là một nguyên tắc trong lập trình hướng đối tượng, cho phép ẩn thông tin của đối tượng và chỉ cho phép các phương thức trong lớp đó truy cập vào các thuộc tính. Điều này giúp bảo vệ dữ liệu khỏi sự can thiệp trực tiếp từ bên ngoài và giảm sự phụ thuộc giữa các đối tượng.</p>
+</li>
+<li>
+<p>Trong Java, tính đóng gói được thực hiện bằng cách sử dụng các từ khóa truy cập như <code>defaut</code>, <code>public</code>, <code>private</code>, và <code>protected</code> để điều khiển quyền truy cập vào các biến và phương thức.</p>
+</li>
+<li>
+<p><strong>Ví Dụ</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> String name;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getName</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> name;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setName</span>(String name) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> name;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="5tính-trừu-tượng-abstract-class"><strong>5.Tính Trừu Tượng (Abstract Class)</strong></h3>
+<ul>
+<li><strong>Tính trừu tượng (Abstract Class)</strong> là một lớp không thể tạo đối tượng trực tiếp và có thể chứa các phương thức trừu tượng (abstract methods) và các phương thức thông thường.</li>
+</ul>
+<h4 id="tính-trừu-tượng-thể-hiện-trong-java">Tính trừu tượng thể hiện trong Java</h4>
+<p>Bạn có thể đạt được trừu tượng thông qua hai cơ chế chính:</p>
+<ul>
+<li><code>Abstract class trong Java (Lớp trừu tượng)</code> giúp đạt được tính trừu tượng từ 0 đến 100%.</li>
+<li><code>Interfaces trong Java (giao diện)</code> giúp đạt tính trừu tượng đến 100%.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Shape</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">int</span> x, y;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Shape</span>(<span style="color:#66d9ef">int</span> x, <span style="color:#66d9ef">int</span> y) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> x;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> y;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">draw</span>();
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Circle</span> <span style="color:#66d9ef">extends</span> Shape {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> radius;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Circle</span>(<span style="color:#66d9ef">int</span> x, <span style="color:#66d9ef">int</span> y, <span style="color:#66d9ef">int</span> radius) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">super</span>(x, y);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">radius</span> <span style="color:#f92672">=</span> radius;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">draw</span>() {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Drawing a circle at (&#34;</span> <span style="color:#f92672">+</span> x <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, &#34;</span> <span style="color:#f92672">+</span> y <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;) with radius &#34;</span> <span style="color:#f92672">+</span> radius);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="51-interface"><strong>5.1 (Interface)</strong></h4>
+<ul>
+<li><strong>Interface</strong> : Interface là một dạng lớp trừu tượng (abstract class) mà tất cả các phương thức đều là phương thức trừu tượng. Lớp kế thừa interface phải thực thi toàn bộ các phương thức của nó.</li>
+<li><code>Interface</code> không phải là 1 lớp(class) mà nó chỉ chứ các phuơng thức để các class khác implement nó</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>  <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">Animal</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">sound</span>();
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Dog</span> <span style="color:#66d9ef">implements</span> Animal {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">sound</span>() {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Dog barks&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        Animal dog <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Dog();
+</span></span><span style="display:flex;"><span>        dog.<span style="color:#a6e22e">sound</span>();  <span style="color:#75715e">// Output: Dog barks</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>Nếu là class thường thì phải implement lại tất cả các phương thức của class interface</li>
+<li>Nếu là class abtract class thì không cần phải implement của tất cả class interface</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">HinhDang</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">ve</span>();  <span style="color:#75715e">// Phương thức trừu tượng</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">xoa</span>(); <span style="color:#75715e">// Phương thức trừu tượng</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HinhTron</span> <span style="color:#66d9ef">implements</span> HinhDang {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">ve</span>() {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Vẽ hình tròn&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">xoa</span>() {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Xóa hình tròn&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">HinhDang</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">ve</span>();  <span style="color:#75715e">// Phương thức trừu tượng</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">xoa</span>(); <span style="color:#75715e">// Phương thức trừu tượng</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Hinh</span> <span style="color:#66d9ef">implements</span> HinhDang {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">ve</span>() {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Vẽ hình&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Phương thức xoa() không được triển khai trong lớp trừu tượng này</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HinhVuong</span> <span style="color:#66d9ef">extends</span> Hinh {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">xoa</span>() {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Xóa hình vuông&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h5 id="so-sánh-interface-và-abtract-class">So Sánh interface và abtract class</h5>
+<table>
+<thead>
+<tr>
+<th>Abtract Class</th>
+<th>Interface</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Abtract Class có phương thức <code>abtract</code> (không có thân hàm) và phương thúc <code>non-abtract</code>(có thân hàm)</td>
+<td>interface có phương thức abtract,defaut và static</td>
+</tr>
+<tr>
+<td>Không hỗ trợ <code>tính đa kế thừa</code></td>
+<td>Có hỗ trợ tính <code>đa kế thừa   </code></td>
+</tr>
+<tr>
+<td>Có các biến <code>final</code>,<code>non-final</code>,<code>static</code> và <code>non-static</code></td>
+<td>Chỉ có tính <code>final</code> và <code>static</code></td>
+</tr>
+<tr>
+<td>Có thể cung cấp nôij dung cài đặt cho <code>interface</code></td>
+<td>Không thể cung cấp nd cài đặt cho <code>abtract</code></td>
+</tr>
+<tr>
+<td>Ví Dụ : public abtract class Shape public abtract void draw();</td>
+<td>Ví Dụ : public interface Drawable <!-- raw HTML omitted --> void draw();</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/3-hotel-manager/3.1-theory/" title=""> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/4-java_core/4.1-more-question/" title=" More Questions " style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1724348513"></script>
+    <script src="/js/perfect-scrollbar.min.js?1724348513"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1724348513"></script>
+    <script src="/js/jquery.sticky.js?1724348513"></script>
+    <script src="/js/featherlight.min.js?1724348513"></script>
+    <script src="/js/highlight.pack.js?1724348513"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1724348513"></script>
+    <script src="/js/learn.js?1724348513"></script>
+    <script src="/js/hugo-learn.js?1724348513"></script>
+
+    <link href="/mermaid/mermaid.css?1724348513" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1724348513"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+  </body>
+</html>
