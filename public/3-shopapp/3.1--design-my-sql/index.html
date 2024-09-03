@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Hotels management  :: Implementing CI/CD using Jenkins and Argo CD.</title>
+    <title>Design my SQL :: Implementing CI/CD using Jenkins and Argo CD.</title>
 
     
-    <link href="/css/nucleus.css?1724782239" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1724782239" rel="stylesheet">
-    <link href="/css/hybrid.css?1724782239" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1724782239" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1724782239" rel="stylesheet">
-    <link href="/css/auto-complete.css?1724782239" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1724782239" rel="stylesheet">
-    <link href="/css/theme.css?1724782239" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1724782239" rel="stylesheet">
+    <link href="/css/nucleus.css?1725380854" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1725380854" rel="stylesheet">
+    <link href="/css/hybrid.css?1725380854" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1725380854" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1725380854" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725380854" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1725380854" rel="stylesheet">
+    <link href="/css/theme.css?1725380854" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1725380854" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1724782239" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1725380854" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1724782239"></script>
+    <script src="/js/jquery-3.3.1.min.js?1725380854"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/3-hotel-manager/">
+  <body class="" data-url="/3-shopapp/3.1--design-my-sql/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1724782239"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1724782239"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1725380854"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1725380854"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1724782239"></script>
+<script type="text/javascript" src="/js/search.js?1725380854"></script>
 
     
   </div>
@@ -335,13 +335,13 @@
  
   
     
-    <li data-nav-id="/3-hotel-manager/" title="Hotels management " class="dd-item 
+    <li data-nav-id="/3-shopapp/" title="SHOP APP" class="dd-item 
+        parent
         
-        active
         
         ">
-      <a href="/3-hotel-manager/">
-           <b> 3 </b> Hotels management 
+      <a href="/3-shopapp/">
+           <b> 3 </b> SHOP APP
           
             <i class="fas fa-check read-icon"></i>
           
@@ -366,12 +366,12 @@
  
   
     
-    <li data-nav-id="/3-hotel-manager/3.2-code-deployment/" title="Code Deployment" class="dd-item 
+    <li data-nav-id="/3-shopapp/3.2-code-deployment/" title="Code Deployment" class="dd-item 
         
         
         
         ">
-      <a href="/3-hotel-manager/3.2-code-deployment/">
+      <a href="/3-shopapp/3.2-code-deployment/">
           <b>3.2</b>Code Deployment
           
             <i class="fas fa-check read-icon"></i>
@@ -394,13 +394,13 @@
  
   
     
-    <li data-nav-id="/3-hotel-manager/3.3-more-question-/" title="More questions" class="dd-item 
+    <li data-nav-id="/3-shopapp/3.1--design-my-sql/" title="Design my SQL" class="dd-item 
         
-        
+        active
         
         ">
-      <a href="/3-hotel-manager/3.3-more-question-/">
-          <b>3.3</b>More questions
+      <a href="/3-shopapp/3.1--design-my-sql/">
+           <b> 3 </b> Design my SQL
           
             <i class="fas fa-check read-icon"></i>
           
@@ -422,13 +422,13 @@
  
   
     
-    <li data-nav-id="/3-hotel-manager/3.1-theory/" title="" class="dd-item 
+    <li data-nav-id="/3-shopapp/3.3-more-question-/" title="More questions" class="dd-item 
         
         
         
         ">
-      <a href="/3-hotel-manager/3.1-theory/">
-          
+      <a href="/3-shopapp/3.3-more-question-/">
+          <b>3.3</b>More questions
           
             <i class="fas fa-check read-icon"></i>
           
@@ -554,7 +554,7 @@
                   
                     
                     
-                      <option id="en" value="//localhost:1313/3-hotel-manager/" selected>English</option>
+                      <option id="en" value="//localhost:1313/3-shopapp/3.1--design-my-sql/" selected>English</option>
                     
                   
               
@@ -617,7 +617,13 @@
             
           
           
-            <a href='/'>Implementing CI/CD using Jenkins and Argo CD.</a> > Hotels management 
+            
+            
+          
+          
+            <a href='/'>Implementing CI/CD using Jenkins and Argo CD.</a> > <a href='/3-shopapp/'>SHOP APP</a> > Design my SQL
+          
+        
           
         
           
@@ -628,7 +634,17 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#thiết-kế-database-cho-shop-app">Thiết Kế database cho Shop app</a></li>
+    <li><a href="#1-một-số-lý-thuyết-quan-trọng-khi-sử-dung-design"><strong>1. Một số lý thuyết quan trọng khi sử dung Design</strong></a>
+      <ul>
+        <li></li>
+        <li><a href="#nếu-muốn-thêm-một-cột-sau-khi-tạo-rồi-thì-dùng-alter">Nếu muốn thêm một cột sau khi tạo rồi thì dùng ALTER:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -644,7 +660,7 @@
           
             <h1>
               
-              Hotels management 
+              Design my SQL
             </h1>
           
 
@@ -652,7 +668,108 @@
 
 
 
-	
+	<h2 id="thiết-kế-database-cho-shop-app">Thiết Kế database cho Shop app</h2>
+<p><img alt="img.png" src="/3-shopapp/3.1--design-my-sql/img.png"></p>
+<h2 id="1-một-số-lý-thuyết-quan-trọng-khi-sử-dung-design"><strong>1. Một số lý thuyết quan trọng khi sử dung Design</strong></h2>
+<ul>
+<li><code> id int PRIMARY KEY AUTO_INCREMENT,</code> : Đây là trường id khóa chính và tự động tăng giá trị.</li>
+<li><code>is_active TINYINT(1) DEFAULT 1,</code> : Đây dùng để hiểu là thanh trạng thái hoạt động hoặc đang tắt hoạt động</li>
+</ul>
+<h4 id="trong-bảng-tokens-">Trong bảng tokens :</h4>
+<ul>
+<li><code>expiration_date DATETIME</code> : cột này để lưu thời gian hết hạn của token.</li>
+<li><code>revoked TINYINT(1) NOT NULL</code> :cột này đánh dấu xem token đã hết hạn hay chưa, token đã bị thu hồi trước khi hết hạn.</li>
+<li><code>expired TINYINT(1) NOT NULL</code> : tương tự cột revoked,giá trị 0 có thể biểu thị <code>chưa hết hạn</code>, và 1 biểu thị <code>đã hết hạn</code>, token đã hết hạn theo thời gian.</li>
+<li></li>
+</ul>
+<h4 id="trong-bảng-products">Trong bảng products</h4>
+<ul>
+<li>
+<p><code>FOREIGN KEY (category_id) REFERENCES categories(id)</code> Quan hệ một nhiều điêù này nghĩa là category trong bảng product đúng là id trong bảng categories.</p>
+<ul>
+<li>
+<p>Bảng categories (danh mục sản phẩm):</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Electronics</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Clothing</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Books</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Bảng products (sản phẩm):</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>name</th>
+<th>price</th>
+<th>category_id</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Laptop</td>
+<td>1000</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>T-Shirt</td>
+<td>20</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Novel</td>
+<td>15</td>
+<td>3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Smartphone</td>
+<td>700</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+<li>
+<p><code>TIMESTAMP</code> có ưu điểm là tự động cập nhật và chuyển đổi múi giờ, phù hợp để theo dõi thời gian trong hệ thống.</p>
+</li>
+</ul>
+<h3 id="nếu-muốn-thêm-một-cột-sau-khi-tạo-rồi-thì-dùng-alter">Nếu muốn thêm một cột sau khi tạo rồi thì dùng ALTER:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ALTER TABLE orders ADD COLUMN <span style="color:#e6db74">`</span>shipping_method<span style="color:#e6db74">`</span> VARCHAR<span style="color:#f92672">(</span>100<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>ALTER TABLE orders ADD COLUMN <span style="color:#e6db74">`</span>shipping_address<span style="color:#e6db74">`</span> VARCHAR<span style="color:#f92672">(</span>200<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>ALTER TABLE orders ADD COLUMN <span style="color:#e6db74">`</span>shipping_date<span style="color:#e6db74">`</span> DATE;
+</span></span><span style="display:flex;"><span>ALTER TABLE orders ADD COLUMN <span style="color:#e6db74">`</span>tracking_number<span style="color:#e6db74">`</span> VARCHAR<span style="color:#f92672">(</span>100<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>ALTER TABLE orders ADD COLUMN <span style="color:#e6db74">`</span>payment_method<span style="color:#e6db74">`</span> VARCHAR<span style="color:#f92672">(</span>100<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>--xóa <span style="color:#ae81ff">1</span> đơn hàng <span style="color:#f92672">=</span>&gt; xóa mềm <span style="color:#f92672">=</span>&gt; thêm trường active
+</span></span><span style="display:flex;"><span>ALTER TABLE orders ADD COLUMN active TINYINT<span style="color:#f92672">(</span>1<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>--Trạng thái đơn hàng chỉ đc phép nhận <span style="color:#e6db74">&#34;một số giá trị cụ thể&#34;</span>
+</span></span><span style="display:flex;"><span>ALTER TABLE orders 
+</span></span><span style="display:flex;"><span>MODIFY COLUMN status ENUM<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;pending&#39;</span>, <span style="color:#e6db74">&#39;processing&#39;</span>, <span style="color:#e6db74">&#39;shipped&#39;</span>, <span style="color:#e6db74">&#39;delivered&#39;</span>, <span style="color:#e6db74">&#39;cancelled&#39;</span><span style="color:#f92672">)</span> 
+</span></span><span style="display:flex;"><span>COMMENT <span style="color:#e6db74">&#39;Trạng thái đơn hàng&#39;</span>;
+</span></span></code></pre></div>
 
 
 
@@ -878,6 +995,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -893,6 +1011,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -951,10 +1072,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/2-git/2.2-advancedgit/_index2/" title="GibHub homework"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/3-shopapp/3.2-code-deployment/" title="Code Deployment"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/3-hotel-manager/3.2-code-deployment/" title="Code Deployment" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/3-shopapp/3.3-more-question-/" title="More questions" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -964,19 +1085,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1724782239"></script>
-    <script src="/js/perfect-scrollbar.min.js?1724782239"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1724782239"></script>
-    <script src="/js/jquery.sticky.js?1724782239"></script>
-    <script src="/js/featherlight.min.js?1724782239"></script>
-    <script src="/js/highlight.pack.js?1724782239"></script>
+    <script src="/js/clipboard.min.js?1725380854"></script>
+    <script src="/js/perfect-scrollbar.min.js?1725380854"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1725380854"></script>
+    <script src="/js/jquery.sticky.js?1725380854"></script>
+    <script src="/js/featherlight.min.js?1725380854"></script>
+    <script src="/js/highlight.pack.js?1725380854"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1724782239"></script>
-    <script src="/js/learn.js?1724782239"></script>
-    <script src="/js/hugo-learn.js?1724782239"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1725380854"></script>
+    <script src="/js/learn.js?1725380854"></script>
+    <script src="/js/hugo-learn.js?1725380854"></script>
 
-    <link href="/mermaid/mermaid.css?1724782239" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1724782239"></script>
+    <link href="/mermaid/mermaid.css?1725380854" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1725380854"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

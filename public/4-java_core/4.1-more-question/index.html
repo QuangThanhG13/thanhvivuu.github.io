@@ -12,21 +12,21 @@
     <title> More Questions  :: Implementing CI/CD using Jenkins and Argo CD.</title>
 
     
-    <link href="/css/nucleus.css?1724348513" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1724348513" rel="stylesheet">
-    <link href="/css/hybrid.css?1724348513" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1724348513" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1724348513" rel="stylesheet">
-    <link href="/css/auto-complete.css?1724348513" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1724348513" rel="stylesheet">
-    <link href="/css/theme.css?1724348513" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1724348513" rel="stylesheet">
+    <link href="/css/nucleus.css?1725379650" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1725379650" rel="stylesheet">
+    <link href="/css/hybrid.css?1725379650" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1725379650" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1725379650" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725379650" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1725379650" rel="stylesheet">
+    <link href="/css/theme.css?1725379650" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1725379650" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1724348513" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1725379650" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1724348513"></script>
+    <script src="/js/jquery-3.3.1.min.js?1725379650"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1724348513"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1724348513"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1725379650"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1725379650"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1724348513"></script>
+<script type="text/javascript" src="/js/search.js?1725379650"></script>
 
     
   </div>
@@ -335,13 +335,13 @@
  
   
     
-    <li data-nav-id="/3-hotel-manager/" title="Hotels management " class="dd-item 
+    <li data-nav-id="/3-shopapp/" title="SHOP APP" class="dd-item 
         
         
         
         ">
-      <a href="/3-hotel-manager/">
-           <b> 3 </b> Hotels management 
+      <a href="/3-shopapp/">
+           <b> 3 </b> SHOP APP
           
             <i class="fas fa-check read-icon"></i>
           
@@ -366,12 +366,12 @@
  
   
     
-    <li data-nav-id="/3-hotel-manager/3.2-code-deployment/" title="Code Deployment" class="dd-item 
+    <li data-nav-id="/3-shopapp/3.2-code-deployment/" title="Code Deployment" class="dd-item 
         
         
         
         ">
-      <a href="/3-hotel-manager/3.2-code-deployment/">
+      <a href="/3-shopapp/3.2-code-deployment/">
           <b>3.2</b>Code Deployment
           
             <i class="fas fa-check read-icon"></i>
@@ -394,13 +394,13 @@
  
   
     
-    <li data-nav-id="/3-hotel-manager/3.3-more-question-/" title="More questions" class="dd-item 
+    <li data-nav-id="/3-shopapp/3.1--design-my-sql/" title="Design my SQL" class="dd-item 
         
         
         
         ">
-      <a href="/3-hotel-manager/3.3-more-question-/">
-          <b>3.3</b>More questions
+      <a href="/3-shopapp/3.1--design-my-sql/">
+           <b> 3 </b> Design my SQL
           
             <i class="fas fa-check read-icon"></i>
           
@@ -422,13 +422,13 @@
  
   
     
-    <li data-nav-id="/3-hotel-manager/3.1-theory/" title="" class="dd-item 
+    <li data-nav-id="/3-shopapp/3.3-more-question-/" title="More questions" class="dd-item 
         
         
         
         ">
-      <a href="/3-hotel-manager/3.1-theory/">
-          
+      <a href="/3-shopapp/3.3-more-question-/">
+          <b>3.3</b>More questions
           
             <i class="fas fa-check read-icon"></i>
           
@@ -634,7 +634,49 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#constructor">Constructor</a></li>
+    <li><a href="#biến-static">Biến static</a></li>
+    <li><a href="#phương-thức-static">Phương thức static</a></li>
+    <li><a href="#tại-sao-phương-thức-main-là-static">Tại sao phương thức <code>main</code> là static?</a></li>
+    <li><a href="#sự-khác-nhau-giữa-phương-thức-static-và-phương-thức-instance">Sự khác nhau giữa phương thức static và phương thức instance</a></li>
+    <li><a href="#this-trong-java-là-gì"><code>This</code> trong Java là gì?</a></li>
+    <li><a href="#super-là-gì"><code>Super</code> là gì?</a></li>
+    <li><a href="#có-thể-sử-dụng-cả-this-và-super-trong-1-constructor-không">Có thể sử dụng cả <code>this</code> và <code>super</code> trong 1 constructor không?</a></li>
+    <li><a href="#lớp-nào-là-lớp-cha-cho-tất-cả-các-lớp">Lớp nào là lớp cha cho tất cả các lớp?</a></li>
+    <li><a href="#tại-sao-đa-kế-thừa-không-được-hỗ-trợ-trong-java">Tại sao đa kế thừa không được hỗ trợ trong Java?</a></li>
+    <li><a href="#sự-khác-nhau-giữa-aggregation-và-composition">Sự khác nhau giữa aggregation và composition</a></li>
+    <li><a href="#object-cloning-là-gì">Object cloning là gì?</a></li>
+    <li><a href="#overloading-phương-thức-là-gì">Overloading phương thức là gì?</a></li>
+    <li><a href="#tại-sao-overloading-phương-thức-không-xảy-ra-khi-thay-đổi-kiểu-giá-trị-trả-về">Tại sao overloading phương thức không xảy ra khi thay đổi kiểu giá trị trả về?</a></li>
+    <li><a href="#có-thể-overload-phương-thức-main-không">Có thể overload phương thức <code>main</code> không?</a></li>
+    <li><a href="#ghi-đè-phương-thức-là-gì">Ghi đè phương thức là gì?</a></li>
+    <li><a href="#tại-sao-không-thể-ghi-đè-phương-thức-static">Tại sao không thể ghi đè phương thức <code>static</code>?</a></li>
+    <li><a href="#có-thể-ghi-đè-phương-thức-đã-nạp-chồng-không">Có thể ghi đè phương thức đã nạp chồng không?</a></li>
+    <li><a href="#có-thể-ghi-đè-biến-instance-không">Có thể ghi đè biến instance không?</a></li>
+    <li><a href="#sự-khác-nhau-giữa-overload-và-override">Sự khác nhau giữa overload và override</a></li>
+    <li><a href="#kiểu-trả-về-hiệp-biến-là-gì">Kiểu trả về hiệp biến là gì?</a></li>
+    <li><a href="#biếnphương-thứcclass-final-là-gì">Biến/phương thức/class <code>final</code> là gì?</a></li>
+    <li><a href="#interface-là-gì">Interface là gì?</a></li>
+    <li><a href="#abstract-class-là-gì"><code>Abstract class</code> là gì?</a></li>
+    <li><a href="#string-là-gì-tại-sao-string-là-bất-biến-immutable"><code>String</code> là gì? Tại sao <code>String</code> là bất biến (immutable)?</a></li>
+    <li><a href="#khác-nhau-giữa-lớp-string-stringbuffer-và-stringbuilder">Khác nhau giữa lớp <code>String</code>, <code>StringBuffer</code> và <code>StringBuilder</code></a></li>
+    <li><a href="#sự-khác-nhau-giữa-equals-và--trong-java">Sự khác nhau giữa <code>equals()</code> và <code>==</code> trong Java</a></li>
+    <li><a href="#có-thể-ghi-đè-phương-thức-equals-không">Có thể ghi đè phương thức <code>equals()</code> không?</a></li>
+    <li><a href="#phương-thức-hashcode-là-gì">Phương thức <code>hashCode()</code> là gì?</a></li>
+    <li><a href="#so-sánh-interface-và-abstract-class">So sánh interface và abstract class</a></li>
+    <li><a href="#boxingunboxing-là-gì">Boxing/unboxing là gì?</a></li>
+    <li><a href="#chuyển-kiểu-tường-minh-type-casting">Chuyển kiểu tường minh (type casting)</a>
+      <ul>
+        <li><a href="#upcasting">Upcasting</a></li>
+        <li><a href="#downcasting">Downcasting</a></li>
+      </ul>
+    </li>
+    <li><a href="#static-binding-vs-dynamic-binding">Static binding vs Dynamic binding</a></li>
+    <li><a href="#các-thành-phần-trong-oop">Các thành phần trong OOP</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -658,7 +700,538 @@
 
 
 
-	
+	<h1 id="java-core">Java Core</h1>
+<h2 id="constructor">Constructor</h2>
+<ul>
+<li><strong>Constructor là gì:</strong> Là phương thức đặc biệt để tạo đối tượng của 1 lớp. Nó có chức năng tạo ra một đối tượng mới của lớp đó và khởi tạo các thuộc tính của đối tượng đó.</li>
+<li><strong>Có mấy loại constructor:</strong> 2 loại: <code>default/no-argument</code> và <code>parameter</code>.</li>
+<li><strong>Constructor trả về kiểu giá trị gì:</strong> Không có kiểu trả về.</li>
+<li><strong>Constructor có được kế thừa không:</strong> Không. Khi tạo lớp con sẽ không kế thừa các constructor của lớp cha ⇒ phải tự định nghĩa constructor riêng của nó. Nếu muốn gọi constructor lớp cha thì phải sử dụng <code>super()</code>.</li>
+<li><strong>Có thể tạo constructor <code>final</code> không:</strong> Không ⇒ Nếu sử dụng sẽ bị lỗi biên dịch. Vì constructor không có hành vi kế thừa như phương thức hoặc lớp, không cần thiết phải sử dụng từ khóa <code>final</code> với constructor.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span> {
+</span></span><span style="display:flex;"><span>    String name;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> age;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Default constructor</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Person</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Unknown&#34;</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> 0;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Parameterized constructor</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Person</span>(String name, <span style="color:#66d9ef">int</span> age) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> name;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> age;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">display</span>() {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Name: &#34;</span> <span style="color:#f92672">+</span> name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, Age: &#34;</span> <span style="color:#f92672">+</span> age);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        Person person1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Person();
+</span></span><span style="display:flex;"><span>        person1.<span style="color:#a6e22e">display</span>(); <span style="color:#75715e">// Output: Name: Unknown, Age: 0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        Person person2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Person(<span style="color:#e6db74">&#34;Alice&#34;</span>, 25);
+</span></span><span style="display:flex;"><span>        person2.<span style="color:#a6e22e">display</span>(); <span style="color:#75715e">// Output: Name: Alice, Age: 25</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="biến-static">Biến static</h2>
+<ul>
+<li><strong>Biến static là gì:</strong> Là biến thuộc về lớp, không thuộc về riêng đối tượng nào cả ⇒ tất cả các đối tượng trong cùng 1 lớp sẽ chia sẻ chung biến static.</li>
+<li><strong>Biến static chỉ khởi tạo 1 lần</strong> khi lớp được nạp vào bộ nhớ. Nó giữ giá trị của nó trong suốt vòng đời của chương trình hoặc khi lớp không còn tồn tại.</li>
+<li><strong>Ứng dụng:</strong> Lưu các giá trị không thay đổi, chẳng hạn như các URL, cấu hình ứng dụng, hoặc thông tin khác cần sử dụng xuyên suốt ứng dụng.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>  <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Counter</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> count <span style="color:#f92672">=</span> 0;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Counter</span>() {
+</span></span><span style="display:flex;"><span>        count<span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getCount</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> count;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        Counter c1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Counter();
+</span></span><span style="display:flex;"><span>        Counter c2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Counter();
+</span></span><span style="display:flex;"><span>        Counter c3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Counter();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Total objects created: &#34;</span> <span style="color:#f92672">+</span> Counter.<span style="color:#a6e22e">getCount</span>()); <span style="color:#75715e">// Output: Total objects created: 3</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="phương-thức-static">Phương thức static</h2>
+<ul>
+<li><strong>Phương thức static là gì:</strong> Là phương thức thuộc về lớp, không thuộc về object riêng nào cả.</li>
+<li><strong>Ứng dụng:</strong>
+<ul>
+<li>Cung cấp các phương thức tiện ích chung không cần truy cập đến trạng thái của đối tượng.</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Counter</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> count <span style="color:#f92672">=</span> 0;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Counter</span>() {
+</span></span><span style="display:flex;"><span>        count<span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getCount</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> count;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        Counter c1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Counter();
+</span></span><span style="display:flex;"><span>        Counter c2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Counter();
+</span></span><span style="display:flex;"><span>        Counter c3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Counter();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Total objects created: &#34;</span> <span style="color:#f92672">+</span> Counter.<span style="color:#a6e22e">getCount</span>()); <span style="color:#75715e">// Output: Total objects created: 3</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="tại-sao-phương-thức-main-là-static">Tại sao phương thức <code>main</code> là static?</h2>
+<ul>
+<li>Khi chạy chương trình Java thì JVM cần 1 điểm khởi đầu để bắt đầu thực thi chương trình ⇒ Phương thức <code>main</code> chính là điểm khởi đầu này.</li>
+<li>JVM không tạo một đối tượng của lớp chứa phương thức <code>main</code> trước khi gọi phương thức đó. Thay vào đó, JVM gọi phương thức <code>main</code> trực tiếp để bắt đầu chương trình. Nếu <code>main</code> không phải là <code>static</code>, JVM sẽ không thể gọi nó mà không có một đối tượng của lớp.</li>
+</ul>
+<h2 id="sự-khác-nhau-giữa-phương-thức-static-và-phương-thức-instance">Sự khác nhau giữa phương thức static và phương thức instance</h2>
+<table>
+<thead>
+<tr>
+<th>Phương thức static</th>
+<th>Phương thức instance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Là phương thức thuộc về lớp</td>
+<td>Là phương thức thuộc về đối tượng cụ thể</td>
+</tr>
+<tr>
+<td>Được khởi tạo khi lớp được nạp vào bộ nhớ, trước khi bất kỳ đối tượng nào của lớp được tạo ra</td>
+<td>Được khởi tạo khi một đối tượng của lớp được tạo ra</td>
+</tr>
+<tr>
+<td>Không phụ thuộc vào bất kỳ đối tượng nào</td>
+<td>Phụ thuộc vào đối tượng của lớp. Mỗi đối tượng có thể gọi các phương thức <code>instance</code> của chính nó</td>
+</tr>
+</tbody>
+</table>
+<h2 id="this-trong-java-là-gì"><code>This</code> trong Java là gì?</h2>
+<ul>
+<li>Đại diện cho đối tượng hiện tại của lớp.</li>
+<li>Dùng để phân biệt biến instance và tham số phương thức có cùng tên.</li>
+<li>Dùng để gọi các phương thức và constructor khác trong cùng một lớp.</li>
+</ul>
+<h2 id="super-là-gì"><code>Super</code> là gì?</h2>
+<ul>
+<li>Đại diện cho lớp cha của đối tượng hiện tại.</li>
+<li>Dùng để truy cập các thành phần lớp cha từ lớp con, bao gồm việc gọi phương thức và constructor lớp cha.</li>
+</ul>
+<h2 id="có-thể-sử-dụng-cả-this-và-super-trong-1-constructor-không">Có thể sử dụng cả <code>this</code> và <code>super</code> trong 1 constructor không?</h2>
+<ul>
+<li>Có thể, tuy nhiên phải theo thứ tự: <code>super</code> → <code>this</code>.</li>
+<li>Nếu gọi <code>this</code> trước <code>super</code> → xảy ra lỗi biên dịch.</li>
+</ul>
+<h2 id="lớp-nào-là-lớp-cha-cho-tất-cả-các-lớp">Lớp nào là lớp cha cho tất cả các lớp?</h2>
+<ul>
+<li>Lớp <strong>Object</strong>.</li>
+<li>Tất cả các lớp kế thừa từ lớp <code>Object</code>, và do đó, có quyền truy cập vào các phương thức cơ bản mà <code>Object</code> cung cấp.</li>
+</ul>
+<h2 id="tại-sao-đa-kế-thừa-không-được-hỗ-trợ-trong-java">Tại sao đa kế thừa không được hỗ trợ trong Java?</h2>
+<ul>
+<li>Tránh diamond problem. Ví dụ: class C kế thừa từ class A và B. Trong A và B đều có phương thức <code>printInfo()</code> thì C không biết kế thừa từ class nào.</li>
+<li>Có thể sử dụng interface để thay thế cho đa kế thừa.</li>
+</ul>
+<h2 id="sự-khác-nhau-giữa-aggregation-và-composition">Sự khác nhau giữa aggregation và composition</h2>
+<table>
+<thead>
+<tr>
+<th>Aggregation</th>
+<th>Composition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Đối tượng chứa chỉ giữ tham chiếu đến các đối tượng thành phần. Các đối tượng thành phần có thể tồn tại độc lập và có thể được chia sẻ giữa nhiều đối tượng chứa</td>
+<td>Đối tượng chứa hoàn toàn sở hữu các đối tượng thành phần. Khi đối tượng chứa bị hủy, các đối tượng thành phần cũng bị hủy</td>
+</tr>
+<tr>
+<td>Mối quan hệ là lỏng lẻo. Đối tượng thành phần có thể tồn tại và được sử dụng bởi nhiều đối tượng chứa khác nhau</td>
+<td>Mối quan hệ là chặt chẽ. Đối tượng thành phần không thể tồn tại mà không có đối tượng chứa</td>
+</tr>
+<tr>
+<td>Đối tượng thành phần thường được khởi tạo ngoài constructor của đối tượng chứa và được gán sau</td>
+<td>Đối tượng thành phần thường được khởi tạo trong constructor của đối tượng chứa</td>
+</tr>
+</tbody>
+</table>
+<h2 id="object-cloning-là-gì">Object cloning là gì?</h2>
+<ul>
+<li>Là quá trình tạo ra 1 bản sao của đối tượng. Quá trình này tạo ra một đối tượng mới với các giá trị giống hệt đối tượng gốc, nhưng có tham chiếu (reference) khác.</li>
+<li><strong>Có 2 cách để thực hiện cloning:</strong>
+<ol>
+<li>Sử dụng <code>Cloneable</code> Interface và <code>Object.clone()</code> Method.</li>
+<li>Sử dụng Constructor sao chép hoặc Phương Thức sao chép.</li>
+</ol>
+</li>
+<li><strong>Mục đích:</strong> Clone giúp tạo ra các bản sao của đối tượng để làm việc hoặc thử nghiệm mà không ảnh hưởng đến đối tượng gốc.</li>
+</ul>
+<h2 id="overloading-phương-thức-là-gì">Overloading phương thức là gì?</h2>
+<ul>
+<li>Là một tính năng trong Java cho phép một lớp có nhiều phương thức cùng tên nhưng khác nhau về danh sách tham số (số lượng hoặc kiểu tham số). Overloading không phụ thuộc vào kiểu trả về của phương thức, nghĩa là không thể tạo ra nhiều phương thức chỉ khác nhau về kiểu trả về.</li>
+<li>Điều này giúp tạo nhiều phương thức có cùng 1 tên nhưng có thể xử lý các kiểu dữ liệu khác nhau/số lượng tham số khác nhau.</li>
+</ul>
+<h2 id="tại-sao-overloading-phương-thức-không-xảy-ra-khi-thay-đổi-kiểu-giá-trị-trả-về">Tại sao overloading phương thức không xảy ra khi thay đổi kiểu giá trị trả về?</h2>
+<ul>
+<li>
+<p>Vì điều này gây ra sự không rõ ràng trong việc chọn phương thức khi gọi.</p>
+</li>
+<li>
+<p>Ví dụ: lúc này nếu gọi phương thức <code>add</code> thì sẽ không biết gọi cái nào ⇒ lỗi biên dịch <code>method add(int,int) is already defined in class Example</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Example</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Phương thức 1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">add</span>(<span style="color:#66d9ef">int</span> a, <span style="color:#66d9ef">int</span> b) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> a <span style="color:#f92672">+</span> b;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Phương thức 2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">double</span> <span style="color:#a6e22e">add</span>(<span style="color:#66d9ef">int</span> a, <span style="color:#66d9ef">int</span> b) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> a <span style="color:#f92672">+</span> b <span style="color:#f92672">+</span> 0.<span style="color:#a6e22e">5</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="có-thể-overload-phương-thức-main-không">Có thể overload phương thức <code>main</code> không?</h2>
+<ul>
+<li>Có thể, tuy nhiên khi chạy ứng dụng JVM chỉ gọi phương thức <code>main(String[] args)</code> và bỏ qua các phiên bản overload khác.</li>
+</ul>
+<h2 id="ghi-đè-phương-thức-là-gì">Ghi đè phương thức là gì?</h2>
+<ul>
+<li>Là kỹ thuật cho phép lớp con kế thừa phương thức từ lớp cha và thay đổi hành vi của nó để phù hợp với nhu cầu cụ thể.</li>
+<li><strong>Quy tắc:</strong>
+<ul>
+<li>Phương thức ghi đè phải có cùng chữ ký với phương thức trong lớp cha.</li>
+<li>Không thể có phạm vi truy cập chặt chẽ hơn.</li>
+<li>Không thể là <code>static</code>.</li>
+<li>Các phương thức <code>final</code>, <code>static</code>, và <code>private</code> không thể bị ghi đè.</li>
+</ul>
+</li>
+</ul>
+<h2 id="tại-sao-không-thể-ghi-đè-phương-thức-static">Tại sao không thể ghi đè phương thức <code>static</code>?</h2>
+<ul>
+<li>Vì phương thức static thuộc về class chứ không thuộc về đối tượng.</li>
+</ul>
+<h2 id="có-thể-ghi-đè-phương-thức-đã-nạp-chồng-không">Có thể ghi đè phương thức đã nạp chồng không?</h2>
+<ul>
+<li>Có thể, phương thức ghi đè trong lớp con phải có cùng chữ ký với phương thức trong lớp cha mà nó ghi đè.</li>
+</ul>
+<h2 id="có-thể-ghi-đè-biến-instance-không">Có thể ghi đè biến instance không?</h2>
+<ul>
+<li>Không thể ghi đè các biến instance.</li>
+<li>Nếu lớp con định nghĩa một biến với cùng tên như trong lớp cha, biến này sẽ ẩn biến của lớp cha nhưng không thay thế nó. Biến trong lớp con và lớp cha vẫn tồn tại độc lập và có thể được truy cập dựa trên tham chiếu đối tượng.</li>
+</ul>
+<h2 id="sự-khác-nhau-giữa-overload-và-override">Sự khác nhau giữa overload và override</h2>
+<table>
+<thead>
+<tr>
+<th>Overload</th>
+<th>Override</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Xảy ra trong cùng 1 lớp hoặc lớp con</td>
+<td>Xảy ra khi lớp con định nghĩa phương thức với cùng tên và danh sách tham số như phương thức trong lớp cha</td>
+</tr>
+<tr>
+<td>Các phương thức phải có cùng tên nhưng khác nhau về danh sách tham số</td>
+<td>Phương thức phải có cùng chữ ký với phương thức cha</td>
+</tr>
+<tr>
+<td>Không liên quan đến kế thừa, không thay thế phương thức</td>
+<td>Có liên quan đến kế thừa, thay thế hành vi của phương thức trong lớp cha</td>
+</tr>
+</tbody>
+</table>
+<h2 id="kiểu-trả-về-hiệp-biến-là-gì">Kiểu trả về hiệp biến là gì?</h2>
+<ul>
+<li>Là khả năng của phương thức ghi đè trong lớp con để trả về một kiểu dữ liệu con của kiểu dữ liệu trả về trong phương thức lớp cha.</li>
+</ul>
+<h2 id="biếnphương-thứcclass-final-là-gì">Biến/phương thức/class <code>final</code> là gì?</h2>
+<ul>
+<li><strong>Biến <code>final</code>:</strong>
+<ul>
+<li><strong>Biến Instance/Static:</strong> Giá trị không thể thay đổi sau khi được gán.</li>
+<li><strong>Biến Cục Bộ:</strong> Không thể gán lại giá trị sau lần gán đầu tiên.</li>
+</ul>
+</li>
+<li><strong>Phương thức <code>final</code>:</strong>
+<ul>
+<li>Không thể ghi đè.</li>
+<li>Tăng hiệu năng khi không cần phải kiểm tra ghi đè.</li>
+</ul>
+</li>
+<li><strong>Class <code>final</code>:</strong>
+<ul>
+<li>Không thể tạo lớp con.</li>
+<li>Bảo vệ class khỏi sự thay đổi.</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>     <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Constants</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">int</span> MAX_AGE <span style="color:#f92672">=</span> 100;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TestFinal</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Constants.MAX_AGE = 120; // Error: Cannot assign a value to final variable &#39;MAX_AGE&#39;</span>
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(Constants.<span style="color:#a6e22e">MAX_AGE</span>); <span style="color:#75715e">// Output: 100</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="interface-là-gì">Interface là gì?</h2>
+<ul>
+<li>Là một bộ quy tắc (contracts) mà các lớp phải tuân theo. Nó chỉ định các phương thức mà một lớp phải triển khai mà không cung cấp bất kỳ thực thi nào.</li>
+<li><strong>Ứng dụng:</strong> Định nghĩa các chức năng cơ bản mà các lớp cần tuân theo. Cho phép tạo ra các hệ thống linh hoạt và dễ mở rộng.</li>
+</ul>
+<h2 id="abstract-class-là-gì"><code>Abstract class</code> là gì?</h2>
+<ul>
+<li>Là một lớp không thể tạo ra đối tượng từ nó, chỉ có thể được kế thừa.</li>
+<li>Nó có thể có cả phương thức <code>abstract</code> (không có thân phương thức) và <code>non-abstract</code>.</li>
+<li><strong>Ứng dụng:</strong> Dùng khi có một số hành vi chung mà các lớp con có thể chia sẻ, nhưng các lớp con cũng cần triển khai các phương thức cụ thể riêng của mình.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// Interface</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">AnimalInterface</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">eat</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">sleep</span>();
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Abstract class</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AnimalAbstract</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">eat</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">sleep</span>() {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Sleeping&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Implementing interface</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Dog</span> <span style="color:#66d9ef">implements</span> AnimalInterface {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">eat</span>() {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Dog is eating&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">sleep</span>() {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Dog is sleeping&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Extending abstract class</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Cat</span> <span style="color:#66d9ef">extends</span> AnimalAbstract {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">eat</span>() {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Cat is eating&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        Dog dog <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Dog();
+</span></span><span style="display:flex;"><span>        dog.<span style="color:#a6e22e">eat</span>(); <span style="color:#75715e">// Output: Dog is eating</span>
+</span></span><span style="display:flex;"><span>        dog.<span style="color:#a6e22e">sleep</span>(); <span style="color:#75715e">// Output: Dog is sleeping</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        Cat cat <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Cat();
+</span></span><span style="display:flex;"><span>        cat.<span style="color:#a6e22e">eat</span>(); <span style="color:#75715e">// Output: Cat is eating</span>
+</span></span><span style="display:flex;"><span>        cat.<span style="color:#a6e22e">sleep</span>(); <span style="color:#75715e">// Output: Sleeping</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="string-là-gì-tại-sao-string-là-bất-biến-immutable"><code>String</code> là gì? Tại sao <code>String</code> là bất biến (immutable)?</h2>
+<ul>
+<li><strong><code>String</code> là một lớp đặc biệt trong Java</strong> để lưu trữ và xử lý chuỗi văn bản.</li>
+<li><strong>Bất biến (immutable):</strong> Mỗi khi thao tác trên <code>String</code>, một đối tượng mới được tạo ra thay vì thay đổi đối tượng hiện tại. Điều này giúp tăng cường bảo mật và hiệu suất.</li>
+</ul>
+<h2 id="khác-nhau-giữa-lớp-string-stringbuffer-và-stringbuilder">Khác nhau giữa lớp <code>String</code>, <code>StringBuffer</code> và <code>StringBuilder</code></h2>
+<ul>
+<li><strong><code>String</code>:</strong> Bất biến (immutable), an toàn cho việc sử dụng trong môi trường đa luồng, nhưng tốn bộ nhớ hơn khi thực hiện nhiều thao tác.</li>
+<li><strong><code>StringBuffer</code>:</strong> Có thể thay đổi (mutable), an toàn cho việc sử dụng trong môi trường đa luồng, hiệu năng thấp hơn <code>StringBuilder</code>.</li>
+<li><strong><code>StringBuilder</code>:</strong> Có thể thay đổi (mutable), không an toàn cho việc sử dụng trong môi trường đa luồng, hiệu năng cao hơn <code>StringBuffer</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">StringExample</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Immutable String</span>
+</span></span><span style="display:flex;"><span>        String str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello&#34;</span>;
+</span></span><span style="display:flex;"><span>        str <span style="color:#f92672">=</span> str.<span style="color:#a6e22e">concat</span>(<span style="color:#e6db74">&#34; World&#34;</span>);
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(str); <span style="color:#75715e">// Output: Hello World</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// StringBuffer (Thread-safe)</span>
+</span></span><span style="display:flex;"><span>        StringBuffer sb <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StringBuffer(<span style="color:#e6db74">&#34;Hello&#34;</span>);
+</span></span><span style="display:flex;"><span>        sb.<span style="color:#a6e22e">append</span>(<span style="color:#e6db74">&#34; World&#34;</span>);
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(sb); <span style="color:#75715e">// Output: Hello World</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// StringBuilder (Not thread-safe, but faster)</span>
+</span></span><span style="display:flex;"><span>        StringBuilder sbuilder <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StringBuilder(<span style="color:#e6db74">&#34;Hello&#34;</span>);
+</span></span><span style="display:flex;"><span>        sbuilder.<span style="color:#a6e22e">append</span>(<span style="color:#e6db74">&#34; World&#34;</span>);
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(sbuilder); <span style="color:#75715e">// Output: Hello World</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="sự-khác-nhau-giữa-equals-và--trong-java">Sự khác nhau giữa <code>equals()</code> và <code>==</code> trong Java</h2>
+<ul>
+<li><strong><code>equals()</code></strong> so sánh nội dung của hai đối tượng (method này có thể được override trong các class để định nghĩa cách so sánh cụ thể).</li>
+<li><strong><code>==</code></strong> so sánh tham chiếu (reference) của hai đối tượng, tức là kiểm tra xem hai đối tượng có cùng tham chiếu đến cùng một vùng nhớ hay không.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span> {
+</span></span><span style="display:flex;"><span>    String name;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> age;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Person</span>(String name, <span style="color:#66d9ef">int</span> age) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> name;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> age;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">equals</span>(Object obj) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">this</span> <span style="color:#f92672">==</span> obj) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (obj <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">||</span> getClass() <span style="color:#f92672">!=</span> obj.<span style="color:#a6e22e">getClass</span>()) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>        Person person <span style="color:#f92672">=</span> (Person) obj;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> age <span style="color:#f92672">==</span> person.<span style="color:#a6e22e">age</span> <span style="color:#f92672">&amp;&amp;</span> name.<span style="color:#a6e22e">equals</span>(person.<span style="color:#a6e22e">name</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">hashCode</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> Objects.<span style="color:#a6e22e">hash</span>(name, age);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        Person p1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Person(<span style="color:#e6db74">&#34;John&#34;</span>, 25);
+</span></span><span style="display:flex;"><span>        Person p2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Person(<span style="color:#e6db74">&#34;John&#34;</span>, 25);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(p1.<span style="color:#a6e22e">equals</span>(p2)); <span style="color:#75715e">// Output: true</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="có-thể-ghi-đè-phương-thức-equals-không">Có thể ghi đè phương thức <code>equals()</code> không?</h2>
+<ul>
+<li>Có thể ghi đè phương thức <code>equals()</code> để định nghĩa cách so sánh nội dung của hai đối tượng.</li>
+<li>Tuy nhiên, khi ghi đè <code>equals()</code>, cần phải tuân thủ hợp đồng (contract) của phương thức này, như: tính đối xứng, tính phản xạ, và tính chuyển tiếp.</li>
+</ul>
+<h2 id="phương-thức-hashcode-là-gì">Phương thức <code>hashCode()</code> là gì?</h2>
+<ul>
+<li>Là phương thức trả về một giá trị số nguyên (hash code) biểu diễn cho đối tượng, được sử dụng chủ yếu trong các cấu trúc dữ liệu như <code>HashMap</code>, <code>HashSet</code>.</li>
+<li><strong>Ghi đè <code>hashCode()</code> khi ghi đè <code>equals()</code>:</strong> Để đảm bảo rằng hai đối tượng bằng nhau theo phương thức <code>equals()</code> thì cũng phải có cùng giá trị <code>hashCode()</code>.</li>
+</ul>
+<h2 id="so-sánh-interface-và-abstract-class">So sánh interface và abstract class</h2>
+<table>
+<thead>
+<tr>
+<th>Interface</th>
+<th>Abstract class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chỉ có thể chứa phương thức abstract và thuộc tính tĩnh (static). Từ Java 8 trở đi, có thể có phương thức default và static với thân phương thức</td>
+<td>Có thể chứa cả phương thức abstract và non-abstract</td>
+</tr>
+<tr>
+<td>Không có constructor</td>
+<td>Có constructor</td>
+</tr>
+<tr>
+<td>Một lớp có thể implement nhiều interface</td>
+<td>Một lớp chỉ có thể kế thừa từ một abstract class</td>
+</tr>
+<tr>
+<td>Tất cả các phương thức đều ngầm định là public và abstract (trước Java 8)</td>
+<td>Các phương thức có thể có bất kỳ phạm vi truy cập nào</td>
+</tr>
+<tr>
+<td>Các thuộc tính ngầm định là public, static và final</td>
+<td>Có thể có các thuộc tính instance không phải final</td>
+</tr>
+</tbody>
+</table>
+<h2 id="boxingunboxing-là-gì">Boxing/unboxing là gì?</h2>
+<ul>
+<li><strong>Boxing</strong> là quá trình chuyển đổi kiểu dữ liệu nguyên thủy (primitive type) thành đối tượng của lớp wrapper tương ứng (e.g., int → Integer).</li>
+<li><strong>Unboxing</strong> là quá trình ngược lại, chuyển đổi đối tượng của lớp wrapper thành kiểu dữ liệu nguyên thủy.
+<ul>
+<li>Ví dụ: int (kiểu nguyên thủy) -&gt; Integer (lớp wrapper).</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BoxingUnboxing</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Boxing: converting primitive to wrapper object</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> num <span style="color:#f92672">=</span> 5;
+</span></span><span style="display:flex;"><span>        Integer boxedNum <span style="color:#f92672">=</span> num; <span style="color:#75715e">// Autoboxing</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Unboxing: converting wrapper object to primitive</span>
+</span></span><span style="display:flex;"><span>        Integer obj <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Integer(10);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> unboxedNum <span style="color:#f92672">=</span> obj; <span style="color:#75715e">// Auto-unboxing</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Boxed: &#34;</span> <span style="color:#f92672">+</span> boxedNum); <span style="color:#75715e">// Output: Boxed: 5</span>
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Unboxed: &#34;</span> <span style="color:#f92672">+</span> unboxedNum); <span style="color:#75715e">// Output: Unboxed: 10</span>
+</span></span></code></pre></div><h2 id="chuyển-kiểu-tường-minh-type-casting">Chuyển kiểu tường minh (type casting)</h2>
+<ul>
+<li>Là quá trình chuyển đổi một kiểu dữ liệu này thành kiểu dữ liệu khác theo yêu cầu của lập trình viên.</li>
+</ul>
+<h3 id="upcasting">Upcasting</h3>
+<ul>
+<li>Chuyển từ kiểu con thành kiểu cha.</li>
+<li><strong>Cú pháp:</strong> <code>ClassCha obj = (ClassCha) objCon</code>.</li>
+</ul>
+<h3 id="downcasting">Downcasting</h3>
+<ul>
+<li>
+<p>Chuyển từ kiểu cha thành kiểu con.</p>
+</li>
+<li>
+<p><strong>Cú pháp:</strong> <code>ClassCon obj = (ClassCon) objCha</code>.</p>
+</li>
+<li>
+<p>Khi sử dụng downcasting, cần kiểm tra kiểu dữ liệu bằng toán tử <code>instanceof</code> để đảm bảo an toàn.</p>
+</li>
+</ul>
+<h2 id="static-binding-vs-dynamic-binding">Static binding vs Dynamic binding</h2>
+<ul>
+<li><strong>Static binding:</strong> Xảy ra trong thời gian biên dịch. Sử dụng cho phương thức static, final, và private.</li>
+<li><strong>Dynamic binding:</strong> Xảy ra trong thời gian chạy. Sử dụng cho các phương thức instance và override.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">StaticBindingExample</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">display</span>() {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Static Binding Example&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        StaticBindingExample obj <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StaticBindingExample();
+</span></span><span style="display:flex;"><span>        obj.<span style="color:#a6e22e">display</span>(); <span style="color:#75715e">// Output: Static Binding Example (Resolved at compile-time)</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Animal</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">sound</span>() {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Animal sound&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Dog</span> <span style="color:#66d9ef">extends</span> Animal {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">sound</span>() {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Dog barks&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        Animal obj <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Dog();
+</span></span><span style="display:flex;"><span>        obj.<span style="color:#a6e22e">sound</span>(); <span style="color:#75715e">// Output: Dog barks (Resolved at runtime)</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="các-thành-phần-trong-oop">Các thành phần trong OOP</h2>
+<ol>
+<li><strong>Inheritance:</strong> Kế thừa tính năng của lớp cha.</li>
+<li><strong>Polymorphism:</strong> Đa hình, tức là cùng một hành vi có thể có nhiều hình thức khác nhau.</li>
+<li><strong>Encapsulation:</strong> Đóng gói, tức là ẩn giấu các chi tiết thực hiện và chỉ cung cấp những thông tin cần thiết ra bên ngoài.</li>
+<li><strong>Abstraction:</strong> Trừu tượng hóa, tức là chỉ giữ lại những thông tin quan trọng và ẩn đi các chi tiết phức tạp.</li>
+</ol>
+
 
 
 
@@ -968,19 +1541,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1724348513"></script>
-    <script src="/js/perfect-scrollbar.min.js?1724348513"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1724348513"></script>
-    <script src="/js/jquery.sticky.js?1724348513"></script>
-    <script src="/js/featherlight.min.js?1724348513"></script>
-    <script src="/js/highlight.pack.js?1724348513"></script>
+    <script src="/js/clipboard.min.js?1725379650"></script>
+    <script src="/js/perfect-scrollbar.min.js?1725379650"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1725379650"></script>
+    <script src="/js/jquery.sticky.js?1725379650"></script>
+    <script src="/js/featherlight.min.js?1725379650"></script>
+    <script src="/js/highlight.pack.js?1725379650"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1724348513"></script>
-    <script src="/js/learn.js?1724348513"></script>
-    <script src="/js/hugo-learn.js?1724348513"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1725379650"></script>
+    <script src="/js/learn.js?1725379650"></script>
+    <script src="/js/hugo-learn.js?1725379650"></script>
 
-    <link href="/mermaid/mermaid.css?1724348513" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1724348513"></script>
+    <link href="/mermaid/mermaid.css?1725379650" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1725379650"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -1,5 +1,5 @@
 ---
-title : "Hotels management "
+title : "SHOP APP"
 date :  "`r Sys.Date()`" 
 weight : 3
 chapter : false
