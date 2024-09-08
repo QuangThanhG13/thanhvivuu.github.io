@@ -219,3 +219,5 @@ class HinhVuong extends Hinh {
 | Có thể cung cấp nôij dung cài đặt cho `interface`                                              | Không thể cung cấp nd cài đặt cho `abtract`          |
 | Ví Dụ : public abtract class Shape public abtract void draw();                                 | Ví Dụ : public interface Drawable <br/> void draw(); | 
 
+
+#### Map<String, String> errors= new HashMap<>();

@@ -12,21 +12,21 @@
     <title>GibHub homework :: Implementing CI/CD using Jenkins and Argo CD.</title>
 
     
-    <link href="/css/nucleus.css?1725383573" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1725383573" rel="stylesheet">
-    <link href="/css/hybrid.css?1725383573" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1725383573" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1725383573" rel="stylesheet">
-    <link href="/css/auto-complete.css?1725383573" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1725383573" rel="stylesheet">
-    <link href="/css/theme.css?1725383573" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1725383573" rel="stylesheet">
+    <link href="/css/nucleus.css?1725801617" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1725801617" rel="stylesheet">
+    <link href="/css/hybrid.css?1725801617" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1725801617" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1725801617" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725801617" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1725801617" rel="stylesheet">
+    <link href="/css/theme.css?1725801617" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1725801617" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1725383573" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1725801617" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1725383573"></script>
+    <script src="/js/jquery-3.3.1.min.js?1725801617"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1725383573"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1725383573"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1725801617"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1725801617"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1725383573"></script>
+<script type="text/javascript" src="/js/search.js?1725801617"></script>
 
     
   </div>
@@ -366,13 +366,13 @@
  
   
     
-    <li data-nav-id="/3-shopapp/3.2-code-deployment/" title="Code Deployment" class="dd-item 
+    <li data-nav-id="/3-shopapp/3.2-java-spring-boot-backendp1/" title="Java Spring Boot backend (p1)" class="dd-item 
         
         
         
         ">
-      <a href="/3-shopapp/3.2-code-deployment/">
-          <b>3.2</b>Code Deployment
+      <a href="/3-shopapp/3.2-java-spring-boot-backendp1/">
+          <b>3.2</b>Java Spring Boot backend (p1)
           
             <i class="fas fa-check read-icon"></i>
           
@@ -422,13 +422,13 @@
  
   
     
-    <li data-nav-id="/3-shopapp/3.3-more-question-/" title="More questions" class="dd-item 
+    <li data-nav-id="/3-shopapp/3.3-java-spring-boot-backendp2/" title="Java Spring Boot backend (p2)" class="dd-item 
         
         
         
         ">
-      <a href="/3-shopapp/3.3-more-question-/">
-          <b>3.3</b>More questions
+      <a href="/3-shopapp/3.3-java-spring-boot-backendp2/">
+          <b>3.3</b>Java Spring Boot backend (p2)
           
             <i class="fas fa-check read-icon"></i>
           
@@ -640,11 +640,20 @@
     <li><a href="#step-2-configure-git">Step 2: Configure Git</a></li>
     <li><a href="#step-3-initialize-a-repository">Step 3: Initialize a Repository</a></li>
     <li><a href="#step-4-add-and-commit-changes">Step 4: Add and Commit Changes</a></li>
-    <li><a href="#step-5-create-a-new-branch-and-use-rebase">Step 5: Create a New Branch and Use Rebase</a></li>
+    <li><a href="#step-5-create-a-new-branch-and-use-rebase">Step 5: Create a New Branch and Use Rebase</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
     <li><a href="#step-6-user-cherry-picks">Step 6: User Cherry picks</a></li>
     <li><a href="#step-7-use-stash">Step 7: Use Stash</a></li>
     <li><a href="#step-8--use-submodule">Step 8 : Use Submodule</a></li>
     <li><a href="#step-9-push-to-github">Step 9: Push to GitHub</a></li>
+    <li><a href="#rebase-git-9000-steps">Rebase Git 9000 steps</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
@@ -750,6 +759,11 @@
 <li>Nghĩa là sẽ lấy commit từ nhanh  <code>feature-branch</code> này cập nhập vào nhánh <code>main</code>.
 <img alt="img_8.png" src="/thanhvivuu.github.io/images/images/8.png?raw=true"></li>
 </ul>
+<h5 id="lý-thuyết-git-reabse">Lý Thuyết <code>Git reabse</code></h5>
+<ul>
+<li>Được hiểu như là Reset base cho barch, giả sử mình có 1 nhánh <code>feature/crawl_video_links</code>
+<img alt="img_2.png" src="img_2.png"></li>
+</ul>
 <h2 id="step-6-user-cherry-picks">Step 6: User Cherry picks</h2>
 <ol>
 <li>Create a new commit on the main branch</li>
@@ -817,6 +831,25 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git remote add origin &lt;repository-url&gt;
 </span></span><span style="display:flex;"><span>git branch -M main
 </span></span><span style="display:flex;"><span>git push -u origin main
+</span></span></code></pre></div><h2 id="rebase-git-9000-steps">Rebase Git 9000 steps</h2>
+<h4 id="target">Target</h4>
+<p><img alt="img.png" src="img.png"></p>
+<h4 id="change-to">Change to</h4>
+<p><img alt="img_1.png" src="img_1.png"></p>
+<h4 id="step">Step:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ git checkout bugFix 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ git rebase main
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ git checkout side
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ git rebase bugFix
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ git check another
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ git rebase bugFix
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ git rebase another main 
 </span></span></code></pre></div>
 
 <footer class="footline">
@@ -1130,19 +1163,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1725383573"></script>
-    <script src="/js/perfect-scrollbar.min.js?1725383573"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1725383573"></script>
-    <script src="/js/jquery.sticky.js?1725383573"></script>
-    <script src="/js/featherlight.min.js?1725383573"></script>
-    <script src="/js/highlight.pack.js?1725383573"></script>
+    <script src="/js/clipboard.min.js?1725801617"></script>
+    <script src="/js/perfect-scrollbar.min.js?1725801617"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1725801617"></script>
+    <script src="/js/jquery.sticky.js?1725801617"></script>
+    <script src="/js/featherlight.min.js?1725801617"></script>
+    <script src="/js/highlight.pack.js?1725801617"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1725383573"></script>
-    <script src="/js/learn.js?1725383573"></script>
-    <script src="/js/hugo-learn.js?1725383573"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1725801617"></script>
+    <script src="/js/learn.js?1725801617"></script>
+    <script src="/js/hugo-learn.js?1725801617"></script>
 
-    <link href="/mermaid/mermaid.css?1725383573" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1725383573"></script>
+    <link href="/mermaid/mermaid.css?1725801617" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1725801617"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -140,21 +140,15 @@ G
 public/2-git/index.html,3/d/3dd69fa33f3592befc7bfc944a1ee9ce56d5a5cc
 F
 public/2-git/index.xml,6/4/64ae1def9995b1a3679f5f0f7a8da23ef153f30d
-Q
-!content/3-Hotel Manager/_index.md,b/4/b4d97bdce239ea317e019c16b4444ba0c349ed18
-\
-,content/3-Hotel Manager/3.1-Theory/_index.md,e/0/e05638bc6140f472d127a467b1459ab6c94eade1
-e
-5content/3-Hotel Manager/3.2-Code Deployment/_index.md,1/3/1341307c1469c7a6df708db199e1f7a26c75ee25
-d
-4content/3-Hotel Manager/3.3-More Question /_index.md,8/b/8bf81ef4230921bed916faf57d4e7795ca90f8e1
 M
 content/4-Java_Core/_index.md,3/1/318462039fef905ba4233223d67ed88a15feafdd
 _
 /content/4-Java_Core/4.1-More Question/_index.md,a/c/acc8f5a4876d05b29d47ecf9d89a44602d52aea4
-V
-&content/3-ShopApp/3.1-Theory/_index.md,6/b/6bcbf26677207ed4cf5255c52013d882008e38a8
 K
 content/3-ShopApp/_index.md,a/0/a05c979ec281d5ff9d99eb9a9951d574ab34f564
 ^
 .content/3-ShopApp/3.1- Design My SQL/_index.md,6/b/6b1917e755160fd789437ac43c6292a72915f797
+l
+<content/3-ShopApp/3.2-Java Spring Boot backend(p1)/_index.md,6/6/666042e1605fab2c04db8c98a15b0608290beeb5
+l
+<content/3-ShopApp/3.3-Java Spring Boot backend(p2)/_index.md,3/8/3856c8feea428639469bde028367f60f8ae3d994

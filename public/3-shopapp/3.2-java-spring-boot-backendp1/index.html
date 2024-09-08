@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>SHOP APP :: Implementing CI/CD using Jenkins and Argo CD.</title>
+    <title>Java Spring Boot backend (p1) :: Implementing CI/CD using Jenkins and Argo CD.</title>
 
     
     <link href="/css/nucleus.css?1725801870" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/3-shopapp/">
+  <body class="" data-url="/3-shopapp/3.2-java-spring-boot-backendp1/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -336,8 +336,8 @@
   
     
     <li data-nav-id="/3-shopapp/" title="SHOP APP" class="dd-item 
+        parent
         
-        active
         
         ">
       <a href="/3-shopapp/">
@@ -396,7 +396,7 @@
     
     <li data-nav-id="/3-shopapp/3.2-java-spring-boot-backendp1/" title="Java Spring Boot backend (p1)" class="dd-item 
         
-        
+        active
         
         ">
       <a href="/3-shopapp/3.2-java-spring-boot-backendp1/">
@@ -554,7 +554,7 @@
                   
                     
                     
-                      <option id="en" value="//localhost:1313/3-shopapp/" selected>English</option>
+                      <option id="en" value="//localhost:1313/3-shopapp/3.2-java-spring-boot-backendp1/" selected>English</option>
                     
                   
               
@@ -617,7 +617,13 @@
             
           
           
-            <a href='/'>Implementing CI/CD using Jenkins and Argo CD.</a> > SHOP APP
+            
+            
+          
+          
+            <a href='/'>Implementing CI/CD using Jenkins and Argo CD.</a> > <a href='/3-shopapp/'>SHOP APP</a> > Java Spring Boot backend (p1)
+          
+        
           
         
           
@@ -628,7 +634,18 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#đối-với-class-category">Đối với class Category</a>
+      <ul>
+        <li><a href="#1-lý-thuyết"><em>1. Lý thuyết</em></a></li>
+        <li><a href="#2-giải-thích"><em>2. Giải thích</em></a></li>
+        <li><a href="#3-một-số-lỗi-thường-gặp"><em>3. Một số lỗi thường gặp</em></a></li>
+        <li><a href="#nếu-muốn-custome-mã-lỗi-riêng-thì-ta-làm-như-sau">Nếu muốn custome mã lỗi riêng thì ta làm như sau</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -644,7 +661,7 @@
           
             <h1>
               
-              SHOP APP
+              Java Spring Boot backend (p1)
             </h1>
           
 
@@ -652,7 +669,117 @@
 
 
 
-	
+	<h1 id="java-spring-boot-backend-p1">Java Spring Boot backend (P1)</h1>
+<h2 id="đối-với-class-category">Đối với class Category</h2>
+<h3 id="1-lý-thuyết"><em>1. Lý thuyết</em></h3>
+<ul>
+<li>Một số lý thuyết về anotation</li>
+<li><code>@RequestBody</code> : Được hiểu như là nó sẽ chạy vào <code>body</code> khi mình truyền vào gì</li>
+<li><code>@RequestParam</code> : Mình chuyền vào cái gì</li>
+<li><code>@NotNull</code> : từ chối giá trị <code>null</code> hoặc <code>không có</code> nhưng <code>chấp nhận giá trị rỗng(empty)</code>.</li>
+<li><code>@NotEmpty</code> : cả giá trị null lẫn giá trị rỗng bằng cách kiểm tra <code>độ dài (length)</code> <code>(String)</code> hoặc kích thước <code>(size)</code> (Collection) xem có <code>lớn hơn 0 hay không</code>.</li>
+<li><code>@NotBlank</code> : Annotation này <code>từ chối String có giá trị null</code> và String có <code>độ dài là 0</code> sau khi đã trim (loại bỏ hết khoảng trắng thừa ở đầu và cuối của String)</li>
+<li></li>
+</ul>
+<h3 id="2-giải-thích"><em>2. Giải thích</em></h3>
+<h3 id="3-một-số-lỗi-thường-gặp"><em>3. Một số lỗi thường gặp</em></h3>
+<h4 id="hiễn-mã-lỗi-trong-posman">Hiễn mã lỗi trong posman</h4>
+<p><img alt="img_2.png" src="/3-shopapp/3.2-java-spring-boot-backendp1/img_2.png">
+<em>Khi chưa fix lỗi</em></p>
+<ul>
+<li>Trường hơpj là name = empty, nhưng trong package dtos có annotation <code>NOTEMPTY </code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> ResponseEntity<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">insertCategory</span>(<span style="color:#a6e22e">@Valid</span> <span style="color:#a6e22e">@RequestBody</span> CategoryDTO categoryDTO) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> ResponseEntity.<span style="color:#a6e22e">ok</span>(<span style="color:#e6db74">&#34;Insert category thành công: &#34;</span> <span style="color:#f92672">+</span> categoryDTO);
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p><img alt="img_1.png" src="/3-shopapp/3.2-java-spring-boot-backendp1/img_1.png">
+<em>Tôi muốn hiện ra như này</em></p>
+<ul>
+<li>sửa đoạn code</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>     <span style="color:#66d9ef">public</span> ResponseEntity<span style="color:#f92672">&lt;?&gt;</span> insertCategory( <span style="color:#75715e">// Nếu chuyển ?--&gt; sang kiểu string thì nó không nhận , vậy phải để kiểu ? để nó nhận thêm kiểu (List và String)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">@Valid</span> <span style="color:#a6e22e">@RequestBody</span> CategoryDTO categoryDTO,
+</span></span><span style="display:flex;"><span>        BindingResult result) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (result.<span style="color:#a6e22e">hasErrors</span>()) {
+</span></span><span style="display:flex;"><span>        String errorMessages <span style="color:#f92672">=</span> String.<span style="color:#a6e22e">valueOf</span>(result.<span style="color:#a6e22e">getFieldErrors</span>()
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">stream</span>()
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">map</span>(FieldError::getDefaultMessage)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">toList</span>());
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> ResponseEntity.<span style="color:#a6e22e">badRequest</span>().<span style="color:#a6e22e">body</span>(errorMessages);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ResponseEntity.<span style="color:#a6e22e">ok</span>(<span style="color:#e6db74">&#34;Insert category thành công: &#34;</span> <span style="color:#f92672">+</span> categoryDTO);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><blockquote>
+<p>Lưu ý: phải xóa anotation <code>@Validated</code> đi bởi vì khi chạy vào class nó sẽ tự hiểu chạy vào annotation này mà không valid ở trên
+<img alt="img_3.png" src="/3-shopapp/3.2-java-spring-boot-backendp1/img_3.png">
+<em>Nó sẽ hiễn mã lỗi 500</em></p>
+</blockquote>
+<h4 id="xử-lý-lỗi-xác-thực-bằng-bindingresult">Xử lý lỗi xác thực bằng BindingResult</h4>
+<ul>
+<li><code>BingdingResult</code> là nơi mà spring chứa xác thực dữ liệu</li>
+<li>Nếu như có lỗi xác thực đầu vào thì ta dùng <code>BindingResult.hasErrors():</code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>    <span style="color:#a6e22e">@PostMapping</span>(consumes <span style="color:#f92672">=</span> MediaType.<span style="color:#a6e22e">APPLICATION_JSON_VALUE</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">createPerson</span>(<span style="color:#a6e22e">@RequestBody</span> <span style="color:#a6e22e">@Valid</span> PersonRequest request, BindingResult bindingResult) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (bindingResult.<span style="color:#a6e22e">hasErrors</span>()) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Một hoặc nhiều trường truyền vào không hợp lệ!&#34;</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><blockquote>
+<p>Các này sẽ không biết cái cụ thể trường nào lỗi và vì sao lại lỗi.</p>
+</blockquote>
+<h5 id="khắc-phục-chúng-ta-dùng--bindingresultgetfielderrors-để-lấy-tất-cả-các-trường-bị-lỗi-bao-gồm-cả-message">Khắc phục chúng ta dùng : <code>BindingResult.getFieldErrors</code> để lấy tất cả các trường bị lỗi bao gồm cả message.</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>    <span style="color:#a6e22e">@PostMapping</span>(consumes <span style="color:#f92672">=</span> MediaType.<span style="color:#a6e22e">APPLICATION_JSON_VALUE</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">createPerson</span>(<span style="color:#a6e22e">@RequestBody</span> <span style="color:#a6e22e">@Valid</span> PersonRequest request, BindingResult bindingResult) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(bindingResult.<span style="color:#a6e22e">hasErrors</span>()){
+</span></span><span style="display:flex;"><span>            Map<span style="color:#f92672">&lt;</span>String, String<span style="color:#f92672">&gt;</span> errors<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;</span>(); <span style="color:#75715e">// Quan Trọng vì cái này sẽ lưu các trường vào đây </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            bindingResult.<span style="color:#a6e22e">getFieldErrors</span>().<span style="color:#a6e22e">forEach</span>(
+</span></span><span style="display:flex;"><span>                    error <span style="color:#f92672">-&gt;</span> errors.<span style="color:#a6e22e">put</span>(error.<span style="color:#a6e22e">getField</span>(), error.<span style="color:#a6e22e">getDefaultMessage</span>())
+</span></span><span style="display:flex;"><span>            );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            String errorMsg<span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span>(String key: errors.<span style="color:#a6e22e">keySet</span>()){
+</span></span><span style="display:flex;"><span>                errorMsg<span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;Lỗi ở: &#34;</span> <span style="color:#f92672">+</span> key <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, lí do: &#34;</span> <span style="color:#f92672">+</span> errors.<span style="color:#a6e22e">get</span>(key) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;\n&#34;</span>;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> errorMsg;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//TODO: Thêm code gọi xuống service layer</span>
+</span></span><span style="display:flex;"><span>        log.<span style="color:#a6e22e">info</span>(request.<span style="color:#a6e22e">toString</span>());
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Các trường truyền vào hợp lệ!&#34;</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><h3 id="nếu-muốn-custome-mã-lỗi-riêng-thì-ta-làm-như-sau">Nếu muốn custome mã lỗi riêng thì ta làm như sau</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Documented</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@Constraint</span>(validatedBy <span style="color:#f92672">=</span> CapitalizedValidator.<span style="color:#a6e22e">class</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@Target</span>( { ElementType.<span style="color:#a6e22e">METHOD</span>, ElementType.<span style="color:#a6e22e">FIELD</span> })
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@Retention</span>(RetentionPolicy.<span style="color:#a6e22e">RUNTIME</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#a6e22e">@interface</span> CapitalizedConstraint {
+</span></span><span style="display:flex;"><span>    String <span style="color:#a6e22e">message</span>() <span style="color:#66d9ef">default</span> <span style="color:#e6db74">&#34;Chữ đầu tiên phải được in hoa!&#34;</span>;
+</span></span><span style="display:flex;"><span>    Class<span style="color:#f92672">&lt;?&gt;[]</span> groups() <span style="color:#66d9ef">default</span> {};
+</span></span><span style="display:flex;"><span>    Class<span style="color:#f92672">&lt;?</span> <span style="color:#66d9ef">extends</span> Payload<span style="color:#f92672">&gt;[]</span> <span style="color:#a6e22e">payload</span>() <span style="color:#66d9ef">default</span> {};
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CapitalizedValidator</span> <span style="color:#66d9ef">implements</span> ConstraintValidator<span style="color:#f92672">&lt;</span>CapitalizedConstraint, String<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">initialize</span>(CapitalizedConstraint constraintAnnotation) {
+</span></span><span style="display:flex;"><span>  ConstraintValidator.<span style="color:#a6e22e">super</span>.<span style="color:#a6e22e">initialize</span>(constraintAnnotation);
+</span></span><span style="display:flex;"><span> }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">isValid</span>(String value, ConstraintValidatorContext context) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>StringUtils.<span style="color:#a6e22e">hasLength</span>(value)) <span style="color:#66d9ef">return</span> Boolean.<span style="color:#a6e22e">FALSE</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>Character.<span style="color:#a6e22e">isUpperCase</span>(value.<span style="color:#a6e22e">charAt</span>(0))) <span style="color:#66d9ef">return</span> Boolean.<span style="color:#a6e22e">FALSE</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> Boolean.<span style="color:#a6e22e">TRUE</span>;
+</span></span><span style="display:flex;"><span> }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>Cuối cùng ta thêm annotation vào</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> String name;
+</span></span></code></pre></div>
 
 
 
@@ -878,6 +1005,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -893,6 +1021,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -951,10 +1082,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/2-git/2.2-advancedgit/_index2/" title="GibHub homework"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/3-shopapp/3.1--design-my-sql/" title="Design my SQL"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/3-shopapp/3.1--design-my-sql/" title="Design my SQL" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/3-shopapp/3.3-java-spring-boot-backendp2/" title="Java Spring Boot backend (p2)" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

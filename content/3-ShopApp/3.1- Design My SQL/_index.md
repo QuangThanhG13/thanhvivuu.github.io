@@ -1,9 +1,9 @@
 ---
 title : "Design my SQL"
 date :  "`r Sys.Date()`" 
-weight : 3
+weight : 1
 chapter : false
-pre : " <b> 3 </b> "
+pre : " <b> 3.1 </b> "
 ---
 ## Thiết Kế database cho Shop app 
 ![img.png](img.png)

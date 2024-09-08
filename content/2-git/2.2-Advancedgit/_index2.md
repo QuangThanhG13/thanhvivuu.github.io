@@ -93,6 +93,11 @@ git rebase main
 - Nghĩa là sẽ lấy commit từ nhanh  `feature-branch` này cập nhập vào nhánh `main`.
 ![img_8.png](/thanhvivuu.github.io/images/images/8.png?raw=true)
 
+##### Lý Thuyết `Git reabse`
+- Được hiểu như là Reset base cho barch, giả sử mình có 1 nhánh `feature/crawl_video_links`
+![img_2.png](img_2.png)
+
+
 ## Step 6: User Cherry picks 
 1. Create a new commit on the main branch
 ```shell
@@ -156,3 +161,38 @@ git remote add origin <repository-url>
 git branch -M main
 git push -u origin main
 ```
+
+## Rebase Git 9000 steps 
+#### Target 
+![img.png](img.png)
+
+#### Change to  
+![img_1.png](img_1.png)
+
+#### Step:
+```shell
+$ git checkout bugFix 
+
+$ git rebase main
+
+$ git checkout side
+
+$ git rebase bugFix
+
+$ git check another
+
+$ git rebase bugFix
+
+$ git rebase another main 
+```
+
+
+
+
+
+
+
+
+
+
+ 

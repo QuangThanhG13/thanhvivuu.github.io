@@ -34,11 +34,11 @@
   </url><url>
     <loc>//localhost:1313/2-git/</loc>
   </url><url>
-    <loc>//localhost:1313/3-shopapp/3.2-code-deployment/</loc>
-  </url><url>
     <loc>//localhost:1313/2-git/2.2-advancedgit/_index1/</loc>
   </url><url>
     <loc>//localhost:1313/2-git/2.2-advancedgit/_index2/</loc>
+  </url><url>
+    <loc>//localhost:1313/3-shopapp/3.2-java-spring-boot-backendp1/</loc>
   </url><url>
     <loc>//localhost:1313/1-introduce/1.2-jenkins/</loc>
     <xhtml:link
@@ -66,7 +66,7 @@
   </url><url>
     <loc>//localhost:1313/3-shopapp/3.1--design-my-sql/</loc>
   </url><url>
-    <loc>//localhost:1313/3-shopapp/3.3-more-question-/</loc>
+    <loc>//localhost:1313/3-shopapp/3.3-java-spring-boot-backendp2/</loc>
   </url><url>
     <loc>//localhost:1313/3-shopapp/</loc>
   </url><url>
