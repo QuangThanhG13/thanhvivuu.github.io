@@ -467,3 +467,19 @@ class Dog extends Animal {
 2. **Polymorphism:** Đa hình, tức là cùng một hành vi có thể có nhiều hình thức khác nhau.
 3. **Encapsulation:** Đóng gói, tức là ẩn giấu các chi tiết thực hiện và chỉ cung cấp những thông tin cần thiết ra bên ngoài.
 4. **Abstraction:** Trừu tượng hóa, tức là chỉ giữ lại những thông tin quan trọng và ẩn đi các chi tiết phức tạp.
+
+
+## Tìm hiểu về `RESTfull api`
+RESTful API là một tiêu chuẩn dùng trong việc thiết kế API cho các ứng dụng web (thiết kế Web services) để tiện cho việc quản lý các resource. Được truyền tải qua HTTP
+Các API RESTful thường được sử dụng để giao tiếp giữa các ứng dụng qua HTTP, với các quy tắc và phương thức cụ thể nhằm đảm bảo việc trao đổi dữ liệu diễn ra dễ dàng, nhất quán và có thể mở rộng.
+#### Cách phương thúc 
+`PATCH`
+![img.png](img.png)
+
+#### Các thành phần của nó: 
+`API` (Application Programming Interface) :là một tập các quy tắc và cơ chế mà theo đó, một ứng dụng hay một thành phần sẽ tương tác với một ứng dụng
+`REST`(REpresentational State** T**ransfer) : là một dạng chuyển đổi cấu trúc dữ liệu Nó sử dụng phương thức HTTP đơn giản để tạo cho giao tiếp giữa các máy
+
+## Tổ chức project trong Spring Boot , nêu ý nghĩa các package trong Spring Boot
+#### Tổ Chức Source Code Theo Mô Hình 3 Lớp
+##### 1. Presentation Layer(Tầng trình diễn)

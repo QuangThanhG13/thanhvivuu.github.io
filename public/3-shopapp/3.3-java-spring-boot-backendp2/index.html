@@ -12,21 +12,21 @@
     <title>Java Spring Boot backend (p2) :: Implementing CI/CD using Jenkins and Argo CD.</title>
 
     
-    <link href="/css/nucleus.css?1725801870" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1725801870" rel="stylesheet">
-    <link href="/css/hybrid.css?1725801870" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1725801870" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1725801870" rel="stylesheet">
-    <link href="/css/auto-complete.css?1725801870" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1725801870" rel="stylesheet">
-    <link href="/css/theme.css?1725801870" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1725801870" rel="stylesheet">
+    <link href="/css/nucleus.css?1725905630" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1725905630" rel="stylesheet">
+    <link href="/css/hybrid.css?1725905630" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1725905630" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1725905630" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725905630" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1725905630" rel="stylesheet">
+    <link href="/css/theme.css?1725905630" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1725905630" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1725801870" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1725905630" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1725801870"></script>
+    <script src="/js/jquery-3.3.1.min.js?1725905630"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1725801870"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1725801870"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1725905630"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1725905630"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1725801870"></script>
+<script type="text/javascript" src="/js/search.js?1725905630"></script>
 
     
   </div>
@@ -636,7 +636,7 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#userrepository-và-usercontrolller">UserRepository và UserControlller</a>
       <ul>
         <li></li>
       </ul>
@@ -666,8 +666,100 @@
 
 
 
-	<h1 id="java-spring-boot-backend-p2">Java Spring Boot backend (P2)</h1>
-<h4 id="tạo-bảng">Tạo bảng</h4>
+	<h2 id="userrepository-và-usercontrolller">UserRepository và UserControlller</h2>
+<h4 id="1giải-thích-logic-chưa-hiểu">1.Giải thích logic chưa hiểu.</h4>
+<h5 id="trong-api-creatuser">Trong api <code>creatUser</code></h5>
+<p>Để convert tu User DTO sang User ta làm</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>       
+</span></span><span style="display:flex;"><span>        User newUser <span style="color:#f92672">=</span>countId(userDTO.<span style="color:#a6e22e">getFacebookAccountId</span>())
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">googleAccountId</span>(userDTO.<span style="color:#a6e22e">getGoogleAccountId</span>())
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">build</span>();
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//1 role thi se cos nhieu user bây giờ ta sẽ tại role cho user</span>
+</span></span><span style="display:flex;"><span>        Role role <span style="color:#f92672">=</span> roleRepository.<span style="color:#a6e22e">findById</span>(userDTO.<span style="color:#a6e22e">getRoleId</span>())
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">orElseThrow</span>(() <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">new</span> DataNotFoundException(<span style="color:#e6db74">&#34;Role not found: &#34;</span> <span style="color:#f92672">+</span> userDTO.<span style="color:#a6e22e">getRoleId</span>()));
+</span></span><span style="display:flex;"><span>        newUser.<span style="color:#a6e22e">setRole</span>(role);
+</span></span></code></pre></div><h5 id="có-1-product-có-sẵn-các-thông-tin-ở-trong-và-muốn-thêm-ảnh-vào">Có 1 product có sẵn các thông tin ở trong và <code>muốn thêm ảnh vào</code></h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            List&lt;MultipartFile&gt; files <span style="color:#f92672">=</span> productDTO.getFiles<span style="color:#f92672">()</span>;
+</span></span><span style="display:flex;"><span>            files <span style="color:#f92672">=</span> files <span style="color:#f92672">==</span> null ? new ArrayList&lt;MultipartFile&gt;<span style="color:#f92672">()</span> : files;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>MultipartFile file : files<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>file.getSize<span style="color:#f92672">()</span> <span style="color:#f92672">==</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">continue</span>;
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>                //Kiem tra kich thuoc file va dinh dang.
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>file.getSize<span style="color:#f92672">()</span> &gt; <span style="color:#ae81ff">10</span> * <span style="color:#ae81ff">1024</span> * 1024<span style="color:#f92672">)</span> <span style="color:#f92672">{</span> //kich thuoc file lon hon 10Mb
+</span></span><span style="display:flex;"><span>                    // throw new ResponseStatusException<span style="color:#f92672">(</span>HttpStatus.PAYLOAD_TOO_LARGE, <span style="color:#e6db74">&#34;File is too large! Maximum size is 10Mb&#34;</span><span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">return</span> ResponseEntity.status<span style="color:#f92672">(</span>HttpStatus.PAYLOAD_TOO_LARGE<span style="color:#f92672">)</span>.body<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;File is too large! Maximum size is 10Mb&#34;</span><span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>                String contentType <span style="color:#f92672">=</span> file.getContentType<span style="color:#f92672">()</span>;
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>contentType <span style="color:#f92672">==</span> null <span style="color:#f92672">||</span> !contentType.startsWith<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;image/&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">return</span> ResponseEntity.status<span style="color:#f92672">(</span>HttpStatus.UNSUPPORTED_MEDIA_TYPE<span style="color:#f92672">)</span>.body<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;File must be an image&#34;</span><span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>                //luu file vao thu muc
+</span></span><span style="display:flex;"><span>                String fileName <span style="color:#f92672">=</span> storeFile<span style="color:#f92672">(</span>file<span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>                //sau <span style="color:#66d9ef">do</span> luu vao doi tuong product trong db
+</span></span><span style="display:flex;"><span>                //luu vao bang product images
+</span></span><span style="display:flex;"><span>             ProductImage productImage <span style="color:#f92672">=</span> productService.createProductImage<span style="color:#f92672">(</span>newProduct.getId<span style="color:#f92672">()</span>,
+</span></span><span style="display:flex;"><span>                        ProductImageDTO.builder<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>                                .imageUrl<span style="color:#f92672">(</span>fileName<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>                                .build<span style="color:#f92672">())</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">}</span>
+</span></span></code></pre></div><h5 id="1-tạo-sản-phẩm-mới-">1. Tạo sản phẩm mới :</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span> Product newProduct <span style="color:#f92672">=</span>  productService.<span style="color:#a6e22e">craetProduct</span>(productDTO);
+</span></span></code></pre></div><ul>
+<li>tạo 1 newProduct trong đây nó đẫ chứa đầy thông tin</li>
+</ul>
+<h5 id="2-xử-lí-các-tệp-tin">2. Xử lí các tệp tin</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>List&lt;MultipartFile&gt; files <span style="color:#f92672">=</span> productDTO.getFiles<span style="color:#f92672">()</span>;
+</span></span><span style="display:flex;"><span>files <span style="color:#f92672">=</span> files <span style="color:#f92672">==</span> null ? new ArrayList&lt;MultipartFile&gt;<span style="color:#f92672">()</span> : files;
+</span></span></code></pre></div><blockquote>
+<p>tương đương</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>files <span style="color:#f92672">==</span> null<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    files <span style="color:#f92672">=</span> new ArrayList&lt;MultipartFile&gt;<span style="color:#f92672">()</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    files <span style="color:#f92672">=</span> files;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ul>
+<li>Tiếp theo, đoạn code lấy danh sách các tệp tin (<code>MultipartFile</code>) từ <code>productDTO.</code></li>
+<li>Nếu không có tệp tin nào tức là <code>file</code> là null,</li>
+</ul>
+<h5 id="3-duyệt-qua-các-tệp-tin">3. Duyệt qua các tệp tin</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>MultipartFile file : files<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>file.getSize<span style="color:#f92672">()</span> <span style="color:#f92672">==</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">continue</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><h5 id="4-kiểm-tra-kichs-thước">4. Kiểm tra kichs thước</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>file.getSize<span style="color:#f92672">()</span> &gt; <span style="color:#ae81ff">10</span> * <span style="color:#ae81ff">1024</span> * 1024<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ResponseEntity.status<span style="color:#f92672">(</span>HttpStatus.PAYLOAD_TOO_LARGE<span style="color:#f92672">)</span>.body<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;File is too large! Maximum size is 10Mb&#34;</span><span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><h5 id="5-kiểm-tra-loại-tệp-tin">5. Kiểm tra loại tệp tin</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>String contentType <span style="color:#f92672">=</span> file.getContentType<span style="color:#f92672">()</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>contentType <span style="color:#f92672">==</span> null <span style="color:#f92672">||</span> !contentType.startsWith<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;image/&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ResponseEntity.status<span style="color:#f92672">(</span>HttpStatus.UNSUPPORTED_MEDIA_TYPE<span style="color:#f92672">)</span>.body<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;File must be an image&#34;</span><span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><ul>
+<li><code>(content type)</code> được kiểm tra để đảm bảo rằng đó là tệp tin hình ảnh.</li>
+</ul>
+<h5 id="6-lưu-trữ-tệp-tin">6. Lưu trữ tệp tin:</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>String fileName <span style="color:#f92672">=</span> storeFile<span style="color:#f92672">(</span>file<span style="color:#f92672">)</span>;
+</span></span></code></pre></div><ul>
+<li>Nó sẽ được lưu trữ vào một vị trí cụ thể bằng phương thức storeFile(file)</li>
+</ul>
+<h5 id="7-lưu-thông-tin-hình-ảnh-vào-cơ-sở-dữ-liệu">7. Lưu thông tin hình ảnh vào cơ sở dữ liệu:</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>ProductImage productImage <span style="color:#f92672">=</span> productService.<span style="color:#a6e22e">createProductImage</span>(newProduct.<span style="color:#a6e22e">getId</span>(),
+</span></span><span style="display:flex;"><span>        ProductImageDTO.<span style="color:#a6e22e">builder</span>()
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">imageUrl</span>(fileName)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">build</span>());
+</span></span></code></pre></div><ul>
+<li><code>Buider pattern</code> : làm việc với đối tượng có nhiều thuộc tính phưucs tạp</li>
+</ul>
+<h5 id="2-luồng-chạy-của-2-class-và-các-anotation-liên-quan">2. Luồng chạy của 2 class và các <code>anotation</code> liên quan.</h5>
+<p>Luồng chạy : từ class Service ta có anotation <code>@RequiredArgsConstructor</code> <code>@Service</code> để : Khi bạn sử dụng <code>@Service</code> và <code>@RequiredArgsConstructor</code>, Spring sẽ tự động quản lý lớp <code>Service</code> này, và tất cả các <code>dependency</code> (như repository hoặc các service khác) sẽ được tự động tiêm vào thông qua constructor mà @RequiredArgsConstructor tạo ra.</p>
+<p>Còn class Controller có <code>@RequiredArgsConstructor</code> : sẽ tạo ra constructor và cho phép Spring tự động tiêm các <code>dependency,</code>mà không cần <code>@Autowire</code> chẳng hạn như các service mà Controller sử dụng.</p>
 
 
 
@@ -984,19 +1076,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1725801870"></script>
-    <script src="/js/perfect-scrollbar.min.js?1725801870"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1725801870"></script>
-    <script src="/js/jquery.sticky.js?1725801870"></script>
-    <script src="/js/featherlight.min.js?1725801870"></script>
-    <script src="/js/highlight.pack.js?1725801870"></script>
+    <script src="/js/clipboard.min.js?1725905630"></script>
+    <script src="/js/perfect-scrollbar.min.js?1725905630"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1725905630"></script>
+    <script src="/js/jquery.sticky.js?1725905630"></script>
+    <script src="/js/featherlight.min.js?1725905630"></script>
+    <script src="/js/highlight.pack.js?1725905630"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1725801870"></script>
-    <script src="/js/learn.js?1725801870"></script>
-    <script src="/js/hugo-learn.js?1725801870"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1725905630"></script>
+    <script src="/js/learn.js?1725905630"></script>
+    <script src="/js/hugo-learn.js?1725905630"></script>
 
-    <link href="/mermaid/mermaid.css?1725801870" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1725801870"></script>
+    <link href="/mermaid/mermaid.css?1725905630" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1725905630"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
